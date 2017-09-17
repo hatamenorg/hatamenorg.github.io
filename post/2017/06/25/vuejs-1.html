@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hatamen - 技术栈， 分享各类新奇有趣、科技、技术、开发，各类互联网优质精选文章以及优秀开源项目； -- by Hatamen。">
+    <meta name="keywords" content="Hatamen, php, laravel, vue, iview, ios, 全栈工程师, 创业" />
+    <meta name="author" content="Ckryo">
+    <link rel="icon" href="/favicon.ico">
+    <!-- page title -->
+    <title>Hatamen - 技术栈</title>
+    <!-- bootstrap css -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+    <!-- css -->
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/animate.css" rel="stylesheet">
+    <link href="/css/magnific-popup.css" rel="stylesheet">
+    <!-- fonts -->
+    <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='/fonts/FontAwesome.otf' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/linear-icons.css">
+    <link rel="stylesheet" href="/css/share.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="/https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="/https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <!-- javascript -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.easing.min.js"></script>
+</head>
+<body data-spy="scroll" data-target="#post-scroll-spy">
+    <!-- preloader -->
+    <div id="preloader">
+        <div class="spinner spinner-round"></div>
+    </div>
+    <!-- / preloader -->
+    <!-- header -->
+    <header>
+        <!-- nav -->
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-logo" href="/index.html">
+                        Hatamen
+                    </a>
+                </div>
+                <!-- / navbar-header -->
+                
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                    	
+                        <li>
+	                        <a href="/">
+	                        	
+	                        	<span>首页</span>
+	                        </a>
+                        </li>
+                        
+                        <li>
+	                        <a href="/project/index.html">
+	                        	
+	                        	<span>项目</span>
+	                        </a>
+                        </li>
+                        
+                        <li>
+	                        <a href="/post/index.html">
+	                        	
+	                        	<span>文章</span>
+	                        </a>
+                        </li>
+                        
+                        <li>
+	                        <a href="/about.html">
+	                        	
+	                        	<span>关于我</span>
+	                        </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                <!--/ nav-collapse -->
+            <!-- / container -->
+        </nav>
+        <!-- / nav -->
+        <!-- header-banner -->
+        <div id="header-banner" class="demo-1"  style="background-image: url(/images/banner-bg.jpg)" >
+    <div class="banner-content text-center">
+        <div class="banner-info">
+            <h1 id="banner-title">Hatamen - 技术栈</h1>
+            <p id="banner-description" style="display: none" data-in-effect="rotateInUpRight">
+                优秀技术资源分享
+            </p>
+        </div>
+        <!-- / banner-info -->
+    </div>
+    <!-- / banner-content -->
+</div>
+        <!-- / header-banner -->
+    </header>
+    <!-- / header -->
+    <!-- / content -->
+    <link rel="stylesheet" href="/css/i_slidebar.css">
+<link rel="stylesheet" href="/css/i_post.css">
+<div id="page-content" class="container">
+    <!-- post content + sidebar -->
+    <section id="blog">
+        <div class="row">
+            <!-- post content area -->
+            <div class="col-md-9">
+                <div class="blog block post-content-area">
+                    <img src="/images/post_preview_default.jpg" alt="">
+                    <div class="post-info-box">
+                        <h1 style="font-size: 48px;">VueJS 开发常见问题集锦</h1>
+                        <p class="post-info" style="margin-bottom: 15px;">
+                            发表于:
+                            <span style="color: #aaa; margin: 0 15px">
+                                2017.06.25
+                            </span>
+                             | 分类：
+                             <a href="#" style="margin: 0 5px">
+                                
+                                    -
+                                
+                             </a>
+                             
+                        </p>
+                        <p>由于公司的前端开始转向 <code>VueJS</code>，最近开始使用这个框架进行开发，遇到一些问题记录下来，以备后用。<br>主要写一些 <strong><a href="https://cn.vuejs.org/v2/guide/" target="_blank" rel="external">官方手册</a></strong> 上没有写，但是实际开发中会遇到的问题，需要一定知识基础。</p>
+<hr>
+<h3 id="涉及技术栈"><a href="#涉及技术栈" class="headerlink" title="涉及技术栈"></a>涉及技术栈</h3><ul>
+<li><p>CLI: <a href="https://github.com/vuejs/vue-cli" target="_blank" rel="external">Vue-CLI</a></p>
+</li>
+<li><p>UI: <a href="http://element.eleme.io/" target="_blank" rel="external">Element</a></p>
+</li>
+<li><p>HTML: <a href="https://pugjs.org/" target="_blank" rel="external">Pug(Jade)</a></p>
+</li>
+<li><p>CSS: <a href="http://lesscss.org/" target="_blank" rel="external">Less</a></p>
+</li>
+<li><p>JavaScript: <a href="https://github.com/lukehoban/es6features" target="_blank" rel="external">ES6</a></p>
+</li>
+</ul>
+<hr>
+<p><strong>正文：</strong></p>
+<h3 id="polyfill-与-transform-runtime"><a href="#polyfill-与-transform-runtime" class="headerlink" title="polyfill 与 transform-runtime"></a>polyfill 与 transform-runtime</h3><p>　　首先，<code>vue-cli</code> 为我们自动添加了 <code>babel-plugin-transform-runtime</code> 这个插件，该插件多数情况下都运作正常，可以转换大部分 <code>ES6</code> 语法。<br>　　但是，存在如下两个问题：</p>
+<ol>
+<li><p><strong>异步加载组件时，会产生 <code>polyfill</code> 代码冗余</strong></p>
+</li>
+<li><p><strong>不支持对全局函数与实例方法的 <code>polyfill</code></strong></p>
+</li>
+</ol>
+<p>　　两个问题的原因均归因于 <code>babel-plugin-transform-runtime</code> 采用了沙箱机制来编译我们的代码（即：不修改宿主环境的内置对象）。</p>
+<p>　　由于异步组件最终会被编译为一个单独的文件，所以即使多个组件中使用了同一个新特性（例如：<code>Object.keys()</code>），那么在每个编译后的文件中都会有一份该新特性的 <code>polyfill</code> 拷贝。如果项目较小可以考虑不使用异步加载，但是首屏的压力会比较大。<br>　　不支持全局函数（如：<code>Promise</code>、<code>Set</code>、<code>Map</code>），<code>Set</code> 跟 <code>Map</code> 这两种数据结构应该大家用的也不多，影响较小。但是 <code>Promise</code> 影响可能就比较大了。<br>　　不支持实例方法（如：<code>&#39;abc&#39;.include(&#39;b&#39;)</code>、<code>[&#39;1&#39;, &#39;2&#39;, &#39;3&#39;].find((n) =&gt; n &lt; 2)</code> 等等），这个限制几乎废掉了大部分字符串和一半左右数组的新特性。</p>
+<blockquote>
+<p>一般情况下 <code>babel-plugin-transform-runtime</code> 能满足大部分的需求，当不满足需求时，推荐使用完整的 <code>babel-polyfill</code>。</p>
+</blockquote>
+<h4 id="替换-babel-polyfill"><a href="#替换-babel-polyfill" class="headerlink" title="替换 babel-polyfill"></a>替换 babel-polyfill</h4><p>　　首先，从项目中移除 <code>babel-plugin-transform-runtime</code><br>　　卸载该依赖：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;bash&quot;&gt;npm un babel-plugin-transform-runtime -D</div></pre></td></tr></table></figure>
+<p>　　修改 <code>babel</code> 配置文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;javascript&quot;&gt;// .babelrc</div><div class="line">&#123;</div><div class="line">  //...</div><div class="line">  &quot;plugins&quot;: [</div><div class="line">    // - &quot;transform-runtime&quot;</div><div class="line">  ]</div><div class="line">  //...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>　　然后，安装 <code>babel-polyfill</code> 依赖：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;bash&quot;&gt;npm i babel-polyfill -D</div></pre></td></tr></table></figure>
+<p>　　最后，在入口文件中导入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;javascript&quot;&gt;// src/main.js</div><div class="line">import &apos;babel-polyfill&apos;</div></pre></td></tr></table></figure>
+<h3 id="ES6-import-引用问题"><a href="#ES6-import-引用问题" class="headerlink" title="ES6 import 引用问题"></a>ES6 import 引用问题</h3><p>　　在 <code>ES6</code> 中，模块系统的导入与导出采用的是引用导出与导入（非简单数据类型），也就是说，如果在一个模块中定义了一个对象并导出，在其他模块中导入使用时，导入的其实是一个变量引用（指针），如果修改了对象中的属性，会影响到其他模块的使用。<br>　　通常情况下，系统体量不大时，我们可以使用 <code>JSON.parse(JSON.stringify(str))</code> 简单粗暴地来生成一个全新的深度拷贝的 <strong>数据对象</strong>。不过当组件较多、数据对象复用程度较高时，很明显会产生性能问题，这时我们可以考虑使用 <a href="https://facebook.github.io/immutable-js/" target="_blank" rel="external">Immutable.js</a>。</p>
+<blockquote>
+<p>鉴于这个原因，进行复杂数据类型的导出时，需要注意多个组件导入同一个数据对象时修改数据后可能产生的问题。<br>此外，模块定义变量或函数时即便使用 <code>let</code> 而不是 <code>const</code>，在导入使用时都会变成只读，不能重新赋值，效果等同于用 <code>const</code> 声明。</p>
+</blockquote>
+<h3 id="在-Vue-中使用-Pug-与-Less"><a href="#在-Vue-中使用-Pug-与-Less" class="headerlink" title="在 Vue 中使用 Pug 与 Less"></a>在 Vue 中使用 Pug 与 Less</h3><h4 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h4><p>　　<code>Vue</code> 中使用 <code>vue-loader</code> 根据 <code>lang</code> 属性自动判断所需要的 <code>loader</code>，所以不用额外配置 <code>Loader</code>，但是需要手动安装相关依赖：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;bash&quot;&gt;npm i pug -D</div><div class="line">npm i less-loader -D</div></pre></td></tr></table></figure>
+<p>还是相当方便的，不用手动修改 <code>webpack</code> 的配置文件添加 <code>loader</code> 就可以使用了</p>
+<blockquote>
+<p>使用 <code>pug</code> 还是 <code>pug-loader</code>？<code>sass</code> 两种语法的 <code>loader</code> 如何设置？<br>— 请参考 <a href="https://vue-loader.vuejs.org/zh-cn/configurations/pre-processors.html" target="_blank" rel="external">预处理器 · vue-loader</a></p>
+</blockquote>
+<h4 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"> &lt;code class=&quot;html&quot;&gt;&lt;style lang=&quot;less&quot;&gt;.action &#123;</div><div class="line">    color: #ddd;</div><div class="line">      ul &#123;</div><div class="line">        overflow: hidden;</div><div class="line">        li &#123;</div><div class="line">          float: left;</div><div class="line">        &#125;</div><div class="line">      &#125;</div><div class="line">  &#125;&lt;/style&gt; </div><div class="line">&lt;template lang=&quot;pug&quot;&gt;&lt;/template&gt;</div><div class="line"> &lt;script&gt;export default &#123;</div><div class="line">    data () &#123;</div><div class="line">      return &#123;</div><div class="line">        hasRight: true</div><div class="line">      &#125;</div><div class="line">    &#125;</div><div class="line">  &#125;&lt;/script&gt;</div></pre></td></tr></table></figure>
+<h3 id="定义全局函数或变量"><a href="#定义全局函数或变量" class="headerlink" title="定义全局函数或变量"></a>定义全局函数或变量</h3><p>　　许多时候我们需要定义一些全局函数或变量，来处理一些频繁的操作（这里拿 <code>AJAX</code> 的异常处理举例说明）。但是在 <code>Vue</code> 中，每一个单文件组件都有一个独立的上下文（<code>this</code>）。通常在异常处理中，需要在视图上有所体现，这个时候我们就需要访问 <code>this</code> 对象，但是全局函数的上下文通常是 <code>window</code>，这时候就需要一些特殊处理了。</p>
+<h4 id="简单粗暴型"><a href="#简单粗暴型" class="headerlink" title="简单粗暴型"></a>简单粗暴型</h4><p>　　最简单的方法就是直接在 <code>window</code> 对象上定义一个全局方法，在组件内使用的时候用 <code>bind</code>、<code>call</code> 或 <code>apply</code> 来改变上下文。<br>　　定义一个全局异常处理方法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;javascript&quot;&gt;// errHandler.js</div><div class="line">window.errHandler = function () &#123; // 不能使用箭头函数</div><div class="line">  if (err.code &amp;&amp; err.code !== 200) &#123;</div><div class="line">    this.$store.commit(&apos;err&apos;, true)</div><div class="line">  &#125; else &#123;</div><div class="line">    // ...</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>　　在入口文件中导入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;javascript&quot;&gt;// src/main.js</div><div class="line">import &apos;errHandler.js&apos;</div></pre></td></tr></table></figure>
+<p>　　在组件中使用：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;javascript&quot;&gt;// xxx.vue</div><div class="line">export default &#123;</div><div class="line">  created () &#123;</div><div class="line">    this.errHandler = window.errHandler.bind(this)</div><div class="line">  &#125;,</div><div class="line">  method: &#123;</div><div class="line">    getXXX () &#123;</div><div class="line">      this.$http.get(&apos;xxx/xx&apos;).then((&#123; body: result &#125;) =&gt; &#123;</div><div class="line">        if (result.code === 200) &#123;</div><div class="line">          // ...</div><div class="line">        &#125; else &#123;</div><div class="line">          this.errHandler(result)</div><div class="line">        &#125;</div><div class="line">      &#125;).catch(this.errHandler)</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="优雅安全型"><a href="#优雅安全型" class="headerlink" title="优雅安全型"></a>优雅安全型</h4><p>　　在大型多人协作的项目中，污染 <code>window</code> 对象还是不太妥当的。特别是一些比较有个人特色的全局方法（可能在你写的组件中几乎处处用到，但是对于其他人来说可能并不需要）。这时候推荐写一个模块，更优雅安全，也比较自然，唯一不足之处就是每个需要使用该函数或方法的组件都需要进行导入。<br>　　使用方法与前一种大同小异，就不多作介绍了。￣ω￣=</p>
+<h3 id="Moment-JS-与-Webpack"><a href="#Moment-JS-与-Webpack" class="headerlink" title="Moment.JS 与 Webpack"></a>Moment.JS 与 Webpack</h3><p>　　在使用 <code>Moment.js</code> 遇到一些问题，发现最终打包的文件中将 <code>Moment.js</code> 的全部语言包都打包了，导致最终文件徒然增加 100+kB。查了一下，发现可能是 <code>webpack</code> 打包或是 <code>Moment.js</code> 资源引用问题（?），目前该问题还未被妥善处理，需要通过一些 <code>trick</code> 来解决这个问题。<br>　　在 <code>webpack</code> 的生产配置文件中的 <code>plugins</code> 字段中添加一个插件，使用内置的方法类 <a href="https://webpack.js.org/plugins/context-replacement-plugin/" target="_blank" rel="external">ContextReplacementPlugin</a> 过滤掉 <code>Moment.js</code> 中那些用不到的语言包：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;javascript&quot;&gt;// build/webpack.prod.conf.js</div><div class="line">new webpack.ContextReplacementPlugin(/moment[\\/]locale$/, /^\.\/(zh-cn)$/)</div></pre></td></tr></table></figure>
+<blockquote>
+<p>解决方案采自 <a href="https://github.com/webpack/webpack/issues/3128#issuecomment-291790964" target="_blank" rel="external">oleg-nogin@webpack/webpack#3128</a>。<br>问题讨论详见 GitHub Issue: <a href="https://github.com/moment/moment/issues/2373" target="_blank" rel="external">moment/moment#2373</a>、<a href="https://github.com/webpack/webpack/issues/3128" target="_blank" rel="external">webpack/webpack#3128</a>。</p>
+</blockquote>
+<h3 id="自定义路径别名"><a href="#自定义路径别名" class="headerlink" title="自定义路径别名"></a>自定义路径别名</h3><p>　　可能有些人注意到了，在 <code>vue-cli</code> 生成的模板中在导入组件时使用了这样的语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;javascript&quot;&gt;import Index from &apos;@/components/Index&apos;</div></pre></td></tr></table></figure>
+<p>　　这个 <code>@</code> 是什么东西？后来改配置文件的时候发现这个是 <code>webpack</code> 的配置选项之一：路径别名。<br>　　我们也可以在基础配置文件中添加自己的路径别名，比如下面这个就把 <code>~</code> 设置为路径 <code>src/components</code> 的别名：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;javascript&quot;&gt;// build/webpack.base.js</div><div class="line">&#123;</div><div class="line">  resolve: &#123;</div><div class="line">    extensions: [&apos;.js&apos;, &apos;.vue&apos;, &apos;.json&apos;],</div><div class="line">    alias: &#123;</div><div class="line">      &apos;vue/code&gt;: &apos;vue/dist/vue.esm.js&apos;,</div><div class="line">      &apos;@&apos;: resolve(&apos;src&apos;),</div><div class="line">      &apos;~&apos;: resolve(&apos;src/components&apos;)</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>　　然后我们导入组件的时候就可以这样写：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;javascript&quot;&gt;// import YourComponent from &apos;YourComponent&apos;</div><div class="line">// import YourComponent from &apos;./YourComponent&apos;</div><div class="line">// import YourComponent from &apos;../YourComponent&apos;</div><div class="line">// import YourComponent from &apos;/src/components/YourComponent&apos;</div><div class="line">import YourComponent from &apos;~/YourComponent&apos;</div></pre></td></tr></table></figure>
+<p>　　既解决了路径过长的麻烦，又解决了相对路径的烦恼，方便很多吧！ヾ(ﾟ∀ﾟゞ)</p>
+<h3 id="CSS-作用域与模块"><a href="#CSS-作用域与模块" class="headerlink" title="CSS 作用域与模块"></a>CSS 作用域与模块</h3><h4 id="组件内样式"><a href="#组件内样式" class="headerlink" title="组件内样式"></a>组件内样式</h4><p>　　通常，组件中 标签里的样式是全局的，在使用第三方 UI 库（如：<code>Element</code>）时，全局样式很可能影响 UI 库的样式。我们可以通过添加 <code>scoped</code> 属性来使 <code>style</code> 中的样式只作用于当前组件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;html&quot;&gt;&lt;style lang=&quot;less&quot; scoped=&quot;&quot;&gt;@import &apos;other.less&apos;;</div><div class="line"> .title &#123;</div><div class="line">   font-size: 1.2rem;</div><div class="line"> &#125;&lt;/style&gt;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>在有 <code>scoped</code> 属性的 <code>style</code> 标签内导入其他样式，同样会受限于作用域，变为组件内样式。复用程度较高的样式不建议这样使用。<br>另，在组件内样式中应避免使用元素选择器，原因在于元素选择器与属性选择器组合时，性能会大大降低。<br>— 两种组合选择器的测试：<a href="http://stevesouders.com/efws/css-selectors/csscreate.php?n=1000&amp;sel=.class%5Bclass%5E%3D%27class%27%5D&amp;body=background%3A+%23CFD&amp;ne=1000" target="_blank" rel="external">classes selector</a>，<a href="http://stevesouders.com/efws/css-selectors/csscreate.php?n=1000&amp;sel=a%5Bclass%5E%3D%27class%27%5D&amp;body=background%3A+%23CFD&amp;ne=1000" target="_blank" rel="external">elements selector</a></p>
+</blockquote>
+<h4 id="导入样式"><a href="#导入样式" class="headerlink" title="导入样式"></a>导入样式</h4><p>　　相对于 <code>style</code> 使用 <code>scoped</code> 属性时的组件内样式，有时候我们也需要添加一些全局样式。当然我们可以用没有 <code>scoped</code> 属性的 <code>style</code> 来写全局样式。但是相比较，更推荐下面这种写法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;css&quot;&gt;/* 单独的全局样式文件 */</div><div class="line">/* style-global.less */</div><div class="line">body &#123;</div><div class="line">  font-size: 10px;</div><div class="line">&#125;</div><div class="line">.title &#123;</div><div class="line">  font-size: 1.4rem;</div><div class="line">  font-weight: bolder;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>　　然后在入口文件中导入全局样式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;javascript&quot;&gt;// src/main.js</div><div class="line">import &apos;style-global.less&apos;</div></pre></td></tr></table></figure>
+<h3 id="获取表单控件值"><a href="#获取表单控件值" class="headerlink" title="获取表单控件值"></a>获取表单控件值</h3><p>　　通常我们可以直接使用 <code>v-model</code> 将表单控件与数据进行绑定，但是有时候我们也会需要在用户输入的时候获取当前值（比如：实时验证当前输入控件内容的有效性）。</p>
+<p>　　这时我们可以使用 <code>@input</code> 或 <code>@change</code> 事件绑定我们自己的处理函数，并传入 <code>$event</code> 对象以获取当前控件的输入值：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;html&quot;&gt;&lt;input type=&quot;text&quot; @change=&quot;change($event)&quot;&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;javascript&quot;&gt;change (e) &#123;</div><div class="line">  let curVal = e.target.value</div><div class="line">  if (/^\d+$/.test(curVal)) &#123;</div><div class="line">    this.num = +curVal</div><div class="line">  &#125; else &#123;</div><div class="line">    console.error(&apos;%s is not a number!&apos;, curVal)</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>当然，如果 UI 框架采用 <code>Element</code> 会更简单，它的事件回调会直接传入当前值。</p>
+</blockquote>
+<h3 id="v-for-的使用-tips"><a href="#v-for-的使用-tips" class="headerlink" title="v-for 的使用 tips"></a>v-for 的使用 tips</h3><p>　　<code>v-for</code> 指令很强大，它不仅可以用来遍历数组、对象，甚至可以遍历一个数字或字符串。</p>
+<p>　　基本语法就不讲了，这里讲个小 tips：</p>
+<h4 id="索引值"><a href="#索引值" class="headerlink" title="索引值"></a>索引值</h4><p>　　在使用 <code>v-for</code> 根据对象或数组生成 <code>DOM</code> 时，有时候需要知道当前的索引。我们可以这样：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;html&quot;&gt;*   &#123;&#123; key &#125;&#125; - &#123;&#123; item &#125;&#125;</div></pre></td></tr></table></figure>
+<p>　　<strong>但是</strong>，在遍历数字的时候需要注意，数字的 <code>value</code> 是从 1 开始，而 <code>key</code> 是从 0 开始：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;html&quot;&gt;*   &#123;&#123; k &#125;&#125;-&#123;&#123; v &#125;&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p><code>2.2.0+</code> 的版本里，当在组件中使用 <code>v-for</code> 时，<code>key</code> 现在是必须的。</p>
+</blockquote>
+<h3 id="模板的唯一根节点"><a href="#模板的唯一根节点" class="headerlink" title="模板的唯一根节点"></a>模板的唯一根节点</h3><p>　　与 <code>JSX</code> 相同，组件中的模板只能有一个根节点，即下面这种写法是 <strong>错误</strong> 的：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;html&quot;&gt;&lt;template&gt;&lt;/template&gt;</div></pre></td></tr></table></figure>
+<p>　　我们需要用一个块级元素把他包裹起来：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;html&quot;&gt;&lt;template&gt;&lt;/template&gt;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>原因参考：<a href="//blog.beard.ink/JavaScript/React-">React-小记：组件开发注意事项#唯一根节点</a></p>
+</blockquote>
+<h3 id="项目路径配置"><a href="#项目路径配置" class="headerlink" title="项目路径配置"></a>项目路径配置</h3><p>　　由于 <code>vue-cli</code> 配置的项目提供了一个内置的静态服务器，在开发阶段基本不会有什么问题。但是，当我们把代码放到服务器上时，经常会遇到静态资源引用错误，导致界面一片空白的问题。</p>
+<p>　　这是由于 <code>vue-cli</code> 默认配置的 <code>webpack</code> 是以站点根目录引用的文件，然而有时候我们可能需要把项目部署到子目录中。</p>
+<p>　　我们可以通过 <code>config/index.js</code> 来修改文件引用的相对路径：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;javascript&quot;&gt;build.assetsSubDirectory: &apos;static&apos;</div><div class="line"> build.assetsPublicPath: &apos;/&apos;</div><div class="line"></div><div class="line"> dev.assetsSubDirectory: &apos;static&apos;</div><div class="line"> dev.assetsPublicPath: &apos;/&apos;</div></pre></td></tr></table></figure>
+<p>　　我们可以看到导出对象中 <code>build</code> 与 <code>dev</code> 均有 <code>assetsSubDirectory</code>、<code>assetsPublicPath</code> 这两个属性。</p>
+<p>　　其中 <strong>assetsSubDirectory</strong> 指静态资源文件夹，也就是打包后的　<code>js</code>、<code>css</code>、图片等文件所放置的文件夹，这个默认一般不会有问题。</p>
+<p>　　<strong>assetsPublicPath</strong> 指静态资源的引用路径，默认配置为 <code>/</code>，即网站根目录，与 <strong>assetsSubDirectory</strong> 组合起来就是完整的静态资源引用路径 <code>/static</code>。</p>
+<p>　　写到这里解决方法已经很明显了，只要把根目录改为相对目录就好了：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;javascript&quot;&gt;build.assetsSubDirectory: &apos;static&apos;</div><div class="line"> build.assetsPublicPath: &apos;./&apos;</div></pre></td></tr></table></figure>
+<p>　　没错！就是一个 <code>.</code> 的问题。ㄟ( ▔, ▔ )ㄏ</p>
+<hr>
+<p><strong>To be continue…</strong></p>
+<blockquote>
+<p>文章还在完善中，欢迎大家一起讨论 Vue.JS 开发中遇到的一些问题哈 (ﾟ▽ﾟ)/<br>话说收藏好多，你确定收藏了会记得看吗<em>(:зゝ∠)</em><br>读一读开发的时候至少会有个印象，点个赞打卡啦~<br>原文：<a href="https://blog.beard.ink/JavaScript/VueJS-%E5%BC%80%E5%8F%91%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E9%9B%86%E9%94%A6/" target="_blank" rel="external">VueJS 开发常见问题集锦</a></p>
+</blockquote>
+
+                    </div>
+                    <!-- / post-info-box -->
+                </div>
+                <!-- / blog-block -->
+                
+<div id="comment">
+    <!--PC和WAP自适应版-->
+    <div id="SOHUCS" sid="请将此处替换为配置SourceID的语句"></div>
+    <script type="text/javascript">
+    (function() {
+        var appid = 'cysYE5nWR';
+        var conf = 'prod_ea59e8a942c2c4c0e72b24ed00ecddc9';
+        var width = window.innerWidth || document.documentElement.clientWidth;
+        if (width < 960) {
+            window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>');
+        } else {
+            var loadJs = function(d, a) {
+                var c = document.getElementsByTagName("head")[0] || document.head || document.documentElement;
+                var b = document.createElement("script");
+                b.setAttribute("type", "text/javascript");
+                b.setAttribute("charset", "UTF-8");
+                b.setAttribute("src", d);
+                if (typeof a === "function") {
+                    if (window.attachEvent) {
+                        b.onreadystatechange = function() {
+                            var e = b.readyState;
+                            if (e === "loaded" || e === "complete") {
+                                b.onreadystatechange = null;
+                                a();
+                            }
+                        }
+                    } else {
+                        b.onload = a;
+                    }
+                }
+                c.appendChild(b)
+            };
+            loadJs("http://changyan.sohu.com/upload/changyan.js", function() {
+                window.changyan.api.config({
+                    appid: appid,
+                    conf: conf
+                })
+            });
+        }
+    })();
+    </script>
+</div>
+<!-- / comments -->
+
+
+            </div>
+            <!-- / col-md-9 -->
+            <!-- / post content area -->
+            <style type="text/css">
+.post-tab-header {
+    width: 100%;
+    padding: 5px 50px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.post-tab-header li {
+    width: 50%;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+
+.post-tab-header li.active {
+    color: #c39d6d;
+    border-bottom: 1px solid #c39d6d;
+}
+
+.post-tab-content .post-tab-item {
+    display: none;
+}
+
+.post-tab-content .post-tab-item.active {
+    display: block;
+}
+
+@keyframes MinefadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(45px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.MinefadeInUp {
+    animation-name: MinefadeInUp;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+.post-toc {
+    font-size: 14px;
+    color: #666;
+    overflow: auto;
+}
+
+.post-toc .nav-link {
+    padding: 0px;
+}
+
+.post-toc ol {
+    margin: 0;
+    padding: 5px 0 5px 20px;
+    text-align: left;
+    list-style: none;
+    font-size: 14px;
+}
+
+.post-toc ol>ol {
+    padding-left: 0;
+}
+
+.post-toc ol a {
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition-property: all;
+    color: #666;
+    border-bottom-color: #ccc;
+}
+
+.post-toc ol a:hover {
+    color: #000;
+    border-bottom-color: #000;
+}
+
+.post-toc .nav-item {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1.8;
+}
+
+.post-toc .nav .nav-child {
+    display: none;
+}
+
+.post-toc .nav .active>.nav-child {
+    display: block;
+}
+
+.post-toc .nav .active-current>.nav-child {
+    display: block;
+}
+
+.post-toc .nav .active-current>.nav-child>.nav-item {
+    display: block;
+}
+
+.post-toc .nav .active>a {
+    color: #c39d6d;
+    border-bottom-color: #c39d6d;
+}
+
+.post-toc .nav .active-current>a {
+    color: #c39d6d;
+}
+
+.post-toc .nav .active-current>a:hover {
+    color: #c39d6d;
+}
+</style>
+<!-- post sidebar area -->
+<div class="col-md-3">
+    <div class="blog-sidebar" data-spy="affix" data-offset-top="627">
+        <ul class="post-tab-header">
+            <li class="active" data-index="0">文章目录</li>
+            <li data-index="1">站点概览</li>
+        </ul>
+        <div style="clear: both"></div>
+        <div class="post-tab-content">
+            <div id="post-scroll-spy" data-index="0" class="active post-tab-item animated MinefadeInUp">
+                <div class="post-toc">
+                    <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#涉及技术栈"><span class="nav-number">1.</span> <span class="nav-text">涉及技术栈</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#polyfill-与-transform-runtime"><span class="nav-number">2.</span> <span class="nav-text">polyfill 与 transform-runtime</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#替换-babel-polyfill"><span class="nav-number">2.1.</span> <span class="nav-text">替换 babel-polyfill</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ES6-import-引用问题"><span class="nav-number">3.</span> <span class="nav-text">ES6 import 引用问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在-Vue-中使用-Pug-与-Less"><span class="nav-number">4.</span> <span class="nav-text">在 Vue 中使用 Pug 与 Less</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装依赖"><span class="nav-number">4.1.</span> <span class="nav-text">安装依赖</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用"><span class="nav-number">4.2.</span> <span class="nav-text">使用</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#定义全局函数或变量"><span class="nav-number">5.</span> <span class="nav-text">定义全局函数或变量</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#简单粗暴型"><span class="nav-number">5.1.</span> <span class="nav-text">简单粗暴型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#优雅安全型"><span class="nav-number">5.2.</span> <span class="nav-text">优雅安全型</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Moment-JS-与-Webpack"><span class="nav-number">6.</span> <span class="nav-text">Moment.JS 与 Webpack</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义路径别名"><span class="nav-number">7.</span> <span class="nav-text">自定义路径别名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS-作用域与模块"><span class="nav-number">8.</span> <span class="nav-text">CSS 作用域与模块</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#组件内样式"><span class="nav-number">8.1.</span> <span class="nav-text">组件内样式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#导入样式"><span class="nav-number">8.2.</span> <span class="nav-text">导入样式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#获取表单控件值"><span class="nav-number">9.</span> <span class="nav-text">获取表单控件值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#v-for-的使用-tips"><span class="nav-number">10.</span> <span class="nav-text">v-for 的使用 tips</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#索引值"><span class="nav-number">10.1.</span> <span class="nav-text">索引值</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#模板的唯一根节点"><span class="nav-number">11.</span> <span class="nav-text">模板的唯一根节点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#项目路径配置"><span class="nav-number">12.</span> <span class="nav-text">项目路径配置</span></a></li></ol>
+                </div>
+            </div>
+            <div data-index="1" class="post-tab-item animated MinefadeInUp">
+                <div class="blog block post-sidebar-widget">
+    <img class="site-author-image" src="/images/avatar.jpg">
+    <p class="site-author-name">Hatamen</p>
+    <p class="site-author-description">hatamen-技术栈，是我的个人技术博客，主要记录和总结前端工作中常用的知识及我的生活。</p>
+    <!-- <div class="feed-link motion-element">
+                        <a href="/atom.xml" rel="alternate">
+                            <i class="fa fa-rss"></i> RSS
+                        </a>
+                    </div> -->
+    <nav class="site-state motion-element">
+        <div class="site-state-item site-state-posts">
+            <a href="/archives">
+                <!-- 计算文章 和 项目总数量 -->
+                
+                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-name">文章</span>
+            </a>
+        </div>
+        <div class="site-state-item site-state-categories">
+            <a href="/categories">
+	            <span class="site-state-item-count">0</span>
+	            <span class="site-state-item-name">项目</span>
+            </a>
+        </div>
+    </nav>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- / col-sm-4 col-md-3 -->
+<!-- / post sidebar area -->
+<script type="text/javascript">
+$(function() {
+    $('.post-tab-header').on('click', 'li', function() {
+        if ($(this).hasClass('active')) return;
+        $('.post-tab-header li').removeClass('active');
+        $('.post-tab-content .post-tab-item').removeClass('active');
+        $(this).addClass('active');
+        var index = $(this).data('index');
+        $('.post-tab-content').find('.post-tab-item[data-index=' + index + ']').addClass('active');
+    });
+});
+</script>
+        </div>
+        <!-- / row -->
+    </section>
+    <!-- / post content + sidebar -->
+</div>
+
+        <!-- / content -->
+</body>
+<!-- footer -->
+<footer>
+    <div class="container">
+        <p class="footer-info">© Made by Ckryo</p>
+    </div>
+    <!-- / container -->
+</footer>
+<!-- / footer -->
+<!-- portfolio -->
+<script src="/js/custom.js"></script>
+<script src="/js/jquery.shuffle.min.js"></script>
+<!-- lightbox -->
+<script src="/js/jquery.magnific-popup.min.js"></script>
+<!-- / lightbox -->
+<!-- / portfolio -->
+<!-- preloader -->
+<script src="/js/preloader.js"></script>
+<!-- / preloader -->
+<!-- / javascript -->
+<script src="/js/jquery.lettering.js"></script>
+<script src="/js/jquery.textillate.js"></script>
+
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?6c660646bd1d809e070de5d4a54aac08";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+<script>
+$(function() {
+    $('#banner-title').textillate({
+        in: {
+            // set the effect name
+            effect: 'fadeInDown',
+            callback: function() {
+                $('#banner-description').css('display', 'block');
+                $('#banner-description').textillate();
+            }
+        },
+        // set the type of token to animate (available types: 'char' and 'word')
+        type: 'char'
+    });
+});
+</script>
+</html>

@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hatamen - 技术栈， 分享各类新奇有趣、科技、技术、开发，各类互联网优质精选文章以及优秀开源项目； -- by Hatamen。">
+    <meta name="keywords" content="Hatamen, php, laravel, vue, iview, ios, 全栈工程师, 创业" />
+    <meta name="author" content="Ckryo">
+    <link rel="icon" href="/favicon.ico">
+    <!-- page title -->
+    <title>Hatamen - 技术栈</title>
+    <!-- bootstrap css -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+    <!-- css -->
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/animate.css" rel="stylesheet">
+    <link href="/css/magnific-popup.css" rel="stylesheet">
+    <!-- fonts -->
+    <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='/fonts/FontAwesome.otf' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/linear-icons.css">
+    <link rel="stylesheet" href="/css/share.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="/https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="/https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <!-- javascript -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.easing.min.js"></script>
+</head>
+<body data-spy="scroll" data-target="#post-scroll-spy">
+    <!-- preloader -->
+    <div id="preloader">
+        <div class="spinner spinner-round"></div>
+    </div>
+    <!-- / preloader -->
+    <!-- header -->
+    <header>
+        <!-- nav -->
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-logo" href="/index.html">
+                        Hatamen
+                    </a>
+                </div>
+                <!-- / navbar-header -->
+                
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                    	
+                        <li>
+	                        <a href="/">
+	                        	
+	                        	<span>首页</span>
+	                        </a>
+                        </li>
+                        
+                        <li>
+	                        <a href="/project/index.html">
+	                        	
+	                        	<span>项目</span>
+	                        </a>
+                        </li>
+                        
+                        <li>
+	                        <a href="/post/index.html">
+	                        	
+	                        	<span>文章</span>
+	                        </a>
+                        </li>
+                        
+                        <li>
+	                        <a href="/about.html">
+	                        	
+	                        	<span>关于我</span>
+	                        </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                <!--/ nav-collapse -->
+            <!-- / container -->
+        </nav>
+        <!-- / nav -->
+        <!-- header-banner -->
+        <div id="header-banner" class="demo-1"  style="background-image: url(/images/banner-bg.jpg)" >
+    <div class="banner-content text-center">
+        <div class="banner-info">
+            <h1 id="banner-title">Hatamen - 技术栈</h1>
+            <p id="banner-description" style="display: none" data-in-effect="rotateInUpRight">
+                优秀技术资源分享
+            </p>
+        </div>
+        <!-- / banner-info -->
+    </div>
+    <!-- / banner-content -->
+</div>
+        <!-- / header-banner -->
+    </header>
+    <!-- / header -->
+    <!-- / content -->
+    
+
+<!-- content -->
+
+<!-- portfolio section -->
+<style type="text/css">
+    .page-to-all {
+        width: 100%;
+        text-align: center;
+        margin: 40px auto 10px;
+    }
+    .page-to-all a {
+        display: inline-block;
+    }
+    #portfolio .portfolio-filter li{
+        cursor: pointer;
+    }
+     #portfolio .lightbox .project-hover-tools {
+        left: 50%;
+        right: auto;
+        width: 42px;
+        margin-left: -21px;
+    }
+    #portfolio .lightbox .project-hover-tools a {
+        margin: 0;
+    }
+    
+    #portfolio .lightbox .project .project-preview {
+        position: relative;
+        height: 260px;
+        overflow: hidden;
+    }
+    #portfolio .lightbox .project .project-preview img {
+        min-width: 100%;
+        min-height: 100%;
+        position: relative;
+        margin: auto;
+    }
+    .project-item-name {
+        display: none;
+    }
+    @media (max-width: 768px) {
+        #portfolio .project-item-name {
+            display: block;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+</style>
+<section id="portfolio">
+    <div class="container">
+        <!-- portfolio filter -->
+        <ul class="portfolio-filter list-inline text-center">
+            <li><a data-group="all" class="active">全部</a></li>
+            
+        </ul>
+        <!--end portfolio filter -->
+        <ul class="row portfolio list-unstyled lightbox" id="grid">
+
+            
+
+            
+                <!-- project -->
+                <li class="col-xs-6 col-md-4 project" data-groups='["illustration"]'>
+                    <div class="img-bg-color primary">
+                        <div class="project-preview"><img src="/images/project_preview_more.jpg"></div>
+                        <!-- project-details -->
+                        <div class="project-details">
+                            <h5 class="project-title">敬请期待</h5>
+                            <p class="skill">更多项目</p>
+                        </div>
+                        <!-- / project-details -->
+                    </div>
+                    <!-- / img-bg-color -->
+                </li>
+                <!-- / project -->
+            
+        </ul>
+        <!-- / projects -->
+    </div>
+    <!-- / container -->
+    <script src="/js/project_index.js" type="text/javascript" charset="utf-8"></script>
+    <div class="page-to-all"><a href="/project/index.html" class="btn btn-primary btn-rounded">全部项目</a></div>
+</section>
+<!-- / portfolio section -->
+
+<!-- blog section 3col -->
+<style type="text/css">
+.post-preview {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    height: 230px;
+    overflow: hidden;
+}
+</style>
+<section id="blog-small">
+    <div class="container">
+        <div class="page-header no-margin text-center">
+            <h2>推荐文章</h2>
+        </div>
+        <p class="text-center">新奇有趣、科技、技术、开发，各类互联网优质精选文章</p>
+        <div class="row">
+            
+                <!-- post-block -->
+                <div class="col-sm-4">
+                    <div class="post-block">
+                        <a href="/post/2017/08/28/webpack3.html" class="post-preview" style="background-image: url(/images/preview/webpack.jpg)"></a>
+                        <div class="small-post-text">
+                            <h5><a href="/post/2017/08/28/webpack3.html">Webpack 3，从入门到放弃</a></h5>
+                            <p class="small-post-meta">
+                                2017/08/28
+                            </p>
+                            <p class="space-bottom" style="max-height: 100px; overflow: hidden">
+                                
+原文首发于：Webpack 3，从入门到放弃
+Update (2017.8.27) : 关于 output.publicPath、devServer.contentBase、devServer.publicPath的区别。如下：
+
+output.publicPath: 对于这个选项，我们无需关注什么绝对相对路径，因为两种路径都可以。我们只需要知道一点：这个选项是指定 HTML 文件中资源文件 (字体、图片、JS文件等) 的文件名的公共 URL 部分的。在实际情况中，我们首先会通过output.filename或有些 loader 如file-loader的name属性设置文件名的原始部分，webpack 将文件名的原始部分和公共部分结合之后，HTML 文件就能获取到资源文件了。
+devServer.contentBase: 设置静态资源的根目录，html-webpack-plugin生成的 html 不是静态资源。当用 html 文件里的地址无法找到静态资源文件时就会去这个目录下去找。
+devServer.publicPath: 指定浏览器上访问所有 打包(bundled)文件 (在dist里生成的所有文件) 的根目录，这个根目录是相对服务器地址及端口的，比devServer.contentBase和output.publicPath优先。
+
+
+前言
+Tips如果你用过 webpack 且一直用的是 webpack 1，请参考 从v1迁移到v2 (v2 和 v3 差异不大) 对版本变更的内容进行适当的了解，然后再选择性地阅读本文。
+
+首先，这篇文章是根据当前最新的 webpack 版本 (即 v3.4.1) 撰写，较长一段时间内无需担心过时的问题。其次，这应该会是一篇极长的文章，涵盖了基本的使用方法，有更高级功能的需求可以参考官方文档继续学习。再次，即使是基本的功能，也内容繁多，我尽可能地解释通俗易懂，将我学习过程中的疑惑和坑一一解释，如有纰漏，敬请雅正。再次，为了清晰有效地讲解，我会演示从零编写 demo，只要一步步跟着做，就会清晰许多。最后，官方文档也是个坑爹货！
+Webpack，何许人也？借用官方的说法：
+
+webpack is a module bundler. Its main purpose is to bundle JavaScript files for usage in a browser, yet it is also capable of transforming, bundling, or packaging just about any resource or asset.
+
+简言之，webpack 是一个模块打包器 (module bundler)，能够将任何资源如 JavaScript 文件、CSS 文件、图片等打包成一个或少数文件。
+为什么要用介个 Webpack?首先，定义已经说明了 webpack 能将多个资源模块打包成一个或少数文件，这意味着与以往的发起多个 HTTP 请求来获得资源相比，现在只需要发起少量的 HTTP 请求。
+
+Tips想了解合并 HTTP 请求的意义，请见 这里。
+
+其次，webpack 能将你的资源转换为最适合浏览器的“格式”，提升应用性能。比如只引用被应用使用的资源 (剔除未被使用的代码)，懒加载资源 (只在需要的时候才加载相应的资源)。再次，对于开发阶段，webpack 也提供了实时加载和热加载的功能，大大地节省了开发时间。除此之外，还有许多优秀之处之处值得去挖掘。不过，webpack 最核心的还是打包的功能。
+webpack，gulp/grunt，npm，它们有什么区别?webpack 是模块打包器（module bundler），把所有的模块打包成一个或少量文件，使你只需加载少量文件即可运行整个应用，而无需像之前那样加载大量的图片，css文件，js文件，字体文件等等。而gulp／grunt 是自动化构建工具，或者叫任务运行器（task runner），是把你所有重复的手动操作让代码来做，例如压缩JS代码、CSS代码，代码检查、代码编译等等，自动化构建工具并不能把所有模块打包到一起，也不能构建不同模块之间的依赖图。两者来比较的话，gulp/grunt 无法做模块打包的事，webpack 虽然有 loader 和 plugin可以做一部分 gulp／grunt 能做的事，但是终究 webpack 的插件还是不如 gulp／grunt 的插件丰富，能做的事比较有限。于是有人两者结合着用，将 webpack 放到 gulp／grunt 中用。然而，更好的方法是用 npm scripts 取代 gulp／grunt，npm 是 node 的包管理器 (node package manager)，用于管理 node 的第三方软件包，npm 对于任务命令的良好支持让你最终省却了编写任务代码的必要，取而代之的，是老祖宗的几个命令行，仅靠几句命令行就足以完成你的模块打包和自动化构建的所有需求。
+准备开始先来看看一个 webpack 的一个完备的配置文件，是 介样 的，当然啦，这里面有很多配置项是即使到这个软件被废弃你也用不上的：），所以无需担心。
+基本配置开始之前，请确定你已经安装了当前 Node 的较新版本。
+然后执行以下命令以新建我们的 demo 目录：
+123&lt;code class=&quot;bash&quot;&gt;$ mkdir webpack-demo &amp;&amp; cd webpack-demo &amp;&amp; npm init -y$ npm i --save-dev webpack$ mkdir src &amp;&amp; cd src &amp;&amp; touch index.js
+我们使用工具函数库 lodash 来演示我们的 demo。先安装之：
+1&lt;code class=&quot;bash&quot;&gt;$ npm i --save lodash
+src/index.js
+1234567891011&lt;code class=&quot;js&quot;&gt;import _ from &apos;lodash&apos;;function component() &#123;  const element = document.createElement(&apos;div&apos;);  element.innerHTML = _.join([&apos;Hello&apos;, &apos;webpack&apos;], &apos; &apos;);  return element;&#125;document.body.appendChild(component());
+
+Tipsimport 和 export 已经是 ES6 的标准，但是仍未得到大多数浏览器的支持 (可喜的是， Chrome 61 已经开始默认支持了，见 ES6 modules)，不过 webpack 提供了对这个特性的支持，但是除了这个特性，其他的 ES6 特性并不会得到 webpack 的特别支持，如有需要，须借助 Babel 进行转译 (transpile)。
+
+然后新建发布版本目录：
+1&lt;code class=&quot;bash&quot;&gt;$ cd .. &amp;&amp; mkdir dist &amp;&amp; cd dist &amp;&amp; touch index.html
+dist/index.html
+1&lt;code class=&quot;html&quot;&gt;&lt;title&gt;webpack demo&lt;/title&gt;
+现在，我们运行 webpack 来打包 index.js 为 bundle.js，本地安装了 webpack 后可以通过 node_modules/.bin/webpack 来访问 webpack 的二进制版本。
+12&lt;code class=&quot;bash&quot;&gt;$ cd ..$ ./node_modules/.bin/webpack src/index.js dist/bundle.js # 第一个参数是打包的入口文件，第二个参数是打包的出口文件
+咻咻咻，大致如下输出一波：
+123456789&lt;code class=&quot;bash&quot;&gt;Hash: de8ed072e2c7b3892179Version: webpack 3.4.1Time: 390ms    Asset    Size  Chunks                    Chunk Namesbundle.js  544 kB       0  [emitted]  [big]  main   [0] ./src/index.js 225 bytes &#123;0&#125; [built]   [2] (webpack)/buildin/global.js 509 bytes &#123;0&#125; [built]   [3] (webpack)/buildin/module.js 517 bytes &#123;0&#125; [built]    + 1 hidden module
+现在，你已经得到了你的第一个打包文件 (bundle.js) 了。
+使用配置文件像上面这样使用 webpack 应该是最挫的姿势了，所以我们要使用 webpack 的配置文件来提高我们的姿势水平。
+1&lt;code class=&quot;bash&quot;&gt;$ touch webpack.config.js
+webpack.config.js
+123456789&lt;code class=&quot;js&quot;&gt;const path = require(&apos;path&apos;);module.exports = &#123;  entry: &apos;./src/index.js&apos;, // 入口起点，可以指定多个入口起点  output: &#123; // 输出，只可指定一个输出配置    filename: &apos;bundle.js&apos;, // 输出文件名    path: path.resolve(__dirname, &apos;dist&apos;) // 输出文件所在的目录  &#125;&#125;;
+执行：
+1&lt;code class=&quot;bash&quot;&gt;$ ./node_modules/.bin/webpack --config webpack.config.js # `--config` 制定 webpack 的配置文件，默认是 `webpack.config.js`
+所以这里可以省却 --config webpack.config.js。但是每次都要写 ./node_modules/.bin/webpack 实在让人不爽，所以我们要动用 NPM Scripts。
+package.json
+1234567&lt;code class=&quot;json&quot;&gt;&#123;  ...  &quot;scripts&quot;: &#123;    &quot;build&quot;: &quot;webpack&quot;  &#125;,  ...&#125;
+
+Tips在 npm scripts 中我们可以通过包名直接引用本地安装的 npm 包的二进制版本，而无需编写包的整个路径。
+
+执行：
+1&lt;code class=&quot;bash&quot;&gt;$ npm run build
+一波输出后便得到了打包文件。
+
+Tipsbulid 并不是 npm scripts 的内置属性，需要使用 npm run 来执行脚本，详情见 npm run。
+
+打包其他类型的文件因为其他文件和 JS 文件类型不同，要把他们加载到 JS 文件中就需要经过加载器 (loader) 的处理。
+加载 CSS我们需要安装两个 loader 来处理 CSS 文件：
+1&lt;code class=&quot;bash&quot;&gt;$ npm i --save-dev style-loader css-loader
+style-loader 通过插入 标签将 CSS 加入到 DOM 中，css-loader 会像解释 import/require() 一样解释 @import 和 url()。 const path = require(‘path’); module.exports = { entry: ‘./src/index.js’, output: { filename: ‘bundle.js’, path: path.resolve(dirname, ‘dist’) }, module: { // 如何处理项目中不同类型的模块 rules: [ // 用于规定在不同模块被创建时如何处理模块的规则数组 { test: /.css$/, // 匹配特定文件的正则表达式或正则表达式数组 use: [ // 应用于模块的 loader 使用列表 ‘style-loader’, ‘css-loader’ ] } ] } }; 我们来创建一个 CSS 文件： $ cd src &amp;&amp; touch style.css src/style.css .hello { color: red; } src/index.js import  from ‘lodash’; import ‘./style.css’; // 通过import引入 CSS 文件 function component() { const element = document.createElement(‘div’); element.innerHTML = .join([‘Hello’, ‘webpack’], ‘ ‘); element.classList.add(‘hello’); // 在相应元素上添加类名 return element; } document.body.appendChild(component()); 执行npm run build，然后打开index.html，就可以看到红色的字体了。CSS 文件此时已经被打包到 bundle.js 中。再打开浏览器控制台，就可以看到 webpack 做了些什么。 加载图片 $ npm install –save-dev file-loader file-loader 指示 webpack 以文件格式发出所需对象并返回文件的公共URL，可用于任何文件的加载。 webpack.config.js const path = require(‘path’); module.exports = { entry: ‘./src/index.js’, output: { filename: ‘bundle.js’, path: path.resolve(dirname, ‘dist’) }, module: { rules: [ { test: /.css$/, use: [ ‘style-loader’, ‘css-loader’ ] }, { // 增加加载图片的规则 test: /.(png|svg|jpg|gif)$/, use: [ ‘file-loader’ ] } ] } }; 我们在当前项目的目录中如下增加图片：  webpack-demo |- package.json |- webpack.config.js |- /dist |- bundle.js |- index.html |- /src + |- icon.jpg |- style.css |- index.js |- /nodemodules src/index.js import  from ‘lodash’; import ‘./style.css’; import Icon from ‘./icon.jpg’; // Icon 是图片的 URL function component() { const element = document.createElement(‘div’); element.innerHTML = _.join([‘Hello’, ‘webpack’], ‘ ‘); element.classList.add(‘hello’); const myIcon = new Image(); myIcon.src = Icon; element.appendChild(myIcon); return element; } document.body.appendChild(component()); src/style.css .hello { color: red; background: url(./icon.jpg); } 再npm run build之。现在你可以看到单独的图片和以图片为基础的背景图了。 加载字体 加载字体用的也是 file-loader。 webpack.config.js const path = require(‘path’); module.exports = { entry: ‘./src/index.js’, output: { filename: ‘bundle.js’, path: path.resolve(dirname, ‘dist’) }, module: { rules: [ { test: /.css$/, use: [ ‘style-loader’, ‘css-loader’ ] }, { test: /.(png|svg|jpg|gif)$/, use: [ ‘file-loader’ ] }, { // 增加加载字体的规则 test: /.(woff|woff2|eot|ttf|otf)$/, use: [ ‘file-loader’ ] } ] } }; 在当前项目的目录中如下增加字体：  webpack-demo |- package.json |- webpack.config.js |- /dist |- bundle.js |- index.html |- /src + |- my-font.ttf |- icon.jpg |- style.css |- index.js |- /nodemodules src/style.css @font-face { font-family: MyFont; src: url(./my-font.ttf); } .hello { color: red; background: url(./icon.jpg); font-family: MyFont; } 运行打包命令之后便可以看到打包好的文件和发生改变的页面。 加载 JSON 文件 因为 webpack 对 JSON 文件的支持是内置的，所以可以直接添加。 src/data.json { “name”: “webpack-demo”, “version”: “1.0.0”, “author”: “Sam Yang” } src/index.js import  from ‘lodash’; import ‘./style.css’; import Icon from ‘./icon.jpg’; import Data from ‘./data.json’; // Data 变量包含可直接使用的 JSON 解析得到的对象 function component() { const element = document.createElement(‘div’); element.innerHTML = .join([‘Hello’, ‘webpack’], ‘ ‘); element.classList.add(‘hello’); const myIcon = new Image(); myIcon.src = Icon; element.appendChild(myIcon); console.log(Data); return element; } document.body.appendChild(component()); 关于其他文件的加载，可以寻求相应的 loader。 输出管理 前面我们只有一个输入文件，但现实是我们往往有不止一个输入文件，这时我们就需要输入多个入口文件并管理输出文件。我们在 src 目录下增加一个 print.js 文件。 src/print.js export default function printMe() { console.log(‘I get called from print.js!’); } src/index.js import  from ‘lodash’; import printMe from ‘./print.js’; // import ‘./style.css’; // import Icon from ‘./icon.jpg’; // import Data from ‘./data.json’; function component() { const element = document.createElement(‘div’); const btn = document.createElement(‘button’); element.innerHTML = _.join([‘Hello’, ‘webpack’], ‘ ‘); // element.classList.add(‘hello’); // const myIcon = new Image(); // myIcon.src = Icon; // element.appendChild(myIcon); // console.log(Data); btn.innerHTML = ‘Click me and check the console!’; btn.onclick = printMe; element.appendChild(btn); return element; } document.body.appendChild(component()); dist/index.html &lt;!DOCTYPE html&gt;   webpack demo     -->    webpack.config.js const path = require(‘path’); module.exports = { // entry: ‘./src/index.js’, entry: { app: ‘./src/index.js’, print: ‘./src/print.js’ }, output: { // filename: ‘bundle.js’, filename: ‘[name].bundle.js’, // 根据入口起点名动态生成 bundle 名，可以使用像 “js/[name]/bundle.js” 这样的文件夹结构 path: path.resolve(dirname, ‘dist’) }, // … }; Tipsfilename: ‘[name].bundle.js’中的[name]会替换为对应的入口起点名，其他可用的替换请参见 output.filename。 现在可以打包文件了。但是如果我们修改了入口文件名或增加了入口文件，index.html是不会自动引用新文件的，而手动修改实在太挫。是时候使用插件 (plugin) 来完成这一任务了。我们使用 HtmlWebpackPlugin 自动生成 html 文件。 loader 和 plugin，有什么区别？loader (加载器)，重在“加载”二字，是用于预处理文件的，只用于在加载不同类型的文件时对不同类型的文件做相应的处理。而 plugin (插件)，顾名思义，是用来增加 webpack 的功能的，作用于整个 webpack 的构建过程。在 webpack 这个大公司中，loader 是保安大叔，负责对进入公司的不同人员的处理，而 plugin 则是公司里不同职位的职员，负责公司里的各种不同业务，每增加一种新型的业务需求，我们就需要增加一种 plugin。 安装插件： $ npm i –save-dev html-webpack-plugin webpack.config.js const path = require(‘path’); const HtmlWebpackPlugin = require(‘html-webpack-plugin’); module.exports = { // entry: ‘./src/index.js’, entry: { app: ‘./src/index.js’, print: ‘./src/print.js’ }, output: { // filename: ‘bundle.js’, filename: ‘[name].bundle.js’, path: path.resolve(dirname, ‘dist’) }, plugins: [ // 插件属性，是插件的实例数组 new HtmlWebpackPlugin({ title: ‘webpack demo’, // 生成 HTML 文档的标题 filename: ‘index.html’ // 写入 HTML 文件的文件名，默认 index.html }) ], // … }; 你可以先把 dist 文件夹的index.html文件删除，然后执行打包命令。咻咻咻，我们看到 dist 目录下已经自动生成了一个index.html文件，但即使不删除原先的index.html，该插件默认生成的index.html也会替换原本的index.html。 此刻，当你细细观察 dist 目录时，虽然现在生成了新的打包文件，但原本的打包文件bundle.js及其他不用的文件仍然存在在 dist 目录中，所以在每次构建前我们需要晴空 dist 目录，我们使用 CleanWebpackPlugin 插件。 $ npm i clean-webpack-plugin –save-dev webpack.config.js const path = require(‘path’); const HtmlWebpackPlugin = require(‘html-webpack-plugin’); const CleanWebpackPlugin = require(‘clean-webpack-plugin’); module.exports = { // entry: ‘./src/index.js’, entry: { app: ‘./src/index.js’, print: ‘./src/print.js’ }, output: { // filename: ‘bundle.js’, filename: ‘[name].bundle.js’, path: path.resolve(dirname, ‘dist’) }, plugins: [ new HtmlWebpackPlugin({ title: ‘webpack demo’, filename: ‘index.html’ }), new CleanWebpackPlugin([‘dist’]) // 第一个参数是要清理的目录的字符串数组 ], // … }; 打包之，现在，dist 中只存在打包生成的文件。 开发环境 webpack 提供了很多便于开发时使用的功能，来一一看看吧。 使用代码映射 (source map) 当你的代码被打包后，如果打包后的代码发生了错误，你很难追踪到错误发生的原始位置，这个时候，我们就需要代码映射 (source map) 这种工具，它能将编译后的代码映射回原始的源码，你的错误是起源于打包前的b.js的某个位置，代码映射就能告诉你错误是那个模块的那个位置。webpack 默认提供了 10 种风格的代码映射，使用它们会明显影响到构建 (build) 和重构建 (rebuild，每次修改后需要重新构建) 的速度，十种风格的差异可以参看 devtool。关于如何选择映射风格可以参看 Webpack devtool source map。这里，我们为了准确显示错误位置，选择速度较慢的inline-source-map。 webpack.config.js const path = require(‘path’); const HtmlWebpackPlugin = require(‘html-webpack-plugin’); const CleanWebpackPlugin = require(‘clean-webpack-plugin’); module.exports = { devtool: ‘inline-source-map’, // 控制是否生成以及如何生成 source map // entry: ‘./src/index.js’, entry: { app: ‘./src/index.js’, print: ‘./src/print.js’ }, // … }; 现在来手动制造一些错误： src/print.js  export default function printMe() { - console.log(‘I get called from print.js!’); + cosnole.log(‘I get called from print.js!’); } 打包之后打开index.html再点击按钮，你就会看到控制台显示如下报错：  Uncaught ReferenceError: cosnole is not defined at HTMLButtonElement.printMe (print.js:2) 现在，我们很清楚哪里发生了错误，然后轻松地改正之。 使用 webpack-dev-server 你一定有这样的体验，开发时每次修改代码保存后都需要重新手动构建代码并手动刷新浏览器以观察修改效果，这是很麻烦的，所以，我们要实时加载代码。可喜的是，webpack 提供了对实时加载代码的支持。我们需要安装 webpack-dev-server 以获得支持。 $ npm i –save-dev webpack-dev-server webpack.config.js const path = require(‘path’); const HtmlWebpackPlugin = require(‘html-webpack-plugin’); const CleanWebpackPlugin = require(‘clean-webpack-plugin’); module.exports = { devtool: ‘inline-source-map’, devServer: { // 检测代码变化并自动重新编译并自动刷新浏览器 contentBase: path.resolve(dirname, ‘dist’) // 设置静态资源的根目录 }, // entry: ‘./src/index.js’, entry: { app: ‘./src/index.js’, print: ‘./src/print.js’ }, // … }; package.json { … “scripts”: { “build”: “webpack”, “start”: “webpack-dev-server –open” }, … } Tips使用 webpack-dev-server 时，webpack 并没有将所有生成的文件写入磁盘，而是放在内存中，提供更快的内存内访问，便于实时更新。 现在，可以直接运行npm start (start是 npm scripts 的内置属性，可直接运行)，然后浏览器自动加载应用的页面，默认在localhost:8080显示。 模块热替换 (HMR, Hot Module Replacement) webpack 提供了对模块热替换 (或者叫热加载) 的支持。这一特性能够让应用运行的时候替换、增加或删除模块，而无需进行完全的重载。想进一步地了解其工作机理，可以参见 Hot Module Replacement，但这并不是必需的，你可以选择跳过机理部分继续往下阅读。 Tips模块热替换（HMR）只更新发生变更（替换、添加、删除）的模块，而无需重新加载整个页面（实时加载，LiveReload），这样可以显著加快开发速度，一旦打开了 webpack-dev-server 的 hot 模式，在试图重新加载整个页面之前，热模式会尝试使用 HMR 来更新。 webpack.config.js const path = require(‘path’); const HtmlWebpackPlugin = require(‘html-webpack-plugin’); const CleanWebpackPlugin = require(‘clean-webpack-plugin’); const webpack = require(‘webpack’); // 引入 webpack 便于调用其内置插件 module.exports = { devtool: ‘inline-source-map’, devServer: { contentBase: path.resolve(dirname, ‘dist’), hot: true, // 告诉 dev-server 我们在用 HMR hotOnly: true // 指定如果热加载失败了禁止刷新页面 (这是 webpack 的默认行为)，这样便于我们知道失败是因为何种错误 }, // entry: ‘./src/index.js’, entry: { app: ‘./src/index.js’, // print: ‘./src/print.js’ }, // … plugins: [ new HtmlWebpackPlugin({ title: ‘webpack demo’, filename: ‘index.html’ }), new CleanWebpackPlugin([‘dist’]), new webpack.HotModuleReplacementPlugin(), // 启用 HMR new webpack.NamedModulesPlugin() // 打印日志信息时 webpack 默认使用模块的数字 ID 指代模块，不便于 debug，这个插件可以将其替换为模块的真实路径 ], // … }; Tipswebpack-dev-server 会为每个入口文件创建一个客户端脚本，这个脚本会监控该入口文件的依赖模块的更新，如果该入口文件编写了 HMR 处理函数，它就能接收依赖模块的更新，反之，更新会向上冒泡，直到客户端脚本仍没有处理函数的话，webpack-dev-server 会重新加载整个页面。如果入口文件本身发生了更新，因为向上会冒泡到客户端脚本，并且不存在 HMR 处理函数，所以会导致页面重载。 我们已经开启了 HMR 的功能，HMR 的接口已经暴露在module.hot属性之下，我们只需要调用 HMR API 即可实现热加载。当“被加载模块”发生改变时，依赖该模块的模块便能检测到改变并接收改变之后的模块。 src/index.js import  from ‘lodash’; import printMe from ‘./print.js’; // import ‘./style.css’; // import Icon from ‘./icon.jpg’; // import Data from ‘./data.json’; function component() { const element = document.createElement(‘div’); const btn = document.createElement(‘button’); element.innerHTML = .join([‘Hello’, ‘webpack’], ‘ ‘); // element.classList.add(‘hello’); // const myIcon = new Image(); // myIcon.src = Icon; // element.appendChild(myIcon); // console.log(Data); btn.innerHTML = ‘Click me and check the console!’; btn.onclick = printMe; element.appendChild(btn); return element; } document.body.appendChild(component()); if(module.hot) { // 习惯上我们会检查是否可以访问 module.hot 属性 module.hot.accept(‘./print.js’, function() { // 接受给定依赖模块的更新，并触发一个回调函数来对这些更新做出响应 console.log(‘Accepting the updated printMe module!’); printMe(); }); } npm start之。为了演示效果，我们做如下修改： src/print.js  export default function printMe() { - console.log(‘I get called from print.js!’); + console.log(‘Updating print.js…’); } 我们会看到控制台打印出的信息中含有以下几行： index.js:33 Accepting the updated printMe module! print.js:2 Updating print.js… log.js:23 [HMR] Updated modules: log.js:23 [HMR] - ./src/print.js log.js:23 [HMR] App is up to date. Tipswebpack-dev-server 在 inline mode (此为默认模式) 时，会为每个入口起点 (entry) 创建一个客户端脚本，所以你会在上面的输出中看到有些信息重复输出两次。 但是当你点击页面的按钮时，你会发现控制台输出的是旧的printMe函数输出的信息，因为onclick事件绑定的仍是原始的printMe函数。我们需要在module.hot.accept里更新绑定。 src/index.js import  from ‘lodash’; import printMe from ‘./print.js’; // import ‘./style.css’; // import Icon from ‘./icon.jpg’; // import Data from ‘./data.json’; // … // document.body.appendChild(component()); var element = component(); document.body.appendChild(element); if(module.hot) { module.hot.accept(‘./print.js’, function() { console.log(‘Accepting the updated printMe module!’); // printMe(); document.body.removeChild(element); element = component(); document.body.appendChild(element); }); } Tipsuglifyjs-webpack-plugin 升级到 v0.4.6 时无法正确压缩 ES6 的代码，所以上面有些代码采用 ES5 以暂时方便后面的压缩，详见 #49。 模块热替换也可以用于样式的修改，效果跟控制台修改一样一样的。 src/index.js import  from ‘lodash’; import printMe from ‘./print.js’; import ‘./style.css’; // import Icon from ‘./icon.jpg’; // import Data from ‘./data.json’; // … npm start之，做如下修改： / … / body { background-color: yellow; } 可以发现在不重载页面的前提下我们对样式的修改进行了热加载，棒！ 生产环境 自动方式 我们只需要运行webpack -p (相当于 webpack –optimize-minimize –define process.env.NODE_ENV=”‘production’”)这个命令，便可以自动构建生产版本的应用，这个命令会完成以下步骤：  使用 UglifyJsPlugin (webpack.optimize.UglifyJsPlugin) 压缩 JS 文件 (此插件和 uglifyjs-webpack-plugin 相同) 运行 LoaderOptionsPlugin 插件，这个插件是用来迁移的，见 document  设置 NodeJS 的环境变量，触发某些 package 包以不同方式编译  值得一提的是，webpack -p设置的process.env.NODE_ENV环境变量，是用于编译后的代码的，只有在打包后的代码中，这一环境变量才是有效的。如果在 webpack 配置文件中引用此环境变量，得到的是 undefined，可以参见 #2537。但是，有时我们确实需要在 webpack 配置文件中使用 process.env.NODE_ENV，怎么办呢？一个方法是运行NODE_ENV=’production’ webpack -p命令，不过这个命令在Windows中是会出问题的。为了解决兼容问题，我们采用 cross-env 解决跨平台的问题。 $ npm i –save-dev cross-env package.json { … “scripts”: { “build”: “cross-env NODE_ENV=production webpack -p”, “start”: “webpack-dev-server –open” }, … } 现在可以在配置文件中使用process.env.NODE_ENV了。 webpack.config.js const path = require(‘path’); const HtmlWebpackPlugin = require(‘html-webpack-plugin’); const CleanWebpackPlugin = require(‘clean-webpack-plugin’); const webpack = require(‘webpack’); module.exports = { // … output: { // filename: ‘bundle.js’, // filename: ‘[name].bundle.js’, filename: process.env.NODE_ENV === ‘production’ ? ‘[name].[chunkhash].js’ : ‘[name].bundle.js’, // 在配置文件中使用process.env.NODE_ENV path: path.resolve(dirname, ‘dist’) }, plugins: [ new HtmlWebpackPlugin({ title: ‘webpack demo’, filename: ‘index.html’ }), new CleanWebpackPlugin([‘dist’]), // new webpack.HotModuleReplacementPlugin(), // 关闭 HMR 功能 new webpack.NamedModulesPlugin() ], // … }; Tips[chunkhash]不能和 HMR 一起使用，换句话说，不应该在开发环境中使用 [chunkhash] (或者 [hash])，这会导致许多问题。详情见 #2393 和 #377。 build 之，我们得到了生产版本的压缩好的打包文件。 多配置文件配置 有时我们会需要为不同的环境配置不同的配置文件，可以选择 简易方法，这里我们采用较为先进的方法。先准备一个基本的配置文件，包含了所有环境都包含的配置，然后用 webpack-merge 将它和特定环境的配置文件合并并导出，这样就减少了基本配置的重复。 $ npm i –save-dev webpack-merge webpack.common.js const path = require(‘path’); const HtmlWebpackPlugin = require(‘html-webpack-plugin’); const CleanWebpackPlugin = require(‘clean-webpack-plugin’); module.exports = { entry: { app: ‘./src/index.js’, print: ‘./src/print.js’ }, output: { path: path.resolve(dirname, ‘dist’) }, plugins: [ new HtmlWebpackPlugin({ title: ‘webpack demo’, filename: ‘index.html’ }), new CleanWebpackPlugin([‘dist’]) ], module: { rules: [ { test: /.css$/, use: [ ‘style-loader’, ‘css-loader’ ] }, { test: /.(png|svg|jpg|gif)$/, use: [ ‘file-loader’ ] }, { test: /.(woff|woff2|eot|ttf|otf)$/, use: [ ‘file-loader’ ] } ] } }; webpack.dev.js const path = require(‘path’); const webpack = require(‘webpack’); const Merge = require(‘webpack-merge’); const CommonConfig = require(‘./webpack.common.js’); module.exports = Merge(CommonConfig, { devtool: ‘cheap-module-eval-source-map’, devServer: { contentBase: path.resolve(dirname, ‘dist’), hot: true, hotOnly: true }, output: { filename: ‘[name].bundle.js’ }, plugins: [ new webpack.DefinePlugin({ ‘process.env.NODE_ENV’: JSON.stringify(‘development’) // 在编译的代码里设置了process.env.NODE_ENV变量 }), new webpack.HotModuleReplacementPlugin(), new webpack.NamedModulesPlugin() ] }); webpack.prod.js const path = require(‘path’); const webpack = require(‘webpack’); const Merge = require(‘webpack-merge’); const CommonConfig = require(‘./webpack.common.js’); module.exports = Merge(CommonConfig, { devtool: ‘cheap-module-source-map’, output: { filename: ‘[name].[chunkhash].js’ }, plugins: [ new webpack.DefinePlugin({ ‘process.env.NODE_ENV’: JSON.stringify(‘production’) }), new webpack.optimize.UglifyJsPlugin() ] }); package.json { … “scripts”: { “build”: “cross-env NODEENV=production webpack -p”, “start”: “webpack-dev-server –open”, “build:dev”: “webpack-dev-server –open –config webpack.dev.js”, “build:prod”: “webpack –progress –config webpack.prod.js” }, … } 现在只需执行npm run build:dev或npm run build:prod便可以得到开发版或者生产版了！ Tipswebpack 命令行选项见 Command Line Interface。 代码分离 入口分离 我们先创建一个新文件： $ cd src &amp;&amp; touch another.js src/another.js import  from ‘lodash’; console.log(_.join([‘Another’, ‘module’, ‘loaded!’], ‘ ‘)); webpack.config.js const path = require(‘path’); const HtmlWebpackPlugin = require(‘html-webpack-plugin’); const CleanWebpackPlugin = require(‘clean-webpack-plugin’); const webpack = require(‘webpack’); module.exports = { // … entry: { app: ‘./src/index.js’, // print: ‘./src/print.js’ another: ‘./src/another.js’ }, // … }; cd .. &amp;&amp; npm run build之，我们发现用入口分离的代码得到了两个大文件，这是因为两个入口文件都引入了lodash，这很大程度上造成了冗余，在同一个页面中我们只需要引入一个lodash就可以了。 抽取相同部分 我们使用 CommonsChunkPlugin 插件来将相同的部分提取出来放到一个单独的模块中。 webpack.config.js const path = require(‘path’); const HtmlWebpackPlugin = require(‘html-webpack-plugin’); const CleanWebpackPlugin = require(‘clean-webpack-plugin’); const webpack = require(‘webpack’); module.exports = { // devtool: ‘inline-source-map’, // … output: { // filename: ‘bundle.js’, filename: ‘[name].bundle.js’, // filename: process.env.NODE_ENV === ‘production’ ? ‘[name].[chunkhash].js’ : ‘[name].bundle.js’, path: path.resolve(dirname, ‘dist’) }, plugins: [ new HtmlWebpackPlugin({ title: ‘webpack demo’, filename: ‘index.html’ }), new CleanWebpackPlugin([‘dist’]), new webpack.optimize.CommonsChunkPlugin({ name: ‘common’ // 抽取出的模块的模块名 }), // new webpack.HotModuleReplacementPlugin(), // new webpack.NamedModulesPlugin() ], // … }; build 之，可以看到结果中包含以下部分：  app.bundle.js 6.14 kB 0 [emitted] app another.bundle.js 185 bytes 1 [emitted] another common.bundle.js 73.2 kB 2 [emitted] common index.html 314 bytes [emitted] 我们把lodash分离出来了。 动态引入 我们还可以选择以动态引入的方式来实现代码分离，借助 import() 实现之。 webpack.config.js const path = require(‘path’); const HtmlWebpackPlugin = require(‘html-webpack-plugin’); const CleanWebpackPlugin = require(‘clean-webpack-plugin’); // const webpack = require(‘webpack’); module.exports = { // … entry: { app: ‘./src/index.js’, // print: ‘./src/print.js’ // another: ‘./src/another.js’ }, output: { // filename: ‘bundle.js’, filename: ‘[name].bundle.js’, chunkFilename: ‘[name].bundle.js’, // 指定非入口块文件输出的名字 // filename: process.env.NODEENV === ‘production’ ? ‘[name].[chunkhash].js’ : ‘[name].bundle.js’, path: path.resolve(__dirname, ‘dist’) }, plugins: [ new HtmlWebpackPlugin({ title: ‘webpack demo’, filename: ‘index.html’ }), new CleanWebpackPlugin([‘dist’]) // new webpack.optimize.CommonsChunkPlugin({ // name: ‘common’ // }), // new webpack.HotModuleReplacementPlugin(), // new webpack.NamedModulesPlugin() ], // … }; src/index.js // import  from ‘lodash’; import printMe from ‘./print.js’; // import ‘./style.css’; // import Icon from ‘./icon.jpg’; // import Data from ‘./data.json’; function component() { // 此函数原来的内容全部注释掉… return import(/ webpackChunkName: “lodash” / ‘lodash’).then(function() { const element = document.createElement(‘div’); const btn = document.createElement(‘button’); element.innerHTML = .join([‘Hello’, ‘webpack’], ‘ ‘); btn.innerHTML = ‘Click me and check the console!’; btn.onclick = printMe; element.appendChild(btn); return element; }).catch(function(error) { console.log(‘An error occurred while loading the component’) }); } // document.body.appendChild(component()); // var element = component(); // document.body.appendChild(element); // 原本热加载的部分全部注释掉… component().then(function(component) { document.body.appendChild(component); }); Tips注意上面中的/ webpackChunkName: “lodash” /这段注释，它并不是可有可无的，它能帮助我们结合output.chunkFilename把分离出的模块最终命名为lodash.bundle.js而非[id].bundle.js。 现在 build 之看看吧。 懒加载 (lazy loading) 既然有了import()，我们可以选择在需要的时候才加载相应的模块，减少了应用初始化时加载大量暂不需要的模块的压力，这能让我们的应用更高效地运行。 src/print.js console.log(‘The print.js module has loaded! See the network tab in dev tools…’); export default function printMe() { // console.log(‘Updating print.js…’); console.log(‘Button Clicked: Here\’s “some text”!’); } src/index.js import  from ‘lodash’; // 其他引入注释… function component() { const element = document.createElement(‘div’); const btn = document.createElement(‘button’); element.innerHTML = .join([‘Hello’, ‘webpack’], ‘ ‘); // element.classList.add(‘hello’); // const myIcon = new Image(); // myIcon.src = Icon; // element.appendChild(myIcon); // console.log(Data); btn.innerHTML = ‘Click me and check the console!’; // btn.onclick = printMe; element.appendChild(btn); btn.onclick = function() { import(/ webpackChunkName: “print” / ‘./print’) .then(function(module) { const printMe = module.default; // 引入模块的默认函数 printMe(); }); }; return element; // 原本的动态引入注释… } document.body.appendChild(component()); // var element = component(); // document.body.appendChild(element); // 热加载部分注释 // component().then(function(component) { // document.body.appendChild(component); // }); 构建之，控制台此时并无输出，点击按钮，会看到控制台如下输出： print.bundle.js:1 The print.js module has loaded! See the network tab in dev tools… print.bundle.js:1 Button Clicked: Here’s “some text”! 说明 print 模块只在我们点击时才引入了，すっげえ！ 缓存 (caching) 浏览器在初次加载网站时，会下载很多文件，为了较少下载大量资源的压力，浏览器会对资源进行缓存 (caching)，这样浏览器便可以更迅速地加载网站，但是我们需要在文件内容发生改变时更新文件。 我们可以在输出文件名上下手脚： webpack.config.js const path = require(‘path’); const HtmlWebpackPlugin = require(‘html-webpack-plugin’); const CleanWebpackPlugin = require(‘clean-webpack-plugin’); // const webpack = require(‘webpack’); module.exports = { // … output: { // filename: ‘bundle.js’, filename: ‘[name].[chunkhash].js’, // chunkFilename: ‘[name].bundle.js’, // filename: process.env.NODE_ENV === ‘production’ ? ‘[name].[chunkhash].js’ : ‘[name].bundle.js’, path: path.resolve(dirname, ‘dist’) }, // … }; Tips[chunkhash] 是内容相关的，只要内容发生了改变，构建后文件名的 hash 就会发生改变。 还有一个要点是提取出第三方库放到单独模块中，因为它们是不太可能频繁发生改变的，所以无需多次加载这些模块，提取的方法用 CommonsChunkPlugin 插件，这个插件上文中提到过，指定入口文件名时它会提取改入口文件为单个文件，不指定则会提取 webpack 的运行时代码。 webpack.config.js const path = require(‘path’); const HtmlWebpackPlugin = require(‘html-webpack-plugin’); const CleanWebpackPlugin = require(‘clean-webpack-plugin’); const webpack = require(‘webpack’); module.exports = { // … entry: { app: ‘./src/index.js’, vendor: [ // 第三方库可以统一放在这个入口一起合并 ‘lodash’ ] // print: ‘./src/print.js’ // another: ‘./src/another.js’ }, output: { // filename: ‘bundle.js’, filename: ‘[name].[chunkhash].js’, chunkFilename: ‘[name].bundle.js’, // filename: process.env.NODE_ENV === ‘production’ ? ‘[name].[chunkhash].js’ : ‘[name].bundle.js’, path: path.resolve(dirname, ‘dist’) }, plugins: [ new HtmlWebpackPlugin({ title: ‘webpack demo’, filename: ‘index.html’ }), new CleanWebpackPlugin([‘dist’]), new webpack.optimize.CommonsChunkPlugin({ name: ‘vendor’ // 将 vendor 入口处的代码放入 vendor 模块 }), new webpack.optimize.CommonsChunkPlugin({ name: ‘runtime’ // 将 webpack 自身的运行时代码放在 runtime 模块 }) // new webpack.HotModuleReplacementPlugin(), // new webpack.NamedModulesPlugin() ], // … }; Tips包含 vendor 的 CommonsChunkPlugin 实例必须在包含 runtime 的之前，否则会报错。 src/index.js // import _ from ‘lodash’; // … // … 如果我们在 src 下新建一个文件h.js，再在index.js中引入它，保存，构建之，我们发现有些没改变的模块的 hash 也发生了改变，这是因为加入h.js后它们的module.id变了，但这明显是不合理的。在开发环境，我们可以用 NamedModulesPlugin 将 id 换成具体路径名。而在生产环境，我们可以使用 HashedModuleIdsPlugin。 webpack.config.js const path = require(‘path’); const HtmlWebpackPlugin = require(‘html-webpack-plugin’); const CleanWebpackPlugin = require(‘clean-webpack-plugin’); const webpack = require(‘webpack’); module.exports = { // … plugins: [ new HtmlWebpackPlugin({ title: ‘webpack demo’, filename: ‘index.html’ }), new webpack.HashedModuleIdsPlugin(), // 替换掉原来的module.id new CleanWebpackPlugin([‘dist’]), new webpack.optimize.CommonsChunkPlugin({ name: ‘vendor’ }), new webpack.optimize.CommonsChunkPlugin({ name: ‘runtime’ }) // new webpack.HotModuleReplacementPlugin(), // new webpack.NamedModulesPlugin() ], // … }; 再来执行刚才那波操作，就会发现无关修改的模块 hash 未变了。 Shimming Tips你可以将 shim 简单理解为是用于兼容 API 的小型库。 使用 jQuery 时我们习惯性地使用$或jQuery变量，每次都使用const $ = require(“jquery”)引入的话太麻烦，如果能直接把这两个变量设置为全局变量岂不美滋滋？这样就可以在每个模块中直接使用这两个变量了。为了兼容这一做法，我们使用 ProvidePlugin 插件为我们完成这一任务。 $ npm i –save jquery webpack.config.js const path = require(‘path’); const HtmlWebpackPlugin = require(‘html-webpack-plugin’); const CleanWebpackPlugin = require(‘clean-webpack-plugin’); const webpack = require(‘webpack’); module.exports = { // … plugins: [ new HtmlWebpackPlugin({ title: ‘webpack demo’, filename: ‘index.html’ }), new webpack.ProvidePlugin({ // 设置全局变量 $: ‘jquery’, jQuery: ‘jquery’ }), new webpack.HashedModuleIdsPlugin(), new CleanWebpackPlugin([‘dist’]), new webpack.optimize.CommonsChunkPlugin({ name: ‘vendor’ }), new webpack.optimize.CommonsChunkPlugin({ name: ‘runtime’ }) // new webpack.HotModuleReplacementPlugin(), // new webpack.NamedModulesPlugin() ], // … }; src/print.js console.log(‘The print.js module has loaded! See the network tab in dev tools…’); console.log($(‘title’).text()); // 使用 jQuery export default function printMe() { // console.log(‘Updating print.js…’); console.log(‘Button Clicked: Here\’s “some text”!’); } build，点击页面按钮，成功了。 另外，如果你需要在某些模块加载时设置该模块的全局变量，请看 这里。 结尾的一点废话 终于写完了 ：），也感谢你能耐心看到这里。webpack 这个工具的配置还是有些麻烦的。但是呢，某人说这个东东前期会花比较多时间，后期会大大提高你的效率。所以呢，还是拿下这个东东吧。有其他需求的话可以继续看官方的文档。遇到困难可以找：  Stack Overflow Google Gitter Webpack Issues  我写好的 demo 文件放在了这里。 Reference  入门 Webpack，看这篇就够了 - v1 Webpack Guides Webpack: When To Use And Why stackoverflow / github issues 
+
+                            </p>
+                        </div>
+                        <!-- / small-post-text -->
+                    </div>
+                    <!-- / post-block -->
+                </div>
+                <!-- / col-md-4 -->
+                <!-- / post-block -->
+                
+                <!-- post-block -->
+                <div class="col-sm-4">
+                    <div class="post-block">
+                        <a href="/post/2017/08/07/vuejs-3.html" class="post-preview" style="background-image: url(/images/preview/vue-demo.jpg)"></a>
+                        <div class="small-post-text">
+                            <h5><a href="/post/2017/08/07/vuejs-3.html">vue快速入门的三个小实例</a></h5>
+                            <p class="small-post-meta">
+                                2017/08/07
+                            </p>
+                            <p class="space-bottom" style="max-height: 100px; overflow: hidden">
+                                1.前言用vue做项目也有一段时间了,但是关于vue入门基础的文章，我还没有写过，那么今天就写vue入门的三个小实例，这三个小实例是我刚接触vue的时候的练手作品，难度从很简单到简单，都是入门级的。希望能帮到大家更好的学习和了解vue，也是让自己能够复习一下vue。如果发现文章写得有什么不好，写错了，或者有什么建议！欢迎大家指点迷津！
+
+1.本篇文章使用的vue版本是2.4.2，大家要注意版本问题2.现在我也是假设您有基础的html,css,javascript的知识，也已经看过了官网的基本介绍，对vue有了一个大概的认识了，了解了常用的vue指令(v-model,v-show,v-if,v-for,v-on,v-bind等)！如果刚接触前端的话，你看着文章可能会蒙圈，建议先学习基础，掌握了基础知识再来看！3.下面的实例，建议大家边看文章边动手做！这样思路会非常清晰，不易混乱！也不会觉得文章长！如果只看文章，你可能未必会看完，因为文章我讲得比较细，比较长！
+
+2.什么是vuevue是现在很火的一个前端MVVM框架，它以数据驱动和组件化的思想构建，与angular和react并称前端三大框架。相比angular和react，vue更加轻巧、高性能、也很容易上手。大家也可以移步，看一下vue的介绍和核心功能官网介绍。简单粗暴的理解就是：用vue开发的时候，就是操作数据，然后vue就会处理，以数据驱动去改变DOM（不知道有没有理解错，理解错了指点下）。下面就是一个最简单的说明例子
+代码如下
+html
+123456 &lt;div id=&quot;app&quot;&gt;&#123;&#123; message &#125;&#125;  &lt;input v-model=&quot;message&quot;&gt;&lt;/div&gt;
+js
+123456new Vue(&#123;  el: &apos;#app&apos;,  data: &#123;    message: &apos;Hello Vue!&apos;  &#125;&#125;)
+栗子
+相信也不难理解，就是input绑定了message这个值，然后在input修改的时候，message就改了，由于双向绑定，同时页面的html（）进行了修改！好，下面进入例子学习！
+3.选项卡运行效果原理分析和实现这个很简单，无非就是一个点击切换显示而已。但是大家也要实现。如果这个看明白了，再看下面两个！这个实例应该只是一个热身和熟悉的作用！
+这个的步骤只有一步，原理也没什么。我直接在代码打注释，看了注释，大家就明白了！
+完整代码12&lt;meta charset=&quot;UTF-8&quot;&gt;&lt;title&gt;Title&lt;/title&gt;
+ body{ font-family:"Microsoft YaHei"; } #tab{ width: 600px; margin: 0 auto; } .tab-tit{ font-size: 0; width: 600px; } .tab-tit a{ display: inline-block; height: 40px; line-height: 40px; font-size: 16px; width: 25%; text-align: center; background: #ccc; color: #333; text-decoration: none; } .tab-tit .cur{ background: #09f; color: #fff; } .tab-con div{ border: 1px solid #ccc; height: 400px; padding-top: 20px; }   
+
+12345678910111213141516171819202122232425262728 &lt;div class=&quot;tab-tit&quot;&gt;    [html](javascript:;)    [css](javascript:;)    [javascript](javascript:;)    [vue](javascript:;)&lt;/div&gt;&lt;div class=&quot;tab-con&quot;&gt;&lt;div v-show=&quot;curId===0&quot;&gt;        html      &lt;/div&gt;&lt;div v-show=&quot;curId===1&quot;&gt;        css    &lt;/div&gt;&lt;div v-show=&quot;curId===2&quot;&gt;        javascript    &lt;/div&gt;&lt;div v-show=&quot;curId===3&quot;&gt;        vue    &lt;/div&gt;&lt;/div&gt;
+
+ new Vue({ el: '#tab', data: { curId: 0 }, computed: {}, methods: {}, mounted: function () { } })   
+
+4.统计总价运行效果原理分析和实现首先，还是先把布局写好，和引入vue，准备vue实例，这个不多说，代码如下
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113114115116117118119120121122123124125126127128129130131132133134135136137138139140141142143144145146147148149150151152153154155156157158159160161162163164165166167168169170171172173174175176177178179180181182183184185186187188189190191192193194195196197198199200201202203204205206207208209210211212213214215216217218219220221222223224225226227228229230231232233234235236237238239240241242243244245246247248249250251252253254255256257258259260261262263264265266267268269270271272273274275276277278279280281282283284285286287288289290291292293294295296297298299300301302303304305306307308309310311312313314315316317318319320321322323324325326327328329330331332333334335336337338339340341342343344345346347348349350351352353354355356357358359360361362363364365366367368369370371372373374375376377378379380381382383384385386387388389390391392393 &lt;meta charset=&quot;UTF-8&quot;&gt;    &lt;title&gt;Title&lt;/title&gt;    &lt;style&gt;.fl&#123;            float: left;        &#125;        .fr&#123;            float: right;        &#125;       blockquote, body, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, img, input, li, ol, p, table, td, textarea, th, ul &#123;            margin: 0;            padding: 0;        &#125;       .clearfix&#123;          zoom: 1;       &#125;        .clearfix:after &#123;            clear: both;        &#125;        .clearfix:after &#123;            content: &apos;.&apos;;            display: block;            overflow: hidden;            visibility: hidden;            font-size: 0;            line-height: 0;            width: 0;            height: 0;        &#125;        a&#123;            text-decoration: none;            color: #333;        &#125;        img&#123;vertical-align: middle;&#125;        .page-shopping-cart &#123;            width: 1200px;            margin: 50px auto;            font-size: 14px;            border: 1px solid #e3e3e3;            border-top: 2px solid #317ee7; &#125;        .page-shopping-cart .cart-title &#123;            color: #317ee7;            font-size: 16px;            text-align: left;            padding-left: 20px;            line-height: 68px; &#125;        .page-shopping-cart .red-text &#123;            color: #e94826; &#125;        .page-shopping-cart .check-span &#123;            display: block;            width: 24px;            height: 20px;            background: url(&quot;shopping_cart.png&quot;) no-repeat 0 0; &#125;        .page-shopping-cart .check-span.check-true &#123;            background: url(&quot;shopping_cart.png&quot;) no-repeat 0 -22px; &#125;        .page-shopping-cart .td-check &#123;            width: 70px; &#125;        .page-shopping-cart .td-product &#123;            width: 460px; &#125;        .page-shopping-cart .td-num, .page-shopping-cart .td-price, .page-shopping-cart .td-total &#123;            width: 160px; &#125;        .page-shopping-cart .td-do &#123;            width: 150px; &#125;        .page-shopping-cart .cart-product-title &#123;            text-align: center;            height: 38px;            line-height: 38px;            padding: 0 20px;            background: #f7f7f7;            border-top: 1px solid #e3e3e3;            border-bottom: 1px solid #e3e3e3; &#125;        .page-shopping-cart .cart-product-title .td-product &#123;            text-align: center;            font-size: 14px; &#125;        .page-shopping-cart .cart-product-title .td-check &#123;            text-align: left; &#125;        .page-shopping-cart .cart-product-title .td-check .check-span &#123;            margin: 9px 6px 0 0; &#125;        .page-shopping-cart .cart-product &#123;            padding: 0 20px;            text-align: center; &#125;        .page-shopping-cart .cart-product table &#123;            width: 100%;            text-align: center;            font-size: 14px; &#125;        .page-shopping-cart .cart-product table td &#123;            padding: 20px 0; &#125;        .page-shopping-cart .cart-product table tr &#123;            border-bottom: 1px dashed #e3e3e3; &#125;        .page-shopping-cart .cart-product table tr:last-child &#123;            border-bottom: none; &#125;        .page-shopping-cart .cart-product table .product-num &#123;            border: 1px solid #e3e3e3;            display: inline-block;            text-align: center; &#125;        .page-shopping-cart .cart-product table .product-num .num-do &#123;            width: 24px;            height: 28px;            display: block;            background: #f7f7f7; &#125;        .page-shopping-cart .cart-product table .product-num .num-reduce span &#123;            background: url(&quot;shopping_cart.png&quot;) no-repeat -40px -22px;            display: block;            width: 6px;            height: 2px;            margin: 13px auto 0 auto; &#125;        .page-shopping-cart .cart-product table .product-num .num-add span &#123;            background: url(&quot;shopping_cart.png&quot;) no-repeat -60px -22px;            display: block;            width: 8px;            height: 8px;            margin: 10px auto 0 auto; &#125;        .page-shopping-cart .cart-product table .product-num .num-input &#123;            width: 42px;            height: 28px;            line-height: 28px;            border: none;            text-align: center; &#125;        .page-shopping-cart .cart-product table .td-product &#123;            text-align: left;            font-size: 12px;            line-height: 20px; &#125;        .page-shopping-cart .cart-product table .td-product img &#123;            border: 1px solid #e3e3e3;            margin-right: 10px; &#125;        .page-shopping-cart .cart-product table .td-product .product-info &#123;            display: inline-block;            vertical-align: middle; &#125;        .page-shopping-cart .cart-product table .td-do &#123;            font-size: 12px; &#125;        .page-shopping-cart .cart-product-info &#123;            height: 50px;            line-height: 50px;            background: #f7f7f7;            padding-left: 20px; &#125;        .page-shopping-cart .cart-product-info .delect-product &#123;            color: #666; &#125;        .page-shopping-cart .cart-product-info .delect-product span &#123;            display: inline-block;            vertical-align: top;            margin: 18px 8px 0 0;            width: 13px;            height: 15px;            background: url(&quot;shopping_cart.png&quot;) no-repeat -60px 0; &#125;        .page-shopping-cart .cart-product-info .product-total &#123;            font-size: 14px;            color: #e94826; &#125;        .page-shopping-cart .cart-product-info .product-total span &#123;            font-size: 20px; &#125;        .page-shopping-cart .cart-product-info .check-num &#123;            color: #333; &#125;        .page-shopping-cart .cart-product-info .check-num span &#123;            color: #e94826; &#125;        .page-shopping-cart .cart-product-info .keep-shopping &#123;            color: #666;            margin-left: 40px; &#125;        .page-shopping-cart .cart-product-info .keep-shopping span &#123;            display: inline-block;            vertical-align: top;            margin: 18px 8px 0 0;            width: 15px;            height: 15px;            background: url(&quot;shopping_cart.png&quot;) no-repeat -40px 0; &#125;        .page-shopping-cart .cart-product-info .btn-buy &#123;            height: 50px;            color: #fff;            font-size: 20px;            display: block;            width: 110px;            background: #ff7700;            text-align: center;            margin-left: 30px; &#125;        .page-shopping-cart .cart-worder &#123;            padding: 20px; &#125;        .page-shopping-cart .cart-worder .choose-worder &#123;            color: #fff;            display: block;            background: #39e;            width: 140px;            height: 40px;            line-height: 40px;            border-radius: 4px;            text-align: center;            margin-right: 20px; &#125;        .page-shopping-cart .cart-worder .choose-worder span &#123;            display: inline-block;            vertical-align: top;            margin: 9px 10px 0 0;            width: 22px;            height: 22px;            background: url(&quot;shopping_cart.png&quot;) no-repeat -92px 0; &#125;        .page-shopping-cart .cart-worder .worker-info &#123;            color: #666; &#125;        .page-shopping-cart .cart-worder .worker-info img &#123;            border-radius: 100%;            margin-right: 10px; &#125;        .page-shopping-cart .cart-worder .worker-info span &#123;            color: #000; &#125;        .choose-worker-box &#123;            width: 620px;            background: #fff; &#125;        .choose-worker-box .box-title &#123;            height: 40px;            line-height: 40px;            background: #F7F7F7;            text-align: center;            position: relative;            font-size: 14px; &#125;        .choose-worker-box .box-title a &#123;            display: block;            position: absolute;            top: 15px;            right: 16px;            width: 10px;            height: 10px;            background: url(&quot;shopping_cart.png&quot;) no-repeat -80px 0; &#125;        .choose-worker-box .box-title a:hover &#123;            background: url(&quot;shopping_cart.png&quot;) no-repeat -80px -22px; &#125;        .choose-worker-box .worker-list &#123;            padding-top: 30px;            height: 134px;            overflow-y: auto; &#125;        .choose-worker-box .worker-list li &#123;            float: left;            width: 25%;            text-align: center;            margin-bottom: 30px; &#125;        .choose-worker-box .worker-list li p &#123;            margin-top: 8px; &#125;        .choose-worker-box .worker-list li.cur a &#123;            color: #f70; &#125;        .choose-worker-box .worker-list li.cur a img &#123;            border: 1px solid #f70; &#125;        .choose-worker-box .worker-list li a:hover &#123;            color: #f70; &#125;        .choose-worker-box .worker-list li a:hover img &#123;            border: 1px solid #f70; &#125;        .choose-worker-box .worker-list li img &#123;            border: 1px solid #fff;            border-radius: 100%; &#125;&lt;/style&gt; &lt;div class=&quot;page-shopping-cart&quot; id=&quot;shopping-cart&quot;&gt;#### 购物清单&lt;div class=&quot;cart-product-title clearfix&quot;&gt;&lt;div class=&quot;td-check fl&quot;&gt;&lt;span class=&quot;check-span fl check-all&quot;&gt;&lt;/span&gt;全选&lt;/div&gt;&lt;div class=&quot;td-product fl&quot;&gt;商品&lt;/div&gt;&lt;div class=&quot;td-num fl&quot;&gt;数量&lt;/div&gt;&lt;div class=&quot;td-price fl&quot;&gt;单价(元)&lt;/div&gt;&lt;div class=&quot;td-total fl&quot;&gt;金额(元)&lt;/div&gt;&lt;div class=&quot;td-do fl&quot;&gt;操作&lt;/div&gt;    &lt;/div&gt;&lt;div class=&quot;cart-product clearfix&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;td-check&quot;&gt;&lt;span class=&quot;check-span&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;td class=&quot;td-product&quot;&gt;![](testimg.jpg)&lt;div class=&quot;product-info&quot;&gt;###### 【斯文】甘油 | 丙三醇品牌：韩国skc  产地：韩国规格/纯度:99.7%  起定量：215千克配送仓储：上海仓海仓储                    &lt;/div&gt;                &lt;/td&gt;&lt;td class=&quot;td-num&quot;&gt;&lt;div class=&quot;product-num&quot;&gt;                        [&lt;span&gt;&lt;/span&gt;](javascript:;)                        &lt;input type=&quot;text&quot; class=&quot;num-input&quot; value=&quot;3&quot;&gt;                        [&lt;span&gt;&lt;/span&gt;](javascript:;)                    &lt;/div&gt;                &lt;/td&gt;&lt;td class=&quot;td-price&quot;&gt;￥&lt;span class=&quot;price-text&quot;&gt;800&lt;/span&gt;.00                &lt;/td&gt;&lt;td class=&quot;td-total&quot;&gt;￥&lt;span class=&quot;total-text&quot;&gt;800&lt;/span&gt;.00                &lt;/td&gt;&lt;td class=&quot;td-do&quot;&gt;[删除](javascript:;)&lt;/td&gt;            &lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;td-check&quot;&gt;&lt;span class=&quot;check-span check-true&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;td class=&quot;td-product&quot;&gt;![](testimg.jpg)&lt;div class=&quot;product-info&quot;&gt;###### 【斯文】甘油 | 丙三醇品牌：韩国skc  产地：韩国规格/纯度:99.7%  起定量：215千克配送仓储：上海仓海仓储                    &lt;/div&gt;                &lt;/td&gt;&lt;td class=&quot;td-num&quot;&gt;&lt;div class=&quot;product-num&quot;&gt;                        [&lt;span&gt;&lt;/span&gt;](javascript:;)                        &lt;input type=&quot;text&quot; class=&quot;num-input&quot; value=&quot;1&quot;&gt;                        [&lt;span&gt;&lt;/span&gt;](javascript:;)                    &lt;/div&gt;                &lt;/td&gt;&lt;td class=&quot;td-price&quot;&gt;￥&lt;span class=&quot;price-text&quot;&gt;800&lt;/span&gt;.00                &lt;/td&gt;&lt;td class=&quot;td-total&quot;&gt;￥&lt;span class=&quot;total-text&quot;&gt;800&lt;/span&gt;.00                &lt;/td&gt;&lt;td class=&quot;td-do&quot;&gt;[删除](javascript:;)&lt;/td&gt;            &lt;/tr&gt;            &lt;/tbody&gt;&lt;/table&gt;    &lt;/div&gt;&lt;div class=&quot;cart-product-info&quot;&gt;        [&lt;span&gt;&lt;/span&gt;删除所选商品](javascript:;)        [&lt;span&gt;&lt;/span&gt;继续购物](#)        [去结算](javascript:;)￥&lt;span&gt;1600&lt;/span&gt;&lt;span&gt;2&lt;/span&gt;件商品总计（不含运费）：    &lt;/div&gt;&lt;div class=&quot;cart-worder clearfix&quot;&gt;        [&lt;span&gt;&lt;/span&gt;绑定跟单员](javascript:;)    &lt;/div&gt;&lt;/div&gt; &lt;script&gt;new Vue(&#123;        el:&apos;#shopping-cart&apos;,        data:&#123;        &#125;,        computed: &#123;&#125;,        methods:&#123;        &#125;    &#125;)&lt;/script&gt;
+然后准备下列表数据，根据下面表格的箭头
+所以大家就知道吗，下面的数据大概是涨这样
+12345678910111213productList:[    &#123;        &apos;pro_name&apos;: &apos;【斯文】甘油 | 丙三醇&apos;,//产品名称        &apos;pro_brand&apos;: &apos;skc&apos;,//品牌名称        &apos;pro_place&apos;: &apos;韩国&apos;,//产地        &apos;pro_purity&apos;: &apos;99.7%&apos;,//规格        &apos;pro_min&apos;: &quot;215千克&quot;,//最小起订量        &apos;pro_depot&apos;: &apos;上海仓海仓储&apos;,//所在仓库        &apos;pro_num&apos;: 3,//数量        &apos;pro_img&apos;: &apos;../../images/ucenter/testimg.jpg&apos;,//图片链接        &apos;pro_price&apos;: 800//单价    &#125;]
+准备了这么多，大家可能想到，还缺少一个，就是记录产品是否有选中，但是这个字段，虽然可以在上面那里加，但是意义不大，比如在平常项目那里！后台的数据不会这样返回，数据库也不会有这个字段，这个字段应该是自己添加的。代码如下
+1234567891011121314151617181920212223242526272829303132new Vue(&#123;    el:&apos;#shopping-cart&apos;,    data:&#123;        productList:[            &#123;                &apos;pro_name&apos;: &apos;【斯文】甘油 | 丙三醇&apos;,//产品名称                &apos;pro_brand&apos;: &apos;skc&apos;,//品牌名称                &apos;pro_place&apos;: &apos;韩国&apos;,//产地                &apos;pro_purity&apos;: &apos;99.7%&apos;,//规格                &apos;pro_min&apos;: &quot;215千克&quot;,//最小起订量                &apos;pro_depot&apos;: &apos;上海仓海仓储&apos;,//所在仓库                &apos;pro_num&apos;: 3,//数量                &apos;pro_img&apos;: &apos;../../images/ucenter/testimg.jpg&apos;,//图片链接                &apos;pro_price&apos;: 800//单价            &#125;        ]    &#125;,    computed: &#123;&#125;,    methods:&#123;    &#125;,    mounted:function () &#123;        //为productList添加select（是否选中）字段，初始值为true        var _this=this;        //为productList添加select（是否选中）字段，初始值为true        this.productList.map(function (item) &#123;            _this.$set(item, &apos;select&apos;, true);        &#125;)        //要像上面这样写双向绑定才能起效，下面的写法是有问题的，双向绑定不起效的！        //this.productList.map(function (item) &#123;item.select=true&#125;)    &#125;&#125;)
+步骤1
+为了着重表示我修改了什么地方，代码我现在只贴出修改的部分，大家对着上面的布局，就很容易知道我改的是什么地方了！下面也是这样操作！
+
+点击增加和减少按钮（箭头指向地方），所属列的金额改变（红框地方）  
+执行步骤1之前，要先把列表的数据给铺出来。利用v-for指令。代码如下
+12345678910111213141516171819202122232425 &lt;span class=&quot;check-span&quot;&gt;&lt;/span&gt;&lt;div class=&quot;product-info&quot;&gt;###### &#123;&#123;item.pro_name&#125;&#125;品牌：&#123;&#123;item.pro_brand&#125;&#125;  产地：&#123;&#123;item.pro_place&#125;&#125;规格/纯度:&#123;&#123;item.pro_purity&#125;&#125;  起定量：&#123;&#123;item.pro_min&#125;&#125;配送仓储：&#123;&#123;item.pro_depot&#125;&#125;        &lt;/div&gt;&lt;div class=&quot;product-num&quot;&gt;            [&lt;span&gt;&lt;/span&gt;](javascript:;)            &lt;input type=&quot;text&quot; class=&quot;num-input&quot; v-model=&quot;item.pro_num&quot;&gt;            [&lt;span&gt;&lt;/span&gt;](javascript:;)        &lt;/div&gt;￥&lt;span class=&quot;price-text&quot;&gt;&#123;&#123;item.pro_price.toFixed(2)&#125;&#125;&lt;/span&gt;￥&lt;span class=&quot;total-text&quot;&gt;&#123;&#123;item.pro_price*item.pro_num&#125;&#125;&lt;/span&gt;.00    [删除](javascript:;)
+这样，列表的数据就有了！
+也可以发现，这两个按钮的功能已经实现了，后面的金额也会发生变化！是不是感到很惊喜！其实这里没什么特别的，就是因为输入框利用v-model绑定了数量（pro_num），然后两个按钮分别添加了事件@click=&quot;item.pro_num--&quot;和@click=&quot;item.pro_num++&quot;。比如刚开始pro_num是3，点击，pro_num就变成2，点击，pro_num就变成4，然后后面的金额会改改，是因为NaN。只要pro_price或者pro_num的值改变了，整一块也会改变，视图就会刷新，我们就能看到变化（这些事情是vue做的，这就是MVVM的魅力，数据驱动视图改变）。
+步骤2点击所属列选择按钮（箭头指向地方），总计的金额（红框地方）和已选产品的列数（蓝框地方）和全选（黄框地方）会改变（如果已经全选了，全选按钮自动变成全选，如果没有全选，全选按钮，自动取消全选）！
+首先，选择与取消选择，在这里只有两个操作（其实只有一个：改变这条记录的select字段）。
+然后改变，如果这条记录select为false，就显示，否则就显示。代码如下
+1&lt;span class=&quot;check-span&quot; @click=&quot;item.select=!item.select&quot; :class=&quot;&#123;&apos;check-true&apos;:item.select&#125;&quot;&gt;&lt;/span&gt;
+其实就是等于添加了@click=&quot;item.select=!item.select&quot; :class=&quot;{&#39;check-true&#39;:item.select}&quot;这里。点击这个，这条数据的select字段就取反（true-&gt;false或者false-&gt;true）。然后:class=&quot;{&#39;check-true&#39;:item.select}&quot;，就会根据这条数据的select字段进行判断，是否添加check-true类名，如果select字段为true，就添加类名，显示。否则不添加类名，显示。
+然后，全选按钮，是否变成。这里用一个computed（计算属性）就好。代码如下
+html
+1&lt;div class=&quot;td-check fl&quot;&gt;&lt;span class=&quot;check-span fl check-all&quot; :class=&quot;&#123;&apos;check-true&apos;:isSelectAll&#125;&quot;&gt;&lt;/span&gt;全选&lt;/div&gt;
+js
+123456computed: &#123;    isSelectAll:function()&#123;        //如果productList中每一条数据的select都为true，返回true，否则返回false;        return this.productList.every(function (val) &#123; return val.select&#125;);    &#125;&#125;
+代码我解释下，就是计算属性中，定义的isSelectAll依赖productList。只要productList改变，isSelectAll的返回值就会改变，然后:class=&quot;{&#39;check-true&#39;:isSelectAll}&quot;根绝isSelectAll返回值是否添加&#39;check-true&#39;类名，显示对应的样式！最后，，这里的多少件产品和总价，也是使用计算属性，有了上一步的基础，给出代码，大家一看就明白了！html
+123 ￥&lt;span&gt;&#123;&#123;getTotal.totalPrice&#125;&#125;&lt;/span&gt;&lt;span&gt;&#123;&#123;getTotal.totalNum&#125;&#125;&lt;/span&gt;件商品总计（不含运费）：
+js
+1234567891011computed: &#123;    //检测是否全选    isSelectAll:function()&#123;        //如果productList中每一条数据的select都为true，返回true，否则返回false;        return this.productList.every(function (val) &#123; return val.select&#125;);    &#125;,    //获取总价和产品总件数    getTotal:function()&#123;        //获取productList中select为true的数据。        var _proList=this.productList.filter(function (val) &#123; return val.select&#125;),totalPrice=0;        for(var i=0,len=_proList.length;i
+ `代码很简单，html根据getTotal返回值显示数据，getTotal依赖productList的数据，只要productList改变，返回值会改变，视图也会改变！
+步骤3点击全选按钮（箭头指向部分），会自动的对产品进行全选或者取消全选，下面的总计也会发生改变
+做到这一步，大家应该知道，全选或者取消全选，就是改变记录的select。但是怎么知道现在的列表有没有全选呢？这个很贱，不需要在操作函数（全选与取消全选函数）里面遍历，大家应该还记得第二步的计算属性isSelectAll（为true就是全选，否则不是全选），把这个传进操作函数就好，然后操作函数，根据参数，决定执行全选，还是取消全选操作。代码如下！html
+1&lt;div class=&quot;td-check fl&quot;&gt;&lt;span class=&quot;check-span fl check-all&quot; :class=&quot;&#123;&apos;check-true&apos;:isSelectAll&#125;&quot; @click=&quot;selectProduct(isSelectAll)&quot;&gt;&lt;/span&gt;全选&lt;/div&gt;
+js
+123456789 methods: &#123;    //全选与取消全选    selectProduct:function(_isSelect)&#123;        //遍历productList，全部取反        for (var i = 0, len = this.productList.length; i &lt; len; i++) &#123;            this.productList[i].select = !_isSelect;        &#125;    &#125;&#125;,
+步骤4点击删除产品，会删除已经选中的，全选按钮和下面的总计，都会变化！点击每条记录后面的删除，会删除当前的这条记录。全选按钮和下面的总计，也都会变化！
+首先，点击删除产品，删除已经选中。这个大家知道了怎么做了！就是遍历productList，如果哪条记录的select为true，就删除。然后，点击每条记录后面的删除，删除当前的这条记录。这个在html遍历productList的时候。顺便带上索引，然后把索引当成参数，传进操作函数，然后根据索引参数，删除productList的哪一条记录。即可实现！代码如下！html
+12345678910111213141516171819202122232425262728 &lt;span class=&quot;check-span&quot; @click=&quot;item.select=!item.select&quot; :class=&quot;&#123;&apos;check-true&apos;:item.select&#125;&quot;&gt;&lt;/span&gt;&lt;div class=&quot;product-info&quot;&gt;###### &#123;&#123;item.pro_name&#125;&#125;品牌：&#123;&#123;item.pro_brand&#125;&#125;  产地：&#123;&#123;item.pro_place&#125;&#125;规格/纯度:&#123;&#123;item.pro_purity&#125;&#125;  起定量：&#123;&#123;item.pro_min&#125;&#125;配送仓储：&#123;&#123;item.pro_depot&#125;&#125;        &lt;/div&gt;&lt;div class=&quot;product-num&quot;&gt;            [&lt;span&gt;&lt;/span&gt;](javascript:;)            &lt;input type=&quot;text&quot; class=&quot;num-input&quot; v-model=&quot;item.pro_num&quot;&gt;            [&lt;span&gt;&lt;/span&gt;](javascript:;)        &lt;/div&gt;￥&lt;span class=&quot;price-text&quot;&gt;&#123;&#123;item.pro_price.toFixed(2)&#125;&#125;&lt;/span&gt;￥&lt;span class=&quot;total-text&quot;&gt;&#123;&#123;item.pro_price*item.pro_num&#125;&#125;&lt;/span&gt;.00    [删除](javascript:;)...[&lt;span&gt;&lt;/span&gt;删除所选商品](javascript:;)
+js
+123456789//删除已经选中(select=true)的产品deleteProduct:function () &#123;    this.productList=this.productList.filter(function (item) &#123;return !item.select&#125;)&#125;,//删除单条产品deleteOneProduct:function (index) &#123;    //根据索引删除productList的记录    this.productList.splice(index,1);&#125;,
+完整代码样式图片
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113114115116117118119120121122123124125126127128129130131132133134135136137138139140141142143144145146147148149150151152153154155156157158159160161162163164165166167168169170171172173174175176177178179180181182183184185186187188189190191192193194195196197198199200201202203204205206207208209210211212213214215216217218219220221222223224225226227228229230231232233234235236237238239240241242243244245246247248249250251252253254255256257258259260261262263264265266267268269270271272273274275276277278279280281282283284285286287288289290291292293294295296297298299300301302303304305306307308309310311312313314315316317318319320321322323324325326327328329330331332333334335336337338339340341342343344345346347348349350351352353354355356357358359360361362363364365366367368369370371372373374375376377378379380381382383384385386387388389390391392393394395396397398399400401402403404405406407408409410411412413414415416417418419420421422423424425426427428429430431432433434435436437438439440441442443444445446447448449450451452453454455456457458459460461462463464465466467468469470471472473474475476477478479480481482483484485486487488489490491492493494495496497498499500501502503504505506507508509510511512513514515516517518519520521522523524525526527528529530531532533 &lt;meta charset=&quot;UTF-8&quot;&gt;    &lt;title&gt;Title&lt;/title&gt;    &lt;style&gt;.fl &#123;            float: left;        &#125;        .fr &#123;            float: right;        &#125;        blockquote, body, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, img, input, li, ol, p, table, td, textarea, th, ul &#123;            margin: 0;            padding: 0;        &#125;        .clearfix &#123;            zoom: 1;        &#125;        .clearfix:after &#123;            clear: both;        &#125;        .clearfix:after &#123;            content: &apos;.&apos;;            display: block;            overflow: hidden;            visibility: hidden;            font-size: 0;            line-height: 0;            width: 0;            height: 0;        &#125;        a &#123;            text-decoration: none;            color: #333;        &#125;        img &#123;            vertical-align: middle;        &#125;        .page-shopping-cart &#123;            width: 1200px;            margin: 50px auto;            font-size: 14px;            border: 1px solid #e3e3e3;            border-top: 2px solid #317ee7;        &#125;        .page-shopping-cart .cart-title &#123;            color: #317ee7;            font-size: 16px;            text-align: left;            padding-left: 20px;            line-height: 68px;        &#125;        .page-shopping-cart .red-text &#123;            color: #e94826;        &#125;        .page-shopping-cart .check-span &#123;            display: block;            width: 24px;            height: 20px;            background: url(&quot;shopping_cart.png&quot;) no-repeat 0 0;        &#125;        .page-shopping-cart .check-span.check-true &#123;            background: url(&quot;shopping_cart.png&quot;) no-repeat 0 -22px;        &#125;        .page-shopping-cart .td-check &#123;            width: 70px;        &#125;        .page-shopping-cart .td-product &#123;            width: 460px;        &#125;        .page-shopping-cart .td-num, .page-shopping-cart .td-price, .page-shopping-cart .td-total &#123;            width: 160px;        &#125;        .page-shopping-cart .td-do &#123;            width: 150px;        &#125;        .page-shopping-cart .cart-product-title &#123;            text-align: center;            height: 38px;            line-height: 38px;            padding: 0 20px;            background: #f7f7f7;            border-top: 1px solid #e3e3e3;            border-bottom: 1px solid #e3e3e3;        &#125;        .page-shopping-cart .cart-product-title .td-product &#123;            text-align: center;            font-size: 14px;        &#125;        .page-shopping-cart .cart-product-title .td-check &#123;            text-align: left;        &#125;        .page-shopping-cart .cart-product-title .td-check .check-span &#123;            margin: 9px 6px 0 0;        &#125;        .page-shopping-cart .cart-product &#123;            padding: 0 20px;            text-align: center;        &#125;        .page-shopping-cart .cart-product table &#123;            width: 100%;            text-align: center;            font-size: 14px;        &#125;        .page-shopping-cart .cart-product table td &#123;            padding: 20px 0;        &#125;        .page-shopping-cart .cart-product table tr &#123;            border-bottom: 1px dashed #e3e3e3;        &#125;        .page-shopping-cart .cart-product table tr:last-child &#123;            border-bottom: none;        &#125;        .page-shopping-cart .cart-product table .product-num &#123;            border: 1px solid #e3e3e3;            display: inline-block;            text-align: center;        &#125;        .page-shopping-cart .cart-product table .product-num .num-do &#123;            width: 24px;            height: 28px;            display: block;            background: #f7f7f7;        &#125;        .page-shopping-cart .cart-product table .product-num .num-reduce span &#123;            background: url(&quot;shopping_cart.png&quot;) no-repeat -40px -22px;            display: block;            width: 6px;            height: 2px;            margin: 13px auto 0 auto;        &#125;        .page-shopping-cart .cart-product table .product-num .num-add span &#123;            background: url(&quot;shopping_cart.png&quot;) no-repeat -60px -22px;            display: block;            width: 8px;            height: 8px;            margin: 10px auto 0 auto;        &#125;        .page-shopping-cart .cart-product table .product-num .num-input &#123;            width: 42px;            height: 28px;            line-height: 28px;            border: none;            text-align: center;        &#125;        .page-shopping-cart .cart-product table .td-product &#123;            text-align: left;            font-size: 12px;            line-height: 20px;        &#125;        .page-shopping-cart .cart-product table .td-product img &#123;            border: 1px solid #e3e3e3;            margin-right: 10px;        &#125;        .page-shopping-cart .cart-product table .td-product .product-info &#123;            display: inline-block;            vertical-align: middle;        &#125;        .page-shopping-cart .cart-product table .td-do &#123;            font-size: 12px;        &#125;        .page-shopping-cart .cart-product-info &#123;            height: 50px;            line-height: 50px;            background: #f7f7f7;            padding-left: 20px;        &#125;        .page-shopping-cart .cart-product-info .delect-product &#123;            color: #666;        &#125;        .page-shopping-cart .cart-product-info .delect-product span &#123;            display: inline-block;            vertical-align: top;            margin: 18px 8px 0 0;            width: 13px;            height: 15px;            background: url(&quot;shopping_cart.png&quot;) no-repeat -60px 0;        &#125;        .page-shopping-cart .cart-product-info .product-total &#123;            font-size: 14px;            color: #e94826;        &#125;        .page-shopping-cart .cart-product-info .product-total span &#123;            font-size: 20px;        &#125;        .page-shopping-cart .cart-product-info .check-num &#123;            color: #333;        &#125;        .page-shopping-cart .cart-product-info .check-num span &#123;            color: #e94826;        &#125;        .page-shopping-cart .cart-product-info .keep-shopping &#123;            color: #666;            margin-left: 40px;        &#125;        .page-shopping-cart .cart-product-info .keep-shopping span &#123;            display: inline-block;            vertical-align: top;            margin: 18px 8px 0 0;            width: 15px;            height: 15px;            background: url(&quot;shopping_cart.png&quot;) no-repeat -40px 0;        &#125;        .page-shopping-cart .cart-product-info .btn-buy &#123;            height: 50px;            color: #fff;            font-size: 20px;            display: block;            width: 110px;            background: #ff7700;            text-align: center;            margin-left: 30px;        &#125;        .page-shopping-cart .cart-worder &#123;            padding: 20px;        &#125;        .page-shopping-cart .cart-worder .choose-worder &#123;            color: #fff;            display: block;            background: #39e;            width: 140px;            height: 40px;            line-height: 40px;            border-radius: 4px;            text-align: center;            margin-right: 20px;        &#125;        .page-shopping-cart .cart-worder .choose-worder span &#123;            display: inline-block;            vertical-align: top;            margin: 9px 10px 0 0;            width: 22px;            height: 22px;            background: url(&quot;shopping_cart.png&quot;) no-repeat -92px 0;        &#125;        .page-shopping-cart .cart-worder .worker-info &#123;            color: #666;        &#125;        .page-shopping-cart .cart-worder .worker-info img &#123;            border-radius: 100%;            margin-right: 10px;        &#125;        .page-shopping-cart .cart-worder .worker-info span &#123;            color: #000;        &#125;        .choose-worker-box &#123;            width: 620px;            background: #fff;        &#125;        .choose-worker-box .box-title &#123;            height: 40px;            line-height: 40px;            background: #F7F7F7;            text-align: center;            position: relative;            font-size: 14px;        &#125;        .choose-worker-box .box-title a &#123;            display: block;            position: absolute;            top: 15px;            right: 16px;            width: 10px;            height: 10px;            background: url(&quot;shopping_cart.png&quot;) no-repeat -80px 0;        &#125;        .choose-worker-box .box-title a:hover &#123;            background: url(&quot;shopping_cart.png&quot;) no-repeat -80px -22px;        &#125;        .choose-worker-box .worker-list &#123;            padding-top: 30px;            height: 134px;            overflow-y: auto;        &#125;        .choose-worker-box .worker-list li &#123;            float: left;            width: 25%;            text-align: center;            margin-bottom: 30px;        &#125;        .choose-worker-box .worker-list li p &#123;            margin-top: 8px;        &#125;        .choose-worker-box .worker-list li.cur a &#123;            color: #f70;        &#125;        .choose-worker-box .worker-list li.cur a img &#123;            border: 1px solid #f70;        &#125;        .choose-worker-box .worker-list li a:hover &#123;            color: #f70;        &#125;        .choose-worker-box .worker-list li a:hover img &#123;            border: 1px solid #f70;        &#125;        .choose-worker-box .worker-list li img &#123;            border: 1px solid #fff;            border-radius: 100%;        &#125;&lt;/style&gt; &lt;div class=&quot;page-shopping-cart&quot; id=&quot;shopping-cart&quot;&gt;#### 购物清单&lt;div class=&quot;cart-product-title clearfix&quot;&gt;&lt;div class=&quot;td-check fl&quot;&gt;&lt;span class=&quot;check-span fl check-all&quot; :class=&quot;&#123;&apos;check-true&apos;:isSelectAll&#125;&quot; @click=&quot;selectProduct(isSelectAll)&quot;&gt;&lt;/span&gt;全选&lt;/div&gt;&lt;div class=&quot;td-product fl&quot;&gt;商品&lt;/div&gt;&lt;div class=&quot;td-num fl&quot;&gt;数量&lt;/div&gt;&lt;div class=&quot;td-price fl&quot;&gt;单价(元)&lt;/div&gt;&lt;div class=&quot;td-total fl&quot;&gt;金额(元)&lt;/div&gt;&lt;div class=&quot;td-do fl&quot;&gt;操作&lt;/div&gt;    &lt;/div&gt;&lt;div class=&quot;cart-product clearfix&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr v-for=&quot;(item,index) in productList&quot;&gt;&lt;td class=&quot;td-check&quot;&gt;&lt;span class=&quot;check-span&quot; @click=&quot;item.select=!item.select&quot; :class=&quot;&#123;&apos;check-true&apos;:item.select&#125;&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;td class=&quot;td-product&quot;&gt;&lt;div class=&quot;product-info&quot;&gt;###### &#123;&#123;item.pro_name&#125;&#125;品牌：&#123;&#123;item.pro_brand&#125;&#125;  产地：&#123;&#123;item.pro_place&#125;&#125;规格/纯度:&#123;&#123;item.pro_purity&#125;&#125;  起定量：&#123;&#123;item.pro_min&#125;&#125;配送仓储：&#123;&#123;item.pro_depot&#125;&#125;                    &lt;/div&gt;                &lt;/td&gt;&lt;td class=&quot;td-num&quot;&gt;&lt;div class=&quot;product-num&quot;&gt;                        [&lt;span&gt;&lt;/span&gt;](javascript:;)                        &lt;input type=&quot;text&quot; class=&quot;num-input&quot; v-model=&quot;item.pro_num&quot;&gt;                        [&lt;span&gt;&lt;/span&gt;](javascript:;)                    &lt;/div&gt;                &lt;/td&gt;&lt;td class=&quot;td-price&quot;&gt;￥&lt;span class=&quot;price-text&quot;&gt;&#123;&#123;item.pro_price.toFixed(2)&#125;&#125;&lt;/span&gt;                &lt;/td&gt;&lt;td class=&quot;td-total&quot;&gt;￥&lt;span class=&quot;total-text&quot;&gt;&#123;&#123;item.pro_price*item.pro_num&#125;&#125;&lt;/span&gt;.00                &lt;/td&gt;&lt;td class=&quot;td-do&quot;&gt;[删除](javascript:;)&lt;/td&gt;            &lt;/tr&gt;            &lt;/tbody&gt;        &lt;/table&gt;    &lt;/div&gt;&lt;div class=&quot;cart-product-info&quot;&gt;        [&lt;span&gt;&lt;/span&gt;删除所选商品](javascript:;)        [&lt;span&gt;&lt;/span&gt;继续购物](#)        [去结算](javascript:;)￥&lt;span&gt;&#123;&#123;getTotal.totalPrice&#125;&#125;&lt;/span&gt;&lt;span&gt;&#123;&#123;getTotal.totalNum&#125;&#125;&lt;/span&gt;件商品总计（不含运费）：    &lt;/div&gt;&lt;/div&gt; &lt;script&gt;new Vue(&#123;        el: &apos;#shopping-cart&apos;,        data: &#123;            productList: [                &#123;                    &apos;pro_name&apos;: &apos;【斯文】甘油 | 丙三醇&apos;,//产品名称                    &apos;pro_brand&apos;: &apos;skc&apos;,//品牌名称                    &apos;pro_place&apos;: &apos;韩国&apos;,//产地                    &apos;pro_purity&apos;: &apos;99.7%&apos;,//规格                    &apos;pro_min&apos;: &quot;215千克&quot;,//最小起订量                    &apos;pro_depot&apos;: &apos;上海仓海仓储&apos;,//所在仓库                    &apos;pro_num&apos;: 3,//数量                    &apos;pro_img&apos;: &apos;../../images/ucenter/testimg.jpg&apos;,//图片链接                    &apos;pro_price&apos;: 800//单价                &#125;,                &#123;                    &apos;pro_name&apos;: &apos;【斯文】甘油 | 丙三醇&apos;,//产品名称                    &apos;pro_brand&apos;: &apos;skc&apos;,//品牌名称                    &apos;pro_place&apos;: &apos;韩国&apos;,//产地                    &apos;pro_purity&apos;: &apos;99.7%&apos;,//规格                    &apos;pro_min&apos;: &quot;215千克&quot;,//最小起订量                    &apos;pro_depot&apos;: &apos;上海仓海仓储&apos;,//所在仓库                    &apos;pro_num&apos;: 3,//数量                    &apos;pro_img&apos;: &apos;../../images/ucenter/testimg.jpg&apos;,//图片链接                    &apos;pro_price&apos;: 800//单价                &#125;,                &#123;                    &apos;pro_name&apos;: &apos;【斯文】甘油 | 丙三醇&apos;,//产品名称                    &apos;pro_brand&apos;: &apos;skc&apos;,//品牌名称                    &apos;pro_place&apos;: &apos;韩国&apos;,//产地                    &apos;pro_purity&apos;: &apos;99.7%&apos;,//规格                    &apos;pro_min&apos;: &quot;215千克&quot;,//最小起订量                    &apos;pro_depot&apos;: &apos;上海仓海仓储&apos;,//所在仓库                    &apos;pro_num&apos;: 3,//数量                    &apos;pro_img&apos;: &apos;../../images/ucenter/testimg.jpg&apos;,//图片链接                    &apos;pro_price&apos;: 800//单价                &#125;            ]        &#125;,        computed: &#123;            //检测是否全选            isSelectAll:function()&#123;                //如果productList中每一条数据的select都为true，返回true，否则返回false;                return this.productList.every(function (val) &#123; return val.select&#125;);            &#125;,            //获取总价和产品总件数            getTotal:function()&#123;                //获取productList中select为true的数据。                var _proList=this.productList.filter(function (val) &#123; return val.select&#125;),totalPrice=0;                for(var i=0,len=_proList.length;i&lt;len;i++)&#123;                    //总价累加                    totalPrice+=_proList[i].pro_num*_proList[i].pro_price;                &#125;                //选择产品的件数就是_proList.length，总价就是totalPrice                return &#123;totalNum:_proList.length,totalPrice:totalPrice&#125;            &#125;        &#125;,        methods: &#123;            //全选与取消全选            selectProduct:function(_isSelect)&#123;                //遍历productList，全部取反                for (var i = 0, len = this.productList.length; i &lt; len; i++) &#123;                    this.productList[i].select = !_isSelect;                &#125;            &#125;,            //删除已经选中(select=true)的产品            deleteProduct:function () &#123;                this.productList=this.productList.filter(function (item) &#123;return !item.select&#125;)            &#125;,            //删除单条产品            deleteOneProduct:function (index) &#123;                //根据索引删除productList的记录                this.productList.splice(index,1);            &#125;,        &#125;,        mounted: function () &#123;            var _this=this;            //为productList添加select（是否选中）字段，初始值为true            this.productList.map(function (item) &#123;                _this.$set(item, &apos;select&apos;, true);            &#125;)        &#125;    &#125;)&lt;/script&gt;
+5.todoList运行效果原理分析和实现首先，还是先把布局写好，和引入vue，准备vue实例，这个不多说，代码如下
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758 &lt;meta charset=&quot;UTF-8&quot;&gt;        &lt;style&gt;body&#123;font-family: &quot;微软雅黑&quot;;font-size: 14px;&#125;            input&#123;font-size: 14px;&#125;            body,ul,div,html&#123;padding: 0;margin: 0;&#125;            .hidden&#123;display: none;&#125;            .main&#123;width: 800px;margin: 0 auto;&#125;            li&#123;list-style-type: none;line-height: 40px;position: relative;border: 1px solid transparent;padding: 0 20px;&#125;            li .type-span&#123;display: block;width: 10px;height: 10px;background: #ccc;margin: 14px 10px 0 0 ;float: left;&#125;            li .close&#123;position: absolute;color: #f00;font-size: 20px;line-height: 40px;height: 40px;right: 20px;cursor: pointer;display: none;top: 0;&#125;            li:hover&#123;border: 1px solid #09f;&#125;            li:hover .close&#123;display: block;&#125;            li .text-keyword&#123;height: 40px;padding-left: 10px;box-sizing: border-box;margin-left: 10px;width: 80%;display: none;&#125;            .text-keyword&#123;box-sizing: border-box;width: 100%;height: 40px;padding-left: 10px;outline: none;&#125;&lt;/style&gt; &lt;div id=&quot;app&quot; class=&quot;main&quot;&gt;## 小目标列表&lt;div class=&quot;list&quot;&gt;### 添加小目标                &lt;input type=&quot;text&quot; class=&quot;text-keyword&quot; placeholder=&quot;输入小目标后，按回车确认&quot;&gt;共有N个目标                    &lt;input type=&quot;radio&quot; name=&quot;chooseType&quot; checked=&quot;true&quot;&gt;&lt;label&gt;所有目标&lt;/label&gt;                    &lt;input type=&quot;radio&quot; name=&quot;chooseType&quot;&gt;&lt;label&gt;已完成目标&lt;/label&gt;                    &lt;input type=&quot;radio&quot; name=&quot;chooseType&quot;&gt;&lt;label&gt;未完成目标&lt;/label&gt;            &lt;/div&gt;*   &lt;div&gt;                            &lt;span class=&quot;type-span&quot;&gt;&lt;/span&gt;                            &lt;span&gt;html5&lt;/span&gt;                            &lt;span class=&quot;close&quot;&gt;X&lt;/span&gt;                        &lt;/div&gt;*   &lt;div&gt;                            &lt;span class=&quot;type-span&quot;&gt;&lt;/span&gt;                            &lt;span&gt;css3&lt;/span&gt;                            &lt;span class=&quot;close&quot;&gt;X&lt;/span&gt;                        &lt;/div&gt;        &lt;/div&gt;    &lt;script type=&quot;text/javascript&quot;&gt;new Vue(&#123;        el: &quot;#app&quot;,        data: &#123;        &#125;,        computed:&#123;        &#125;,        methods:&#123;        &#125;    &#125;);&lt;/script&gt;
+布局有了，相当于一个骨架就有了，下面实现功能，一个一个来
+步骤1输入并回车，多一条记录。下面的记录文字也会改变
+首先，大的输入框回车要添加纪录，那么输入框必须绑定一个值和一个添加纪录的方法。代码如下：然后，下面的记录也要改变，所以，下面的记录也要帮一个值，因为这个记录可能会有多个，这个值就是一个数组，也可以看到，记录除了名称，还有记录是否完成的状态，所以，绑定记录的这个值肯定是一个对象数组！代码如下最后，记录文字要改变。这个只是一个当前记录的长度即可！
+
+为了着重表示我修改了什么地方，代码我现在只贴出修改的部分，大家对着上面的布局，就很容易知道我改的是什么地方了！下面也是这样操作！
+
+html代码
+123456789 &lt;input type=&quot;text&quot; class=&quot;text-keyword&quot; placeholder=&quot;输入小目标后，按回车确认&quot; @keyup.13=&quot;addList&quot; v-model=&quot;addText&quot;&gt;共有&#123;&#123;prolist.length&#125;&#125;个目标*   &lt;div&gt;            &lt;span class=&quot;type-span&quot;&gt;&lt;/span&gt;            &lt;span&gt;&#123;&#123;list.name&#125;&#125;&lt;/span&gt;            &lt;span class=&quot;close&quot;&gt;X&lt;/span&gt;        &lt;/div&gt;
+js代码
+123456789101112131415161718192021222324252627new Vue(&#123;    el: &quot;#app&quot;,    data: &#123;        addText:&apos;&apos;,        //name-名称,status-完成状态       prolist:[               &#123;name:&quot;HTML5&quot;,status:false&#125;,               &#123;name:&quot;CSS3&quot;,status:false&#125;,               &#123;name:&quot;vue&quot;,status:false&#125;,               &#123;name:&quot;react&quot;,status:false&#125;        ]    &#125;,    computed:&#123;    &#125;,    methods:&#123;        addList()&#123;            //添加进来默认status=false,就是未完成状态            this.prolist.push(&#123;                name:this.addText,                status:false            &#125;);            //添加后，清空addText            this.addText=&quot;&quot;;        &#125;    &#125;&#125;);
+测试一下，没问题
+步骤2点击切换，下面记录会改变
+看到三个选项，也很简单，无非就是三个选择，一个是所有的目标，一个是所有已经完成的目标，一个是所有没完成的目标。首先.新建一个新的变量（newList），储存prolist。遍历的时候不再遍历prolist，而是遍历newList。改变也是改变newList。然后.选择所有目标的时候，显示全部prolist，把prolist赋值给newList。然后.选择所有已经完成目标的时候，只显示prolist中，status为true的目标，把prolist中，status为true的项赋值给newList，最后.选择所有未完成目标的时候，只显示status为false的目标，把prolist中，status为false的项赋值给newList。
+代码如下
+html
+12345*   &lt;div&gt;               &lt;span class=&quot;status-span&quot;&gt;&lt;/span&gt;               &lt;span&gt;&#123;&#123;list.name&#125;&#125;&lt;/span&gt;               &lt;span class=&quot;close&quot; @click=&quot;delectList(index)&quot;&gt;X&lt;/span&gt;           &lt;/div&gt;
+js
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152new Vue(&#123;    el: &quot;#app&quot;,    data: &#123;        addText:&apos;&apos;,        //name-名称,status-完成状态       prolist:[               &#123;name:&quot;HTML5&quot;,status:false&#125;,               &#123;name:&quot;CSS3&quot;,status:false&#125;,               &#123;name:&quot;vue&quot;,status:false&#125;,               &#123;name:&quot;react&quot;,status:false&#125;        ],        newList:[]    &#125;,    computed:&#123;        noend:function()&#123;            return this.prolist.filter(function(item)&#123;                return !item.status            &#125;).length;        &#125;    &#125;,    methods:&#123;        addList()&#123;            //添加进来默认status=false,就是未完成状态            this.prolist.push(&#123;                name:this.addText,                status:false            &#125;);            //添加后，清空addText            this.addText=&quot;&quot;;        &#125;,        chooseList(type)&#123;            //type=1时，选择所有目标            //type=2时，选择所有已完成目标            //type=3时，选择所有未完成目标            switch(type)&#123;                case 1:this.newList=this.prolist;break;                case 2:this.newList=this.prolist.filter(function(item)&#123;return item.status&#125;);break;                case 3:this.newList=this.prolist.filter(function(item)&#123;return !item.status&#125;);break;            &#125;        &#125;,        delectList(index)&#123;            //根据索引，删除数组某一项            this.prolist.splice(index,1);            //更新newList  newList可能经过this.prolist.filter()赋值，这样的话，删除了prolist不会影响到newList  那么就要手动更新newList            this.newList=this.prolist;        &#125;,    &#125;,    mounted()&#123;        //初始化，把prolist赋值给newList。默认显示所有目标        this.newList=this.prolist;    &#125;&#125;);
+运行结果
+步骤3红色关闭标识，点击会删除该记录。前面按钮点击会切换该记录完成状态，颜色也改变，记录文字也跟着改变
+首先点击红色关闭标识，点击会删除该记录。这个应该没什么问题，就是删除prolist的一条记录！然后前面按钮点击会切换该记录完成状态。这个也没什么，就是改变prolist的一条记录的status字段！最后记录文字的改变，就是记录prolist中status为false的有多少条，prolist中status为true的有多少条而已
+html代码
+1共有&#123;&#123;prolist.length&#125;&#125;个目标，&#123;&#123;noend==0?&quot;全部完成了&quot;:&apos;已完成&apos;+(prolist.length-noend)+&apos;，还有&apos;+noend+&apos;条未完成&apos;&#125;&#125;
+12345*   &lt;div&gt;               &lt;span class=&quot;status-span&quot; @click=&quot;list.status=!list.status&quot; :class=&quot;&#123;&apos;status-end&apos;:list.status&#125;&quot;&gt;&lt;/span&gt;               &lt;span&gt;&#123;&#123;list.name&#125;&#125;&lt;/span&gt;               &lt;span class=&quot;close&quot; @click=&quot;delectList(index)&quot;&gt;X&lt;/span&gt;           &lt;/div&gt;
+js
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849new Vue(&#123;    el: &quot;#app&quot;,    data: &#123;        addText:&apos;&apos;,        //name-名称,status-完成状态       prolist:[               &#123;name:&quot;HTML5&quot;,status:false&#125;,               &#123;name:&quot;CSS3&quot;,status:false&#125;,               &#123;name:&quot;vue&quot;,status:false&#125;,               &#123;name:&quot;react&quot;,status:false&#125;        ],        newList:[]    &#125;,    computed:&#123;        //计算属性，返回未完成目标的条数，就是数组里面status=false的条数        noend:function()&#123;            return this.prolist.filter(function(item)&#123;                return !item.status            &#125;).length;        &#125;    &#125;,    methods:&#123;        addList()&#123;            //添加进来默认status=false,就是未完成状态            this.prolist.push(&#123;                name:this.addText,                status:false            &#125;);            //添加后，清空addText            this.addText=&quot;&quot;;        &#125;,        chooseList(type)&#123;            switch(type)&#123;                case 1:this.newList=this.prolist;break;                case 2:this.newList=this.prolist.filter(function(item)&#123;return item.status&#125;);break;                case 3:this.newList=this.prolist.filter(function(item)&#123;return !item.status&#125;);break;            &#125;        &#125;,        delectList(index)&#123;            //根据索引，删除数组某一项            this.prolist.splice(index,1);            //更新newList  newList可能经过this.prolist.filter()赋值，这样的话，删除了prolist不会影响到newList  那么就要手动更新newList            this.newList=this.prolist;        &#125;,    &#125;,    mounted()&#123;        this.newList=this.prolist;    &#125;&#125;);
+运行结果
+步骤4文字双击会出现输入框，可输入文字，如果回车或者失去焦点，就改变文字，如果按下ESC就恢复原来的文字
+首先.双击出现输入框，就是双击文字后，给当前的li设置一个类名（‘eidting’），然后写好样式。当li出现这个类名的时候，就出现输入框，并且隐藏其它内容。然后.回车或者失去焦点，就改变文字这个只需要操作一个，就是把类名（‘eidting’）清除掉。然后输入框就会隐藏，其它内容显示！最后.按下ESC就恢复原来的文字，就是出现输入框的时候，用一个变量（‘beforeEditText’）先保存当前的内容，然后按下了ESC，就把变量（‘beforeEditText’）赋值给当前操作的值！
+代码如下：
+html
+1234567*   &lt;div&gt;               &lt;span class=&quot;status-span&quot; @click=&quot;list.status=!list.status&quot; :class=&quot;&#123;&apos;status-end&apos;:list.status&#125;&quot;&gt;&lt;/span&gt;               &lt;span @dblclick=&quot;curIndex=index&quot;&gt;&#123;&#123;list.name&#125;&#125;&lt;/span&gt;               &lt;span class=&quot;close&quot; @click=&quot;delectList(index)&quot;&gt;X&lt;/span&gt;           &lt;/div&gt;           &lt;input type=&quot;text&quot; class=&quot;text2&quot; v-model=&quot;list.name&quot; @keyup.esc=&quot;cancelEdit(list)&quot; @blur=&quot;edited&quot; @focus=&quot;editBefore(list.name)&quot; @keyup.enter=&quot;edited&quot;&gt;
+css(加上)
+1234li div&#123;display: block;&#125;li.eidting div&#123;display: none;&#125;li .text2&#123;height: 40px;padding-left: 10px;box-sizing: border-box;margin-left: 10px;width: 80%;display: none;&#125;li.eidting .text2&#123;display: block;&#125;
+js
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546methods:&#123;        addList()&#123;            //添加进来默认status=false,就是未完成状态            this.prolist.push(&#123;                name:this.addText,                status:false            &#125;);            //添加后，清空addText            this.addText=&quot;&quot;;        &#125;,        chooseList(type)&#123;            //type=1时，选择所有目标            //type=2时，选择所有已完成目标            //type=3时，选择所有未完成目标            switch(type)&#123;                case 1:this.newList=this.prolist;break;                case 2:this.newList=this.prolist.filter(function(item)&#123;return item.status&#125;);break;                case 3:this.newList=this.prolist.filter(function(item)&#123;return !item.status&#125;);break;            &#125;        &#125;,        delectList(index)&#123;            //根据索引，删除数组某一项            this.prolist.splice(index,1);            //更新newList  newList可能经过this.prolist.filter()赋值，这样的话，删除了prolist不会影响到newList  那么就要手动更新newList            this.newList=this.prolist;        &#125;,        //修改前        editBefore(name)&#123;            //先记录当前项（比如这一项，&#123;name:&quot;HTML5&quot;,status:false&#125;）            //beforeEditText=&quot;HTML5&quot;            this.beforeEditText=name;        &#125;,        //修改完成后        edited()&#123;            //修改完了，设置curIndex=&quot;&quot;，这样输入框就隐藏，其它元素就会显示。因为在li元素 写了：:class=&quot;&#123;&apos;eidting&apos;:curIndex===index&#125;&quot;  当curIndex不等于index时，eidting类名就清除了！            //输入框利用v-model绑定了当前项（比如这一项，&#123;name:&quot;HTML5&quot;,status:false&#125;）的name,当在输入框编辑的时候，比如改成‘HTML’,实际上当前项的name已经变成了‘HTML’，所以，这一步只是清除eidting类名，隐藏输入框而已            //还有一个要注意的就是虽然li遍历的是newList，比如改了newList的这一项（&#123;name:&quot;HTML5&quot;,status:false&#125;），比如改成这样（&#123;name:&quot;HTML&quot;,status:true&#125;）。实际上prolist的这一项（&#123;name:&quot;HTML5&quot;,status:false&#125;），也会被改成（&#123;name:&quot;HTML&quot;,status:true&#125;）。因为这里是一个对象，而且公用一个堆栈！修改其中一个，另一个会被影响到            this.curIndex=&quot;&quot;;        &#125;,        //取消修改        cancelEdit(val)&#123;            //上面说了输入框利用v-model绑定了当前项（比如这一项，&#123;name:&quot;HTML5&quot;,status:false&#125;）的name,当在输入框编辑的时候，比如改成‘HTML’,实际上当前项的name已经变成了‘HTML’，所以，这一步就是把之前保存的beforeEditText赋值给当前项的name属性，起到一个恢复原来值得作用！            val.name=this.beforeEditText;            this.curIndex=&quot;&quot;;        &#125; &#125;,
+运行结果
+还有一个小细节，大家可能注意到了，就是双击文字，出来输入框的时候，还要自己手动点击一下，才能获得焦点，我们想双击了，输入框出来的时候，自动获取焦点，怎么办？自定义指令就行了！
+12345678910computed:&#123;...&#125;,methods:&#123;...&#125;,mounted()&#123;...&#125;,directives:&#123;    &quot;focus&quot;:&#123;        update(el)&#123;            el.focus();        &#125;    &#125;&#125;
+然后html 调用指令
+1&lt;input type=&quot;text&quot; class=&quot;text2&quot; v-model=&quot;list.name&quot; @keyup.esc=&quot;cancelEdit(list)&quot; @blur=&quot;edited&quot; @focus=&quot;editBefore(list.name)&quot; @keyup.enter=&quot;edited&quot; v-focus=&quot;&quot;&gt;
+完整代码123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113114115116117118119120121122123124125126127128129130131132133134135136137138139140141 &lt;meta charset=&quot;UTF-8&quot;&gt;    &lt;style&gt;body&#123;font-family: &quot;微软雅黑&quot;;font-size: 14px;&#125;        input&#123;font-size: 14px;&#125;        body,ul,div,html&#123;padding: 0;margin: 0;&#125;        .hidden&#123;display: none;&#125;        .main&#123;width: 800px;margin: 0 auto;&#125;        li&#123;list-style-type: none;line-height: 40px;position: relative;border: 1px solid transparent;padding: 0 20px;&#125;        li .status-span&#123;display: block;width: 10px;height: 10px;background: #ccc;margin: 14px 10px 0 0 ;float: left;&#125;        li .status-span.status-end&#123;            background: #09f;        &#125;        li .close&#123;position: absolute;color: #f00;font-size: 20px;line-height: 40px;height: 40px;right: 20px;cursor: pointer;display: none;top: 0;&#125;        li:hover&#123;border: 1px solid #09f;&#125;        li:hover .close&#123;display: block;&#125;        li div&#123;display: block;&#125;        li.eidting div&#123;display: none;&#125;        li .text2&#123;height: 40px;padding-left: 10px;box-sizing: border-box;margin-left: 10px;width: 80%;display: none;&#125;        li.eidting .text2&#123;display: block;&#125;        li .text-keyword&#123;height: 40px;padding-left: 10px;box-sizing: border-box;margin-left: 10px;width: 80%;display: none;&#125;        .text-keyword&#123;box-sizing: border-box;width: 100%;height: 40px;padding-left: 10px;outline: none;&#125;&lt;/style&gt; &lt;div id=&quot;app&quot; class=&quot;main&quot;&gt;## 小目标列表&lt;div class=&quot;list&quot;&gt;### 添加小目标        &lt;input type=&quot;text&quot; class=&quot;text-keyword&quot; placeholder=&quot;输入小目标后，按回车确认&quot; @keyup.13=&quot;addList&quot; v-model=&quot;addText&quot;&gt;共有&#123;&#123;prolist.length&#125;&#125;个目标，&#123;&#123;noend==0?&quot;全部完成了&quot;:&apos;已完成&apos;+(prolist.length-noend)+&apos;，还有&apos;+noend+&apos;条未完成&apos;&#125;&#125;            &lt;input type=&quot;radio&quot; name=&quot;chooseType&quot; checked=&quot;true&quot; @click=&quot;chooseList(1)&quot;&gt;&lt;label&gt;所有目标&lt;/label&gt;            &lt;input type=&quot;radio&quot; name=&quot;chooseType&quot; @click=&quot;chooseList(2)&quot;&gt;&lt;label&gt;已完成目标&lt;/label&gt;            &lt;input type=&quot;radio&quot; name=&quot;chooseType&quot; @click=&quot;chooseList(3)&quot;&gt;&lt;label&gt;未完成目标&lt;/label&gt;    &lt;/div&gt;*   &lt;div&gt;                    &lt;span class=&quot;status-span&quot; @click=&quot;changeType(index)&quot; :class=&quot;&#123;&apos;status-end&apos;:list.status&#125;&quot;&gt;&lt;/span&gt;                    &lt;span @dblclick=&quot;curIndex=index&quot;&gt;&#123;&#123;list.name&#125;&#125;&lt;/span&gt;                    &lt;span class=&quot;close&quot; @click=&quot;delectList(list)&quot;&gt;X&lt;/span&gt;                &lt;/div&gt;                &lt;input type=&quot;text&quot; class=&quot;text2&quot; v-model=&quot;list.name&quot; @keyup.esc=&quot;cancelEdit(list)&quot; @blur=&quot;edited&quot; @focus=&quot;editBefore(list.name)&quot; @keyup.enter=&quot;edited&quot; v-focus=&quot;&quot;&gt;&lt;/div&gt; &lt;script type=&quot;text/javascript&quot;&gt;new Vue(&#123;        el: &quot;#app&quot;,        data: &#123;            addText:&apos;&apos;,            //name-名称,status-完成状态            prolist:[                &#123;name:&quot;HTML5&quot;,status:false&#125;,                &#123;name:&quot;CSS3&quot;,status:false&#125;,                &#123;name:&quot;vue&quot;,status:false&#125;,                &#123;name:&quot;react&quot;,status:false&#125;            ],            newList:[],            curIndex:&apos;&apos;,            beforeEditText:&quot;&quot;,            curType:0        &#125;,        computed:&#123;            //计算属性，返回未完成目标的条数，就是数组里面status=false的条数            noend:function()&#123;                return this.prolist.filter(function(item)&#123;                    return !item.status                &#125;).length;            &#125;        &#125;,        methods:&#123;            addList()&#123;                //添加进来默认status=false,就是未完成状态                this.prolist.push(&#123;                    name:this.addText,                    status:false                &#125;);                //添加后，清空addText                this.addText=&quot;&quot;;            &#125;,            chooseList(type)&#123;                //type=1时，选择所有目标                //type=2时，选择所有已完成目标                //type=3时，选择所有未完成目标                this.curType=type;                switch(type)&#123;                    case 1:this.newList=this.prolist;break;                    case 2:this.newList=this.prolist.filter(function(item)&#123;return item.status&#125;);break;                    case 3:this.newList=this.prolist.filter(function(item)&#123;return !item.status&#125;);break;                &#125;            &#125;,            /*改变单条数据的完成状态*/            changeType(index)&#123;                this.newList[index].status=!this.newList[index].status;                //更新数据                this.chooseList(this.curType);            &#125;,            delectList(list)&#123;                var index=this.prolist.indexOf(list);                //根据索引，删除数组某一项                this.prolist.splice(index,1);                //更新newList  newList可能经过this.prolist.filter()赋值，这样的话，删除了prolist不会影响到newList  那么就要手动更新newList                //this.newList=this.prolist;                this.chooseList(this.curType);            &#125;,            //修改前            editBefore(name)&#123;                //先记录当前项（比如这一项，&#123;name:&quot;HTML5&quot;,status:false&#125;）                //beforeEditText=&quot;HTML5&quot;                this.beforeEditText=name;            &#125;,            //修改完成后            edited()&#123;                //修改完了，设置curIndex=&quot;&quot;，这样输入框就隐藏，其它元素就会显示。因为在li元素 写了：:class=&quot;&#123;&apos;eidting&apos;:curIndex===index&#125;&quot;  当curIndex不等于index时，eidting类名就清除了！                //输入框利用v-model绑定了当前项（比如这一项，&#123;name:&quot;HTML5&quot;,status:false&#125;）的name,当在输入框编辑的时候，比如改成‘HTML’,实际上当前项的name已经变成了‘HTML’，所以，这一步只是清除eidting类名，隐藏输入框而已                //还有一个要注意的就是虽然li遍历的是newList，比如改了newList的这一项（&#123;name:&quot;HTML5&quot;,status:false&#125;），比如改成这样（&#123;name:&quot;HTML&quot;,status:true&#125;）。实际上prolist的这一项（&#123;name:&quot;HTML5&quot;,status:false&#125;），也会被改成（&#123;name:&quot;HTML&quot;,status:true&#125;）。因为这里是一个对象，而且公用一个堆栈！修改其中一个，另一个会被影响到                this.curIndex=&quot;&quot;;            &#125;,            //取消修改            cancelEdit(val)&#123;                //上面说了输入框利用v-model绑定了当前项（比如这一项，&#123;name:&quot;HTML5&quot;,status:false&#125;）的name,当在输入框编辑的时候，比如改成‘HTML’,实际上当前项的name已经变成了‘HTML’，所以，这一步就是把之前保存的beforeEditText赋值给当前项的name属性，起到一个恢复原来值得作用！                val.name=this.beforeEditText;                this.curIndex=&quot;&quot;;            &#125;        &#125;,        mounted()&#123;            //初始化，把prolist赋值给newList。默认显示所有目标            this.newList=this.prolist;        &#125;,        directives:&#123;            &quot;focus&quot;:&#123;                update(el)&#123;                    el.focus();                &#125;            &#125;        &#125;    &#125;);&lt;/script&gt;
+6.小结好了，三个小实例在这里就说完了！别看文章这么长，其实都是基础，可能是我比较啰嗦而已！如果大家能熟透这几个小实例，相信用vue做项目也是信手拈来。基础的语法在这里了，有了基础，高级的写法也不会很难学习！如果以后，我有什么要分享的，我会继续分享。最后一句老话，如果觉得我哪里写错了，写得不好，欢迎指点！`
+
+                            </p>
+                        </div>
+                        <!-- / small-post-text -->
+                    </div>
+                    <!-- / post-block -->
+                </div>
+                <!-- / col-md-4 -->
+                <!-- / post-block -->
+                
+                <!-- post-block -->
+                <div class="col-sm-4">
+                    <div class="post-block">
+                        <a href="/post/2017/07/09/vuejs-4.html" class="post-preview" style="background-image: url(/images/preview/vue.jpg)"></a>
+                        <div class="small-post-text">
+                            <h5><a href="/post/2017/07/09/vuejs-4.html">vue.js 组件之间传递数据</a></h5>
+                            <p class="small-post-meta">
+                                2017/07/09
+                            </p>
+                            <p class="space-bottom" style="max-height: 100px; overflow: hidden">
+                                前言组件是 vue.js 最强大的功能之一，而组件实例的作用域是相互独立的，这就意味着不同组件之间的数据无法相互引用。如何传递数据也成了组件的重要知识点之一。
+组件组件与组件之间，还存在着不同的关系。父子关系与兄弟关系（不是父子的都暂称为兄弟吧）。
+父子组件父子关系即是组件 A 在它的模板中使用了组件 B，那么组件 A 就是父组件，组件 B 就是子组件。
+12345678910111213&lt;code class=&quot;js&quot;&gt;// 注册一个子组件Vue.component(&apos;child&apos;, &#123;    data: function()&#123;        return &#123;            text: &apos;我是father的子组件！&apos;        &#125;    &#125;,    template: &apos;&lt;span&gt;&#123;&#123; text &#125;&#125;&lt;/span&gt;&apos;&#125;)// 注册一个父组件Vue.component(&apos;father&apos;, &#123;    template: &apos;&apos;  // 在模板中使用了child组件&#125;)
+直接使用 father 组件的时候：
+123 &lt;code class=&quot;html&quot;&gt;&lt;div id=&quot;app&quot;&gt;    &lt;father&gt;&lt;/father&gt;&lt;/div&gt;
+页面中就会渲染出 ：我是father的子组件！
+father 组件在模板中使用了 child 组件，所以它就是父组件，child 组件被使用，所以 child 组件就是子组件。
+兄弟组件两个组件互不引用，则为兄弟组件。
+1234567891011121314&lt;code class=&quot;js&quot;&gt;Vue.component(&apos;brother1&apos;, &#123;    template: &apos;&lt;div&gt;我是大哥&lt;/div&gt;&apos;&#125;)Vue.component(&apos;brother2&apos;, &#123;    template: &apos;&lt;div&gt;我是小弟&lt;/div&gt;&apos;&#125;)
+使用组件的时候：
+1234 &lt;code class=&quot;html&quot;&gt;&lt;div id=&quot;app&quot;&gt;    &lt;brother1&gt;&lt;/brother1&gt;    &lt;brother2&gt;&lt;/brother2&gt;&lt;/div&gt;
+页面中就会渲染出 ：
+我是大哥
+我是小弟
+Prop子组件想要使用父组件的数据，我们需要通过子组件的 props 选项来获得父组件传过来的数据。以下我使用在 .vue 文件中的格式来写例子。
+如何传递数据在父组件 father.vue 中引用子组件 child.vue，把 name 的值传给 child 组件。
+123456789101112&lt;code class=&quot;html&quot;&gt;&lt;template&gt;&lt;/template&gt; &lt;script&gt;import child from &apos;./child.vue&apos;;    export default &#123;        components: &#123;            child        &#125;,        data() &#123;            return &#123;                name: &apos;linxin&apos;            &#125;        &#125;    &#125;&lt;/script&gt;
+在子组件 child.vue 中的 props 选项中声明它期待获得的数据
+12345&lt;code class=&quot;html&quot;&gt;&lt;template&gt;&lt;/template&gt; &lt;script&gt;export default &#123;        // 在 props 中声明获取父组件的数据通过 message 传过来        props: [&apos;message&apos;]    &#125;&lt;/script&gt;
+那么页面中就会渲染出：Hello linxin
+单向数据流当父组件的 name 发生改变，子组件也会自动地更新视图。但是在子组件中，我们不要去修改 prop。如果你必须要修改到这些数据，你可以使用以下方法：
+方法一：把 prop 赋值给一个局部变量，然后需要修改的话就修改这个局部变量，而不影响 prop
+1234567891011&lt;code class=&quot;js&quot;&gt;export default &#123;    data()&#123;        return &#123;            newMessage: null        &#125;     &#125;,    props: [&apos;message&apos;],    created()&#123;        this.newMessage = this.message;    &#125;&#125;
+方法二：在计算属性中对 prop 进行处理
+12345678&lt;code class=&quot;js&quot;&gt;export default &#123;    props: [&apos;message&apos;],    computed: &#123;        newMessage()&#123;            return this.newMessage + &apos; 哈哈哈&apos;;        &#125;    &#125;&#125;
+自定义事件prop 是单向绑定的：当父组件的属性变化时，将传导给子组件，但是不会反过来。修改子组件的 prop 值，是不会传回给父组件去更新视图的。那么子组件要如何去与父组件通讯呢？
+那就是自定义事件。通过在父组件 $on(eventName) 监听自定义事件，当子组件里 $emit(eventName) 触发该自定义事件的时候，父组件执行相应的操作。
+比如在父组件中控制一个弹框子组件的显示，在子组件中按下关闭之后，告诉父组件去隐藏它，然后父组件就执行操作隐藏弹框。
+123456789101112131415161718&lt;code class=&quot;html&quot;&gt;&lt;template&gt;&lt;/template&gt; &lt;script&gt;import dialog from &apos;./dialog.vue&apos;;    export default &#123;        components: &#123; dialog &#125;,        data() &#123;            return &#123;                show: false            &#125;        &#125;,        methods: &#123;            showDialog() &#123;                this.show = true;            &#125;,            hideDialog() &#123;                this.show = false;            &#125;        &#125;    &#125;&lt;/script&gt;
+在子组件 dialog.vue 中：
+1234567891011&lt;code class=&quot;html&quot;&gt;&lt;template&gt;&lt;/template&gt; &lt;script&gt;export default &#123;        // 驼峰式命名的 prop 需要转换为相对应的短横线隔开式 is-show        props: [&apos;isShow&apos;],        methods: &#123;            toHide()&#123;                // $emit 方法触发父组件的监听事件                this.$emit(&apos;hide&apos;);            &#125;        &#125;    &#125;&lt;/script&gt;
+这样就实现了父子组件之间的相互通讯。
+Event Bus有时候两个组件之间需要进行通信，但是它们彼此不是父子组件的关系。在一些简单场景，你可以使用一个空的 Vue 实例作为一个事件总线中心(central event bus)：
+123456789&lt;code class=&quot;js&quot;&gt;var bus = new Vue();// 在组件 A 的 methods 方法中触发事件bus.$emit(&apos;say-hello&apos;, &apos;world&apos;)// 在组件 B 的 created 钩子函数中监听事件bus.$on(&apos;say-hello&apos;, function (arg) &#123;  console.log(&apos;hello &apos; + arg);          // hello world&#125;)
+Vuex在复杂场景中，你应该考虑使用专门的状态管理模式 Vuex。关于 Vuex，可查看我的另一篇文章：Vuex 模块化实现待办事项的状态管理
+总结组件通讯并不是一定要使用必须要使用 Vuex，对于一些简单的数据传递，prop 也可以完成。本文主要是对组件传参的一些基础知识点的记录，实战可以参考 notepad 这个例子，使用 prop 实现子组件的显示与隐藏，使用 vuex 来实现组件间的数据状态管理。
+
+                            </p>
+                        </div>
+                        <!-- / small-post-text -->
+                    </div>
+                    <!-- / post-block -->
+                </div>
+                <!-- / col-md-4 -->
+                <!-- / post-block -->
+                
+        </div>
+        <!-- / row -->
+    </div>
+    <!-- / container -->
+    <div class="page-to-all"><a href="/post/index.html" class="btn btn-primary btn-rounded">全部文章</a></div>
+</section>
+<!-- / blog section 3col -->
+
+<!-- / content -->
+        <!-- / content -->
+</body>
+<!-- footer -->
+<footer>
+    <div class="container">
+        <p class="footer-info">© Made by Ckryo</p>
+    </div>
+    <!-- / container -->
+</footer>
+<!-- / footer -->
+<!-- portfolio -->
+<script src="/js/custom.js"></script>
+<script src="/js/jquery.shuffle.min.js"></script>
+<!-- lightbox -->
+<script src="/js/jquery.magnific-popup.min.js"></script>
+<!-- / lightbox -->
+<!-- / portfolio -->
+<!-- preloader -->
+<script src="/js/preloader.js"></script>
+<!-- / preloader -->
+<!-- / javascript -->
+<script src="/js/jquery.lettering.js"></script>
+<script src="/js/jquery.textillate.js"></script>
+
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?6c660646bd1d809e070de5d4a54aac08";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+<script>
+$(function() {
+    $('#banner-title').textillate({
+        in: {
+            // set the effect name
+            effect: 'fadeInDown',
+            callback: function() {
+                $('#banner-description').css('display', 'block');
+                $('#banner-description').textillate();
+            }
+        },
+        // set the type of token to animate (available types: 'char' and 'word')
+        type: 'char'
+    });
+});
+</script>
+</html>

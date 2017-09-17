@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hatamen - 技术栈， 分享各类新奇有趣、科技、技术、开发，各类互联网优质精选文章以及优秀开源项目； -- by Hatamen。">
+    <meta name="keywords" content="Hatamen, php, laravel, vue, iview, ios, 全栈工程师, 创业" />
+    <meta name="author" content="Ckryo">
+    <link rel="icon" href="/favicon.ico">
+    <!-- page title -->
+    <title>Hatamen - 技术栈</title>
+    <!-- bootstrap css -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+    <!-- css -->
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/animate.css" rel="stylesheet">
+    <link href="/css/magnific-popup.css" rel="stylesheet">
+    <!-- fonts -->
+    <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='/fonts/FontAwesome.otf' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/linear-icons.css">
+    <link rel="stylesheet" href="/css/share.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="/https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="/https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <!-- javascript -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.easing.min.js"></script>
+</head>
+<body data-spy="scroll" data-target="#post-scroll-spy">
+    <!-- preloader -->
+    <div id="preloader">
+        <div class="spinner spinner-round"></div>
+    </div>
+    <!-- / preloader -->
+    <!-- header -->
+    <header>
+        <!-- nav -->
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-logo" href="/index.html">
+                        Hatamen
+                    </a>
+                </div>
+                <!-- / navbar-header -->
+                
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                    	
+                        <li>
+	                        <a href="/">
+	                        	
+	                        	<span>首页</span>
+	                        </a>
+                        </li>
+                        
+                        <li>
+	                        <a href="/project/index.html">
+	                        	
+	                        	<span>项目</span>
+	                        </a>
+                        </li>
+                        
+                        <li>
+	                        <a href="/post/index.html">
+	                        	
+	                        	<span>文章</span>
+	                        </a>
+                        </li>
+                        
+                        <li>
+	                        <a href="/about.html">
+	                        	
+	                        	<span>关于我</span>
+	                        </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                <!--/ nav-collapse -->
+            <!-- / container -->
+        </nav>
+        <!-- / nav -->
+        <!-- header-banner -->
+        <div id="header-banner" class="demo-1"  style="background-image: url(/images/banner-bg.jpg)" >
+    <div class="banner-content text-center">
+        <div class="banner-info">
+            <h1 id="banner-title">Hatamen - 技术栈</h1>
+            <p id="banner-description" style="display: none" data-in-effect="rotateInUpRight">
+                优秀技术资源分享
+            </p>
+        </div>
+        <!-- / banner-info -->
+    </div>
+    <!-- / banner-content -->
+</div>
+        <!-- / header-banner -->
+    </header>
+    <!-- / header -->
+    <!-- / content -->
+    <link rel="stylesheet" href="/css/i_slidebar.css">
+<link rel="stylesheet" href="/css/i_post.css">
+<div id="page-content" class="container">
+    <!-- post content + sidebar -->
+    <section id="blog">
+        <div class="row">
+            <!-- post content area -->
+            <div class="col-md-9">
+                <div class="blog block post-content-area">
+                    <img src="/images/preview/webpack.jpg" alt="">
+                    <div class="post-info-box">
+                        <h1 style="font-size: 48px;">Webpack 3，从入门到放弃</h1>
+                        <p class="post-info" style="margin-bottom: 15px;">
+                            发表于:
+                            <span style="color: #aaa; margin: 0 15px">
+                                2017.08.28
+                            </span>
+                             | 分类：
+                             <a href="#" style="margin: 0 5px">
+                                
+                                    webpack
+                                
+                             </a>
+                             
+                                标签：
+                                
+                                    <a href="#" class="post-tag">webpack</a>
+                                
+                            
+                        </p>
+                        <blockquote>
+<p>原文首发于：<a href="https://yangkean.com/blog/2017/8/webpack.html" target="_blank" rel="external">Webpack 3，从入门到放弃</a></p>
+<p><strong>Update (2017.8.27)</strong> : 关于 <code>output.publicPath</code>、<code>devServer.contentBase</code>、<code>devServer.publicPath</code>的区别。如下：</p>
+<ul>
+<li><strong>output.publicPath</strong>: 对于这个选项，我们无需关注什么绝对相对路径，因为两种路径都可以。我们只需要知道一点：这个选项是指定 HTML 文件中资源文件 (字体、图片、JS文件等) 的<code>文件名</code>的公共 URL 部分的。在实际情况中，我们首先会通过<code>output.filename</code>或有些 loader 如<code>file-loader</code>的<code>name</code>属性设置<code>文件名</code>的原始部分，webpack 将<code>文件名</code>的原始部分和公共部分结合之后，HTML 文件就能获取到资源文件了。</li>
+<li><strong>devServer.contentBase</strong>: 设置静态资源的根目录，<code>html-webpack-plugin</code>生成的 html 不是静态资源。当用 html 文件里的地址无法找到静态资源文件时就会去这个目录下去找。</li>
+<li><strong>devServer.publicPath</strong>: 指定浏览器上访问所有 <strong>打包(bundled)文件</strong> (在<code>dist</code>里生成的所有文件) 的根目录，这个根目录是相对服务器地址及端口的，比<code>devServer.contentBase</code>和<code>output.publicPath</code>优先。</li>
+</ul>
+</blockquote>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p><strong>Tips</strong><br>如果你用过 webpack 且一直用的是 webpack 1，请参考 <a href="https://webpack.js.org/guides/migrating/" target="_blank" rel="external"><strong>从v1迁移到v2</strong></a> (v2 和 v3 差异不大) 对版本变更的内容进行适当的了解，然后再选择性地阅读本文。</p>
+</blockquote>
+<p>首先，这篇文章是根据当前最新的 <a href="https://github.com/webpack/webpack" target="_blank" rel="external">webpack</a> 版本 (即 v3.4.1) 撰写，较长一段时间内无需担心过时的问题。其次，这应该会是一篇极长的文章，涵盖了基本的使用方法，有更高级功能的需求可以参考官方文档继续学习。再次，即使是基本的功能，也内容繁多，我尽可能地解释通俗易懂，将我学习过程中的疑惑和坑一一解释，如有纰漏，敬请雅正。再次，为了清晰有效地讲解，我会演示从零编写 demo，只要一步步跟着做，就会清晰许多。最后，官方文档也是个坑爹货！</p>
+<h2 id="Webpack，何许人也？"><a href="#Webpack，何许人也？" class="headerlink" title="Webpack，何许人也？"></a>Webpack，何许人也？</h2><p>借用官方的说法：</p>
+<blockquote>
+<p>webpack is a module bundler. Its main purpose is to bundle JavaScript files for usage in a browser, yet it is also capable of transforming, bundling, or packaging just about any resource or asset.</p>
+</blockquote>
+<p>简言之，webpack 是一个模块打包器 (<em>module bundler</em>)，能够将任何资源如 JavaScript 文件、CSS 文件、图片等打包成一个或少数文件。</p>
+<h2 id="为什么要用介个-Webpack"><a href="#为什么要用介个-Webpack" class="headerlink" title="为什么要用介个 Webpack?"></a>为什么要用介个 Webpack?</h2><p>首先，定义已经说明了 webpack 能将多个资源模块打包成一个或少数文件，这意味着与以往的发起多个 HTTP 请求来获得资源相比，现在只需要发起少量的 HTTP 请求。</p>
+<blockquote>
+<p><strong>Tips</strong><br>想了解合并 HTTP 请求的意义，请见 <a href="https://www.zhihu.com/question/34401250?from=profile_question_card" target="_blank" rel="external"><strong>这里</strong></a>。</p>
+</blockquote>
+<p>其次，webpack 能将你的资源转换为最适合浏览器的“格式”，提升应用性能。比如只引用被应用使用的资源 (剔除未被使用的代码)，懒加载资源 (只在需要的时候才加载相应的资源)。再次，对于开发阶段，webpack 也提供了实时加载和热加载的功能，大大地节省了开发时间。除此之外，还有许多优秀之处之处值得去挖掘。不过，webpack 最核心的还是打包的功能。</p>
+<h2 id="webpack，gulp-grunt，npm，它们有什么区别"><a href="#webpack，gulp-grunt，npm，它们有什么区别" class="headerlink" title="webpack，gulp/grunt，npm，它们有什么区别?"></a>webpack，gulp/grunt，npm，它们有什么区别?</h2><p>webpack 是模块打包器（<em>module bundler</em>），把所有的模块打包成一个或少量文件，使你只需加载少量文件即可运行整个应用，而无需像之前那样加载大量的图片，css文件，js文件，字体文件等等。而gulp／grunt 是自动化构建工具，或者叫任务运行器（<em>task runner</em>），是把你所有重复的手动操作让代码来做，例如压缩JS代码、CSS代码，代码检查、代码编译等等，自动化构建工具并不能把所有模块打包到一起，也不能构建不同模块之间的依赖图。两者来比较的话，gulp/grunt 无法做模块打包的事，webpack 虽然有 loader 和 plugin可以做一部分 gulp／grunt 能做的事，但是终究 webpack 的插件还是不如 gulp／grunt 的插件丰富，能做的事比较有限。于是有人两者结合着用，将 webpack 放到 gulp／grunt 中用。然而，更好的方法是用 npm scripts 取代 gulp／grunt，npm 是 node 的包管理器 (<em>node package manager</em>)，用于管理 node 的第三方软件包，npm 对于任务命令的良好支持让你最终省却了编写任务代码的必要，取而代之的，是老祖宗的几个命令行，仅靠几句命令行就足以完成你的模块打包和自动化构建的所有需求。</p>
+<h2 id="准备开始"><a href="#准备开始" class="headerlink" title="准备开始"></a>准备开始</h2><p>先来看看一个 webpack 的一个完备的配置文件，是 <a href="https://webpack.js.org/configuration/#options" target="_blank" rel="external">介样</a> 的，当然啦，这里面有很多配置项是即使到这个软件被废弃你也用不上的：），所以无需担心。</p>
+<h2 id="基本配置"><a href="#基本配置" class="headerlink" title="基本配置"></a>基本配置</h2><p>开始之前，请确定你已经安装了当前 <a href="https://nodejs.org/en/" target="_blank" rel="external">Node</a> 的较新版本。</p>
+<p>然后执行以下命令以新建我们的 demo 目录：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;bash&quot;&gt;$ mkdir webpack-demo &amp;&amp; cd webpack-demo &amp;&amp; npm init -y</div><div class="line">$ npm i --save-dev webpack</div><div class="line">$ mkdir src &amp;&amp; cd src &amp;&amp; touch index.js</div></pre></td></tr></table></figure>
+<p>我们使用工具函数库 <a href="https://github.com/lodash/lodash" target="_blank" rel="external">lodash</a> 来演示我们的 demo。先安装之：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;bash&quot;&gt;$ npm i --save lodash</div></pre></td></tr></table></figure>
+<p><strong>src/index.js</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;js&quot;&gt;import _ from &apos;lodash&apos;;</div><div class="line"></div><div class="line">function component() &#123;</div><div class="line">  const element = document.createElement(&apos;div&apos;);</div><div class="line"></div><div class="line">  element.innerHTML = _.join([&apos;Hello&apos;, &apos;webpack&apos;], &apos; &apos;);</div><div class="line"></div><div class="line">  return element;</div><div class="line">&#125;</div><div class="line"></div><div class="line">document.body.appendChild(component());</div></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>Tips</strong><br><code>import</code> 和 <code>export</code> 已经是 ES6 的标准，但是仍未得到大多数浏览器的支持 (可喜的是， Chrome 61 已经开始默认支持了，见 <a href="http://caniuse.com/#feat=es6-module" target="_blank" rel="external"><strong>ES6 modules</strong></a>)，不过 webpack 提供了对这个特性的支持，但是除了这个特性，其他的 ES6 特性并不会得到 webpack 的特别支持，如有需要，须借助 <a href="https://babeljs.io/" target="_blank" rel="external"><strong>Babel</strong></a> 进行转译 (<em>transpile</em>)。</p>
+</blockquote>
+<p>然后新建发布版本目录：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;bash&quot;&gt;$ cd .. &amp;&amp; mkdir dist &amp;&amp; cd dist &amp;&amp; touch index.html</div></pre></td></tr></table></figure>
+<p><strong>dist/index.html</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;html&quot;&gt;&lt;title&gt;webpack demo&lt;/title&gt;</div></pre></td></tr></table></figure>
+<p>现在，我们运行 webpack 来打包 <code>index.js</code> 为 <code>bundle.js</code>，本地安装了 webpack 后可以通过 <code>node_modules/.bin/webpack</code> 来访问 webpack 的二进制版本。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;bash&quot;&gt;$ cd ..</div><div class="line">$ ./node_modules/.bin/webpack src/index.js dist/bundle.js # 第一个参数是打包的入口文件，第二个参数是打包的出口文件</div></pre></td></tr></table></figure>
+<p>咻咻咻，大致如下输出一波：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;bash&quot;&gt;Hash: de8ed072e2c7b3892179</div><div class="line">Version: webpack 3.4.1</div><div class="line">Time: 390ms</div><div class="line">    Asset    Size  Chunks                    Chunk Names</div><div class="line">bundle.js  544 kB       0  [emitted]  [big]  main</div><div class="line">   [0] ./src/index.js 225 bytes &#123;0&#125; [built]</div><div class="line">   [2] (webpack)/buildin/global.js 509 bytes &#123;0&#125; [built]</div><div class="line">   [3] (webpack)/buildin/module.js 517 bytes &#123;0&#125; [built]</div><div class="line">    + 1 hidden module</div></pre></td></tr></table></figure>
+<p>现在，你已经得到了你的第一个打包文件 (bundle.js) 了。</p>
+<h2 id="使用配置文件"><a href="#使用配置文件" class="headerlink" title="使用配置文件"></a>使用配置文件</h2><p>像上面这样使用 webpack 应该是最挫的姿势了，所以我们要使用 webpack 的配置文件来提高我们的姿势水平。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;bash&quot;&gt;$ touch webpack.config.js</div></pre></td></tr></table></figure>
+<p><strong>webpack.config.js</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;js&quot;&gt;const path = require(&apos;path&apos;);</div><div class="line"></div><div class="line">module.exports = &#123;</div><div class="line">  entry: &apos;./src/index.js&apos;, // 入口起点，可以指定多个入口起点</div><div class="line">  output: &#123; // 输出，只可指定一个输出配置</div><div class="line">    filename: &apos;bundle.js&apos;, // 输出文件名</div><div class="line">    path: path.resolve(__dirname, &apos;dist&apos;) // 输出文件所在的目录</div><div class="line">  &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<p>执行：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;bash&quot;&gt;$ ./node_modules/.bin/webpack --config webpack.config.js # `--config` 制定 webpack 的配置文件，默认是 `webpack.config.js`</div></pre></td></tr></table></figure>
+<p>所以这里可以省却 <code>--config webpack.config.js</code>。但是每次都要写 <code>./node_modules/.bin/webpack</code> 实在让人不爽，所以我们要动用 <strong>NPM Scripts</strong>。</p>
+<p><strong>package.json</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;json&quot;&gt;&#123;</div><div class="line">  ...</div><div class="line">  &quot;scripts&quot;: &#123;</div><div class="line">    &quot;build&quot;: &quot;webpack&quot;</div><div class="line">  &#125;,</div><div class="line">  ...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>Tips</strong><br>在 <code>npm scripts</code> 中我们可以通过包名直接引用本地安装的 npm 包的二进制版本，而无需编写包的整个路径。</p>
+</blockquote>
+<p>执行：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;bash&quot;&gt;$ npm run build</div></pre></td></tr></table></figure>
+<p>一波输出后便得到了打包文件。</p>
+<blockquote>
+<p><strong>Tips</strong><br><code>bulid</code> 并不是 <code>npm scripts</code> 的内置属性，需要使用 <code>npm run</code> 来执行脚本，详情见 <a href="https://docs.npmjs.com/cli/run-script" target="_blank" rel="external"><strong>npm run</strong></a>。</p>
+</blockquote>
+<h2 id="打包其他类型的文件"><a href="#打包其他类型的文件" class="headerlink" title="打包其他类型的文件"></a>打包其他类型的文件</h2><p>因为其他文件和 JS 文件类型不同，要把他们加载到 JS 文件中就需要经过加载器 (<em>loader</em>) 的处理。</p>
+<h3 id="加载-CSS"><a href="#加载-CSS" class="headerlink" title="加载 CSS"></a>加载 CSS</h3><p>我们需要安装两个 loader 来处理 CSS 文件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;bash&quot;&gt;$ npm i --save-dev style-loader css-loader</div></pre></td></tr></table></figure>
+<p><a href="https://github.com/webpack-contrib/style-loader" target="_blank" rel="external">style-loader</a> 通过插入 <style>标签将 CSS 加入到 DOM 中，<a href="https://github.com/webpack-contrib/css-loader">css-loader</a> 会像解释 import/require() 一样解释 @import 和 url()。</p> <pre><code class="js">const path = require(‘path’); module.exports = { entry: ‘./src/index.js’, output: { filename: ‘bundle.js’, path: path.resolve(<strong>dirname, ‘dist’) }, module: { // 如何处理项目中不同类型的模块 rules: [ // 用于规定在不同模块被创建时如何处理模块的规则数组 { test: /.css$/, // 匹配特定文件的正则表达式或正则表达式数组 use: [ // 应用于模块的 loader 使用列表 ‘style-loader’, ‘css-loader’ ] } ] } };</code></pre> <p>我们来创建一个 CSS 文件：</p> <pre><code class="bash">$ cd src &amp;&amp; touch style.css</code></pre> <p><strong>src/style.css</strong></p> <pre><code class="css">.hello { color: red; }</code></pre> <p><strong>src/index.js</strong></p> <pre><code class="js">import <em> from ‘lodash’; import ‘./style.css’; // 通过<code>import</code>引入 CSS 文件 function component() { const element = document.createElement(‘div’); element.innerHTML = </em>.join([‘Hello’, ‘webpack’], ‘ ‘); element.classList.add(‘hello’); // 在相应元素上添加类名 return element; } document.body.appendChild(component());</code></pre> <p>执行<code>npm run build</code>，然后打开<code>index.html</code>，就可以看到红色的字体了。CSS 文件此时已经被打包到 bundle.js 中。再打开浏览器控制台，就可以看到 webpack 做了些什么。</p> <h3>加载图片</h3> <pre><code class="bash">$ npm install –save-dev file-loader</code></pre> <p><a href="https://github.com/webpack-contrib/file-loader">file-loader</a> 指示 webpack 以文件格式发出所需对象并返回文件的公共URL，可用于任何文件的加载。</p> <p><strong>webpack.config.js</strong></p> <pre><code class="js">const path = require(‘path’); module.exports = { entry: ‘./src/index.js’, output: { filename: ‘bundle.js’, path: path.resolve(</strong>dirname, ‘dist’) }, module: { rules: [ { test: /.css$/, use: [ ‘style-loader’, ‘css-loader’ ] }, { // 增加加载图片的规则 test: /.(png|svg|jpg|gif)$/, use: [ ‘file-loader’ ] } ] } };</code></pre> <p>我们在当前项目的目录中如下增加图片：</p> <pre><code> webpack-demo |- package.json |- webpack.config.js |- /dist |- bundle.js |- index.html |- /src + |- icon.jpg |- style.css |- index.js |- /node<em>modules</code></pre> <p><strong>src/index.js</strong></p> <pre><code class="js">import </em> from ‘lodash’; import ‘./style.css’; import Icon from ‘./icon.jpg’; // Icon 是图片的 URL function component() { const element = document.createElement(‘div’); element.innerHTML = _.join([‘Hello’, ‘webpack’], ‘ ‘); element.classList.add(‘hello’); const myIcon = new Image(); myIcon.src = Icon; element.appendChild(myIcon); return element; } document.body.appendChild(component());</code></pre> <p><strong>src/style.css</strong></p> <pre><code class="css">.hello { color: red; background: url(./icon.jpg); }</code></pre> <p>再<code>npm run build</code>之。现在你可以看到单独的图片和以图片为基础的背景图了。</p> <h3>加载字体</h3> <p>加载字体用的也是 file-loader。</p> <p><strong>webpack.config.js</strong></p> <pre><code class="js">const path = require(‘path’); module.exports = { entry: ‘./src/index.js’, output: { filename: ‘bundle.js’, path: path.resolve(<strong>dirname, ‘dist’) }, module: { rules: [ { test: /.css$/, use: [ ‘style-loader’, ‘css-loader’ ] }, { test: /.(png|svg|jpg|gif)$/, use: [ ‘file-loader’ ] }, { // 增加加载字体的规则 test: /.(woff|woff2|eot|ttf|otf)$/, use: [ ‘file-loader’ ] } ] } };</code></pre> <p>在当前项目的目录中如下增加字体：</p> <pre><code> webpack-demo |- package.json |- webpack.config.js |- /dist |- bundle.js |- index.html |- /src + |- my-font.ttf |- icon.jpg |- style.css |- index.js |- /node<em>modules</code></pre> <p><strong>src/style.css</strong></p> <pre><code class="css">@font-face { font-family: MyFont; src: url(./my-font.ttf); } .hello { color: red; background: url(./icon.jpg); font-family: MyFont; }</code></pre> <p>运行打包命令之后便可以看到打包好的文件和发生改变的页面。</p> <h3>加载 JSON 文件</h3> <p>因为 webpack 对 JSON 文件的支持是内置的，所以可以直接添加。</p> <p><strong>src/data.json</strong></p> <pre><code class="json">{ “name”: “webpack-demo”, “version”: “1.0.0”, “author”: “Sam Yang” }</code></pre> <p><strong>src/index.js</strong></p> <pre><code class="js">import </em> from ‘lodash’; import ‘./style.css’; import Icon from ‘./icon.jpg’; import Data from ‘./data.json’; // Data 变量包含可直接使用的 JSON 解析得到的对象 function component() { const element = document.createElement(‘div’); element.innerHTML = <em>.join([‘Hello’, ‘webpack’], ‘ ‘); element.classList.add(‘hello’); const myIcon = new Image(); myIcon.src = Icon; element.appendChild(myIcon); console.log(Data); return element; } document.body.appendChild(component());</code></pre> <p>关于其他文件的加载，可以寻求相应的 loader。</p> <h2>输出管理</h2> <p>前面我们只有一个输入文件，但现实是我们往往有不止一个输入文件，这时我们就需要输入多个入口文件并管理输出文件。我们在 src 目录下增加一个 print.js 文件。</p> <p><strong>src/print.js</strong></p> <pre><code class="js">export default function printMe() { console.log(‘I get called from print.js!’); }</code></pre> <p><strong>src/index.js</strong></p> <pre><code class="js">import </em> from ‘lodash’; import printMe from ‘./print.js’; // import ‘./style.css’; // import Icon from ‘./icon.jpg’; // import Data from ‘./data.json’; function component() { const element = document.createElement(‘div’); const btn = document.createElement(‘button’); element.innerHTML = _.join([‘Hello’, ‘webpack’], ‘ ‘); // element.classList.add(‘hello’); // const myIcon = new Image(); // myIcon.src = Icon; // element.appendChild(myIcon); // console.log(Data); btn.innerHTML = ‘Click me and check the console!’; btn.onclick = printMe; element.appendChild(btn); return element; } document.body.appendChild(component());</code></pre> <p><strong>dist/index.html</strong></p> <pre><code class="html">&lt;!DOCTYPE html&gt; <html> <head> <title>webpack demo</title> <script src="./print.bundle.js"></script> </head> <body> <!-- <script src="bundle.js"></script> --> <script src="./app.bundle.js"></script> </body> </html></code></pre> <p><strong>webpack.config.js</strong></p> <pre><code class="js">const path = require(‘path’); module.exports = { // entry: ‘./src/index.js’, entry: { app: ‘./src/index.js’, print: ‘./src/print.js’ }, output: { // filename: ‘bundle.js’, filename: ‘[name].bundle.js’, // 根据入口起点名动态生成 bundle 名，可以使用像 “js/[name]/bundle.js” 这样的文件夹结构 path: path.resolve(</strong>dirname, ‘dist’) }, // … };</code></pre> <blockquote><p><strong>Tips</strong><br><code>filename: ‘[name].bundle.js’</code>中的<code>[name]</code>会替换为对应的入口起点名，其他可用的替换请参见 <a href="https://webpack.js.org/configuration/output/#output-filename"><strong>output.filename</strong></a>。</p></blockquote> <p>现在可以打包文件了。但是如果我们修改了入口文件名或增加了入口文件，<code>index.html</code>是不会自动引用新文件的，而手动修改实在太挫。是时候使用插件 (<em>plugin</em>) 来完成这一任务了。我们使用 <a href="https://github.com/jantimon/html-webpack-plugin">HtmlWebpackPlugin</a> 自动生成 html 文件。</p> <blockquote><p><strong>loader 和 plugin，有什么区别？</strong><br>loader (加载器)，重在“加载”二字，是用于预处理文件的，只用于在加载不同类型的文件时对不同类型的文件做相应的处理。而 plugin (插件)，顾名思义，是用来增加 webpack 的功能的，作用于整个 webpack 的构建过程。在 webpack 这个大公司中，loader 是保安大叔，负责对进入公司的不同人员的处理，而 plugin 则是公司里不同职位的职员，负责公司里的各种不同业务，每增加一种新型的业务需求，我们就需要增加一种 plugin。</p></blockquote> <p>安装插件：</p> <pre><code class="bash">$ npm i –save-dev html-webpack-plugin</code></pre> <p><strong>webpack.config.js</strong></p> <pre><code class="js">const path = require(‘path’); const HtmlWebpackPlugin = require(‘html-webpack-plugin’); module.exports = { // entry: ‘./src/index.js’, entry: { app: ‘./src/index.js’, print: ‘./src/print.js’ }, output: { // filename: ‘bundle.js’, filename: ‘[name].bundle.js’, path: path.resolve(<strong>dirname, ‘dist’) }, plugins: [ // 插件属性，是插件的实例数组 new HtmlWebpackPlugin({ title: ‘webpack demo’, // 生成 HTML 文档的标题 filename: ‘index.html’ // 写入 HTML 文件的文件名，默认 <code>index.html</code> }) ], // … };</code></pre> <p>你可以先把 dist 文件夹的<code>index.html</code>文件删除，然后执行打包命令。咻咻咻，我们看到 dist 目录下已经自动生成了一个<code>index.html</code>文件，但即使不删除原先的<code>index.html</code>，该插件默认生成的<code>index.html</code>也会替换原本的<code>index.html</code>。</p> <p>此刻，当你细细观察 dist 目录时，虽然现在生成了新的打包文件，但原本的打包文件<code>bundle.js</code>及其他不用的文件仍然存在在 dist 目录中，所以在每次构建前我们需要晴空 dist 目录，我们使用 <a href="https://github.com/johnagan/clean-webpack-plugin">CleanWebpackPlugin</a> 插件。</p> <pre><code class="bash">$ npm i clean-webpack-plugin –save-dev</code></pre> <p><strong>webpack.config.js</strong></p> <pre><code class="js">const path = require(‘path’); const HtmlWebpackPlugin = require(‘html-webpack-plugin’); const CleanWebpackPlugin = require(‘clean-webpack-plugin’); module.exports = { // entry: ‘./src/index.js’, entry: { app: ‘./src/index.js’, print: ‘./src/print.js’ }, output: { // filename: ‘bundle.js’, filename: ‘[name].bundle.js’, path: path.resolve(</strong>dirname, ‘dist’) }, plugins: [ new HtmlWebpackPlugin({ title: ‘webpack demo’, filename: ‘index.html’ }), new CleanWebpackPlugin([‘dist’]) // 第一个参数是要清理的目录的字符串数组 ], // … };</code></pre> <p>打包之，现在，dist 中只存在打包生成的文件。</p> <h2>开发环境</h2> <p>webpack 提供了很多便于开发时使用的功能，来一一看看吧。</p> <h3>使用代码映射 (<em>source map</em>)</h3> <p>当你的代码被打包后，如果打包后的代码发生了错误，你很难追踪到错误发生的原始位置，这个时候，我们就需要代码映射 (<em>source map</em>) 这种工具，它能将编译后的代码映射回原始的源码，你的错误是起源于打包前的<code>b.js</code>的某个位置，代码映射就能告诉你错误是那个模块的那个位置。webpack 默认提供了 10 种风格的代码映射，使用它们会明显影响到构建 (<em>build</em>) 和重构建 (<em>rebuild</em>，每次修改后需要重新构建) 的速度，十种风格的差异可以参看 <a href="https://webpack.js.org/configuration/devtool/#devtool">devtool</a>。关于如何选择映射风格可以参看 <a href="http://cheng.logdown.com/posts/2016/03/25/679045">Webpack devtool source map</a>。这里，我们为了准确显示错误位置，选择速度较慢的<code>inline-source-map</code>。</p> <p><strong>webpack.config.js</strong></p> <pre><code class="js">const path = require(‘path’); const HtmlWebpackPlugin = require(‘html-webpack-plugin’); const CleanWebpackPlugin = require(‘clean-webpack-plugin’); module.exports = { devtool: ‘inline-source-map’, // 控制是否生成以及如何生成 source map // entry: ‘./src/index.js’, entry: { app: ‘./src/index.js’, print: ‘./src/print.js’ }, // … };</code></pre> <p>现在来手动制造一些错误：</p> <p><strong>src/print.js</strong></p> <pre><code class="js"> export default function printMe() { - console.log(‘I get called from print.js!’); + cosnole.log(‘I get called from print.js!’); }</code></pre> <p>打包之后打开<code>index.html</code>再点击按钮，你就会看到控制台显示如下报错：</p> <pre><code> Uncaught ReferenceError: cosnole is not defined at HTMLButtonElement.printMe (print.js:2)</code></pre> <p>现在，我们很清楚哪里发生了错误，然后轻松地改正之。</p> <h3>使用 webpack-dev-server</h3> <p>你一定有这样的体验，开发时每次修改代码保存后都需要重新手动构建代码并手动刷新浏览器以观察修改效果，这是很麻烦的，所以，我们要实时加载代码。可喜的是，webpack 提供了对实时加载代码的支持。我们需要安装 <a href="https://github.com/webpack/webpack-dev-server">webpack-dev-server</a> 以获得支持。</p> <pre><code class="bash">$ npm i –save-dev webpack-dev-server</code></pre> <p><strong>webpack.config.js</strong></p> <pre><code class="js">const path = require(‘path’); const HtmlWebpackPlugin = require(‘html-webpack-plugin’); const CleanWebpackPlugin = require(‘clean-webpack-plugin’); module.exports = { devtool: ‘inline-source-map’, devServer: { // 检测代码变化并自动重新编译并自动刷新浏览器 contentBase: path.resolve(<strong>dirname, ‘dist’) // 设置静态资源的根目录 }, // entry: ‘./src/index.js’, entry: { app: ‘./src/index.js’, print: ‘./src/print.js’ }, // … };</code></pre> <p><strong>package.json</strong></p> <pre><code class="json">{ … “scripts”: { “build”: “webpack”, “start”: “webpack-dev-server –open” }, … }</code></pre> <blockquote><p><strong>Tips</strong><br>使用 webpack-dev-server 时，webpack 并没有将所有生成的文件写入磁盘，而是放在内存中，提供更快的内存内访问，便于实时更新。</p></blockquote> <p>现在，可以直接运行<code>npm start</code> (<code>start</code>是 npm scripts 的内置属性，可直接运行)，然后浏览器自动加载应用的页面，默认在<code>localhost:8080</code>显示。</p> <h2>模块热替换 (<em>HMR, Hot Module Replacement</em>)</h2> <p>webpack 提供了对模块热替换 (或者叫热加载) 的支持。这一特性能够让应用运行的时候替换、增加或删除模块，而无需进行完全的重载。想进一步地了解其工作机理，可以参见 <a href="https://webpack.js.org/concepts/hot-module-replacement/">Hot Module Replacement</a>，但这并不是必需的，你可以选择跳过机理部分继续往下阅读。</p> <blockquote><p><strong>Tips</strong><br>模块热替换（<em>HMR</em>）只更新发生变更（替换、添加、删除）的模块，而无需重新加载整个页面（实时加载，<em>LiveReload</em>），这样可以显著加快开发速度，一旦打开了 webpack-dev-server 的 hot 模式，在试图重新加载整个页面之前，热模式会尝试使用 HMR 来更新。</p></blockquote> <p><strong>webpack.config.js</strong></p> <pre><code class="js">const path = require(‘path’); const HtmlWebpackPlugin = require(‘html-webpack-plugin’); const CleanWebpackPlugin = require(‘clean-webpack-plugin’); const webpack = require(‘webpack’); // 引入 webpack 便于调用其内置插件 module.exports = { devtool: ‘inline-source-map’, devServer: { contentBase: path.resolve(</strong>dirname, ‘dist’), hot: true, // 告诉 dev-server 我们在用 HMR hotOnly: true // 指定如果热加载失败了禁止刷新页面 (这是 webpack 的默认行为)，这样便于我们知道失败是因为何种错误 }, // entry: ‘./src/index.js’, entry: { app: ‘./src/index.js’, // print: ‘./src/print.js’ }, // … plugins: [ new HtmlWebpackPlugin({ title: ‘webpack demo’, filename: ‘index.html’ }), new CleanWebpackPlugin([‘dist’]), new webpack.HotModuleReplacementPlugin(), // 启用 HMR new webpack.NamedModulesPlugin() // 打印日志信息时 webpack 默认使用模块的数字 ID 指代模块，不便于 debug，这个插件可以将其替换为模块的真实路径 ], // … };</code></pre> <blockquote><p><strong>Tips</strong><br>webpack-dev-server 会为每个入口文件创建一个客户端脚本，这个脚本会监控该入口文件的依赖模块的更新，如果该入口文件编写了 HMR 处理函数，它就能接收依赖模块的更新，反之，更新会向上冒泡，直到客户端脚本仍没有处理函数的话，webpack-dev-server 会重新加载整个页面。如果入口文件本身发生了更新，因为向上会冒泡到客户端脚本，并且不存在 HMR 处理函数，所以会导致页面重载。</p></blockquote> <p>我们已经开启了 HMR 的功能，HMR 的接口已经暴露在<code>module.hot</code>属性之下，我们只需要调用 <a href="https://webpack.js.org/api/hot-module-replacement/">HMR API</a> 即可实现热加载。当“被加载模块”发生改变时，依赖该模块的模块便能检测到改变并接收改变之后的模块。</p> <p><strong>src/index.js</strong></p> <pre><code class="js">import <em> from ‘lodash’; import printMe from ‘./print.js’; // import ‘./style.css’; // import Icon from ‘./icon.jpg’; // import Data from ‘./data.json’; function component() { const element = document.createElement(‘div’); const btn = document.createElement(‘button’); element.innerHTML = </em>.join([‘Hello’, ‘webpack’], ‘ ‘); // element.classList.add(‘hello’); // const myIcon = new Image(); // myIcon.src = Icon; // element.appendChild(myIcon); // console.log(Data); btn.innerHTML = ‘Click me and check the console!’; btn.onclick = printMe; element.appendChild(btn); return element; } document.body.appendChild(component()); if(module.hot) { // 习惯上我们会检查是否可以访问 <code>module.hot</code> 属性 module.hot.accept(‘./print.js’, function() { // 接受给定依赖模块的更新，并触发一个回调函数来对这些更新做出响应 console.log(‘Accepting the updated printMe module!’); printMe(); }); }</code></pre> <p><code>npm start</code>之。为了演示效果，我们做如下修改：</p> <p><strong>src/print.js</strong></p> <pre><code class="js"> export default function printMe() { - console.log(‘I get called from print.js!’); + console.log(‘Updating print.js…’); }</code></pre> <p>我们会看到控制台打印出的信息中含有以下几行：</p> <pre><code class="bash">index.js:33 Accepting the updated printMe module! print.js:2 Updating print.js… log.js:23 [HMR] Updated modules: log.js:23 [HMR] - ./src/print.js log.js:23 [HMR] App is up to date.</code></pre> <blockquote><p><strong>Tips</strong><br>webpack-dev-server 在 <a href="https://webpack.js.org/configuration/dev-server/#devserver-inline"><strong>inline mode</strong></a> (此为默认模式) 时，会为每个入口起点 (<em>entry</em>) 创建一个客户端脚本，所以你会在上面的输出中看到有些信息重复输出两次。</p></blockquote> <p>但是当你点击页面的按钮时，你会发现控制台输出的是旧的<code>printMe</code>函数输出的信息，因为<code>onclick</code>事件绑定的仍是原始的<code>printMe</code>函数。我们需要在<code>module.hot.accept</code>里更新绑定。</p> <p><strong>src/index.js</strong></p> <pre><code class="js">import <em> from ‘lodash’; import printMe from ‘./print.js’; // import ‘./style.css’; // import Icon from ‘./icon.jpg’; // import Data from ‘./data.json’; // … // document.body.appendChild(component()); var element = component(); document.body.appendChild(element); if(module.hot) { module.hot.accept(‘./print.js’, function() { console.log(‘Accepting the updated printMe module!’); // printMe(); document.body.removeChild(element); element = component(); document.body.appendChild(element); }); }</code></pre> <blockquote><p><strong>Tips</strong><br><a href="https://github.com/webpack-contrib/uglifyjs-webpack-plugin"><strong>uglifyjs-webpack-plugin</strong></a> 升级到 v0.4.6 时无法正确压缩 ES6 的代码，所以上面有些代码采用 ES5 以暂时方便后面的压缩，详见 <a href="https://github.com/webpack-contrib/uglifyjs-webpack-plugin/issues/49">#49</a>。</p></blockquote> <p>模块热替换也可以用于样式的修改，效果跟控制台修改一样一样的。</p> <p><strong>src/index.js</strong></p> <pre><code class="js">import </em> from ‘lodash’; import printMe from ‘./print.js’; import ‘./style.css’; // import Icon from ‘./icon.jpg’; // import Data from ‘./data.json’; // …</code></pre> <p><code>npm start</code>之，做如下修改：</p> <pre><code class="css">/<em> … </em>/ body { background-color: yellow; }</code></pre> <p>可以发现在不重载页面的前提下我们对样式的修改进行了热加载，棒！</p> <h2>生产环境</h2> <h3>自动方式</h3> <p>我们只需要运行<code>webpack -p</code> (相当于 <code>webpack –optimize-minimize –define process.env.NODE_ENV=”‘production’”</code>)这个命令，便可以自动构建生产版本的应用，这个命令会完成以下步骤：</p> <ul> <li>使用 <code>UglifyJsPlugin</code> (<em>webpack.optimize.UglifyJsPlugin</em>) 压缩 JS 文件 (此插件和 <a href="https://github.com/webpack-contrib/uglifyjs-webpack-plugin">uglifyjs-webpack-plugin</a> 相同)</li> <li>运行 <code>LoaderOptionsPlugin</code> 插件，这个插件是用来迁移的，见 <a href="https://webpack.js.org/plugins/loader-options-plugin/">document</a> </li> <li>设置 NodeJS 的环境变量，触发某些 package 包以不同方式编译</li> </ul> <p>值得一提的是，<code>webpack -p</code>设置的<code>process.env.NODE_ENV</code>环境变量，是用于编译后的代码的，只有在打包后的代码中，这一环境变量才是有效的。如果在 webpack 配置文件中引用此环境变量，得到的是 undefined，可以参见 <a href="https://github.com/webpack/webpack/issues/2537">#2537</a>。但是，有时我们确实需要在 webpack 配置文件中使用 <code>process.env.NODE_ENV</code>，怎么办呢？一个方法是运行<code>NODE_ENV=’production’ webpack -p</code>命令，不过这个命令在Windows中是会出问题的。为了解决兼容问题，我们采用 <a href="https://github.com/kentcdodds/cross-env">cross-env</a> 解决跨平台的问题。</p> <pre><code class="bash">$ npm i –save-dev cross-env</code></pre> <p><strong>package.json</strong></p> <pre><code class="json">{ … “scripts”: { “build”: “cross-env NODE_ENV=production webpack -p”, “start”: “webpack-dev-server –open” }, … }</code></pre> <p>现在可以在配置文件中使用<code>process.env.NODE_ENV</code>了。</p> <p><strong>webpack.config.js</strong></p> <pre><code class="js">const path = require(‘path’); const HtmlWebpackPlugin = require(‘html-webpack-plugin’); const CleanWebpackPlugin = require(‘clean-webpack-plugin’); const webpack = require(‘webpack’); module.exports = { // … output: { // filename: ‘bundle.js’, // filename: ‘[name].bundle.js’, filename: process.env.NODE_ENV === ‘production’ ? ‘[name].[chunkhash].js’ : ‘[name].bundle.js’, // 在配置文件中使用<code>process.env.NODE_ENV</code> path: path.resolve(<strong>dirname, ‘dist’) }, plugins: [ new HtmlWebpackPlugin({ title: ‘webpack demo’, filename: ‘index.html’ }), new CleanWebpackPlugin([‘dist’]), // new webpack.HotModuleReplacementPlugin(), // 关闭 HMR 功能 new webpack.NamedModulesPlugin() ], // … };</code></pre> <blockquote><p><strong>Tips</strong><br>[chunkhash]不能和 HMR 一起使用，换句话说，不应该在开发环境中使用 [chunkhash] (或者 [hash])，这会导致许多问题。详情见 <a href="https://github.com/webpack/webpack/issues/2393">#2393</a> 和 <a href="https://github.com/webpack/webpack-dev-server/issues/377">#377</a>。</p></blockquote> <p>build 之，我们得到了生产版本的压缩好的打包文件。</p> <h3>多配置文件配置</h3> <p>有时我们会需要为不同的环境配置不同的配置文件，可以选择 <a href="https://webpack.js.org/guides/production/#simple-approach">简易方法</a>，这里我们采用较为先进的方法。先准备一个基本的配置文件，包含了所有环境都包含的配置，然后用 <a href="https://github.com/survivejs/webpack-merge">webpack-merge</a> 将它和特定环境的配置文件合并并导出，这样就减少了基本配置的重复。</p> <pre><code class="bash">$ npm i –save-dev webpack-merge</code></pre> <p><strong>webpack.common.js</strong></p> <pre><code class="js">const path = require(‘path’); const HtmlWebpackPlugin = require(‘html-webpack-plugin’); const CleanWebpackPlugin = require(‘clean-webpack-plugin’); module.exports = { entry: { app: ‘./src/index.js’, print: ‘./src/print.js’ }, output: { path: path.resolve(</strong>dirname, ‘dist’) }, plugins: [ new HtmlWebpackPlugin({ title: ‘webpack demo’, filename: ‘index.html’ }), new CleanWebpackPlugin([‘dist’]) ], module: { rules: [ { test: /.css$/, use: [ ‘style-loader’, ‘css-loader’ ] }, { test: /.(png|svg|jpg|gif)$/, use: [ ‘file-loader’ ] }, { test: /.(woff|woff2|eot|ttf|otf)$/, use: [ ‘file-loader’ ] } ] } };</code></pre> <p><strong>webpack.dev.js</strong></p> <pre><code class="js">const path = require(‘path’); const webpack = require(‘webpack’); const Merge = require(‘webpack-merge’); const CommonConfig = require(‘./webpack.common.js’); module.exports = Merge(CommonConfig, { devtool: ‘cheap-module-eval-source-map’, devServer: { contentBase: path.resolve(<strong>dirname, ‘dist’), hot: true, hotOnly: true }, output: { filename: ‘[name].bundle.js’ }, plugins: [ new webpack.DefinePlugin({ ‘process.env.NODE_ENV’: JSON.stringify(‘development’) // 在编译的代码里设置了<code>process.env.NODE_ENV</code>变量 }), new webpack.HotModuleReplacementPlugin(), new webpack.NamedModulesPlugin() ] });</code></pre> <p><strong>webpack.prod.js</strong></p> <pre><code class="js">const path = require(‘path’); const webpack = require(‘webpack’); const Merge = require(‘webpack-merge’); const CommonConfig = require(‘./webpack.common.js’); module.exports = Merge(CommonConfig, { devtool: ‘cheap-module-source-map’, output: { filename: ‘[name].[chunkhash].js’ }, plugins: [ new webpack.DefinePlugin({ ‘process.env.NODE_ENV’: JSON.stringify(‘production’) }), new webpack.optimize.UglifyJsPlugin() ] });</code></pre> <p><strong>package.json</strong></p> <pre><code class="json">{ … “scripts”: { “build”: “cross-env NODE<em>ENV=production webpack -p”, “start”: “webpack-dev-server –open”, “build:dev”: “webpack-dev-server –open –config webpack.dev.js”, “build:prod”: “webpack –progress –config webpack.prod.js” }, … }</code></pre> <p>现在只需执行<code>npm run build:dev</code>或<code>npm run build:prod</code>便可以得到开发版或者生产版了！</p> <blockquote><p><strong>Tips</strong><br>webpack 命令行选项见 <a href="https://webpack.js.org/api/cli/">Command Line Interface</a>。</p></blockquote> <h2>代码分离</h2> <h3>入口分离</h3> <p>我们先创建一个新文件：</p> <pre><code class="bash">$ cd src &amp;&amp; touch another.js</code></pre> <p><strong>src/another.js</strong></p> <pre><code class="js">import </em> from ‘lodash’; console.log(_.join([‘Another’, ‘module’, ‘loaded!’], ‘ ‘));</code></pre> <p><strong>webpack.config.js</strong></p> <pre><code class="js">const path = require(‘path’); const HtmlWebpackPlugin = require(‘html-webpack-plugin’); const CleanWebpackPlugin = require(‘clean-webpack-plugin’); const webpack = require(‘webpack’); module.exports = { // … entry: { app: ‘./src/index.js’, // print: ‘./src/print.js’ another: ‘./src/another.js’ }, // … };</code></pre> <p><code>cd .. &amp;&amp; npm run build</code>之，我们发现用入口分离的代码得到了两个大文件，这是因为两个入口文件都引入了<code>lodash</code>，这很大程度上造成了冗余，在同一个页面中我们只需要引入一个<code>lodash</code>就可以了。</p> <h3>抽取相同部分</h3> <p>我们使用 <a href="https://webpack.js.org/plugins/commons-chunk-plugin/">CommonsChunkPlugin</a> 插件来将相同的部分提取出来放到一个单独的模块中。</p> <p><strong>webpack.config.js</strong></p> <pre><code class="js">const path = require(‘path’); const HtmlWebpackPlugin = require(‘html-webpack-plugin’); const CleanWebpackPlugin = require(‘clean-webpack-plugin’); const webpack = require(‘webpack’); module.exports = { // devtool: ‘inline-source-map’, // … output: { // filename: ‘bundle.js’, filename: ‘[name].bundle.js’, // filename: process.env.NODE_ENV === ‘production’ ? ‘[name].[chunkhash].js’ : ‘[name].bundle.js’, path: path.resolve(</strong>dirname, ‘dist’) }, plugins: [ new HtmlWebpackPlugin({ title: ‘webpack demo’, filename: ‘index.html’ }), new CleanWebpackPlugin([‘dist’]), new webpack.optimize.CommonsChunkPlugin({ name: ‘common’ // 抽取出的模块的模块名 }), // new webpack.HotModuleReplacementPlugin(), // new webpack.NamedModulesPlugin() ], // … };</code></pre> <p>build 之，可以看到结果中包含以下部分：</p> <pre><code class="bash"> app.bundle.js 6.14 kB 0 [emitted] app another.bundle.js 185 bytes 1 [emitted] another common.bundle.js 73.2 kB 2 [emitted] common index.html 314 bytes [emitted]</code></pre> <p>我们把<code>lodash</code>分离出来了。</p> <h3>动态引入</h3> <p>我们还可以选择以动态引入的方式来实现代码分离，借助 <a href="https://webpack.js.org/api/module-methods/#import-"><em>import()</em></a> 实现之。</p> <p><strong>webpack.config.js</strong></p> <pre><code class="js">const path = require(‘path’); const HtmlWebpackPlugin = require(‘html-webpack-plugin’); const CleanWebpackPlugin = require(‘clean-webpack-plugin’); // const webpack = require(‘webpack’); module.exports = { // … entry: { app: ‘./src/index.js’, // print: ‘./src/print.js’ // another: ‘./src/another.js’ }, output: { // filename: ‘bundle.js’, filename: ‘[name].bundle.js’, chunkFilename: ‘[name].bundle.js’, // 指定非入口块文件输出的名字 // filename: process.env.NODE<em>ENV === ‘production’ ? ‘[name].[chunkhash].js’ : ‘[name].bundle.js’, path: path.resolve(__dirname, ‘dist’) }, plugins: [ new HtmlWebpackPlugin({ title: ‘webpack demo’, filename: ‘index.html’ }), new CleanWebpackPlugin([‘dist’]) // new webpack.optimize.CommonsChunkPlugin({ // name: ‘common’ // }), // new webpack.HotModuleReplacementPlugin(), // new webpack.NamedModulesPlugin() ], // … };</code></pre> <p><strong>src/index.js</strong></p> <pre><code class="js">// import </em> from ‘lodash’; import printMe from ‘./print.js’; // import ‘./style.css’; // import Icon from ‘./icon.jpg’; // import Data from ‘./data.json’; function component() { // 此函数原来的内容全部注释掉… return import(/<em> webpackChunkName: “lodash” </em>/ ‘lodash’).then(function(<em>) { const element = document.createElement(‘div’); const btn = document.createElement(‘button’); element.innerHTML = </em>.join([‘Hello’, ‘webpack’], ‘ ‘); btn.innerHTML = ‘Click me and check the console!’; btn.onclick = printMe; element.appendChild(btn); return element; }).catch(function(error) { console.log(‘An error occurred while loading the component’) }); } // document.body.appendChild(component()); // var element = component(); // document.body.appendChild(element); // 原本热加载的部分全部注释掉… component().then(function(component) { document.body.appendChild(component); });</code></pre> <blockquote><p><strong>Tips</strong><br>注意上面中的<code>/<em> webpackChunkName: “lodash” </em>/</code>这段注释，它并不是可有可无的，它能帮助我们结合<code>output.chunkFilename</code>把分离出的模块最终命名为<code>lodash.bundle.js</code>而非<code>[id].bundle.js</code>。</p></blockquote> <p>现在 build 之看看吧。</p> <h2>懒加载 (<em>lazy loading</em>)</h2> <p>既然有了<code>import()</code>，我们可以选择在需要的时候才加载相应的模块，减少了应用初始化时加载大量暂不需要的模块的压力，这能让我们的应用更高效地运行。</p> <p><strong>src/print.js</strong></p> <pre><code class="js">console.log(‘The print.js module has loaded! See the network tab in dev tools…’); export default function printMe() { // console.log(‘Updating print.js…’); console.log(‘Button Clicked: Here\’s “some text”!’); }</code></pre> <p><strong>src/index.js</strong></p> <pre><code class="js">import <em> from ‘lodash’; // 其他引入注释… function component() { const element = document.createElement(‘div’); const btn = document.createElement(‘button’); element.innerHTML = </em>.join([‘Hello’, ‘webpack’], ‘ ‘); // element.classList.add(‘hello’); // const myIcon = new Image(); // myIcon.src = Icon; // element.appendChild(myIcon); // console.log(Data); btn.innerHTML = ‘Click me and check the console!’; // btn.onclick = printMe; element.appendChild(btn); btn.onclick = function() { import(/<em> webpackChunkName: “print” </em>/ ‘./print’) .then(function(module) { const printMe = module.default; // 引入模块的默认函数 printMe(); }); }; return element; // 原本的动态引入注释… } document.body.appendChild(component()); // var element = component(); // document.body.appendChild(element); // 热加载部分注释 // component().then(function(component) { // document.body.appendChild(component); // });</code></pre> <p>构建之，控制台此时并无输出，点击按钮，会看到控制台如下输出：</p> <pre><code class="bash">print.bundle.js:1 The print.js module has loaded! See the network tab in dev tools… print.bundle.js:1 Button Clicked: Here’s “some text”!</code></pre> <p>说明 print 模块只在我们点击时才引入了，すっげえ！</p> <h2>缓存 (<em>caching</em>)</h2> <p>浏览器在初次加载网站时，会下载很多文件，为了较少下载大量资源的压力，浏览器会对资源进行缓存 (<em>caching</em>)，这样浏览器便可以更迅速地加载网站，但是我们需要在文件内容发生改变时更新文件。</p> <p>我们可以在输出文件名上下手脚：</p> <p><strong>webpack.config.js</strong></p> <pre><code class="js">const path = require(‘path’); const HtmlWebpackPlugin = require(‘html-webpack-plugin’); const CleanWebpackPlugin = require(‘clean-webpack-plugin’); // const webpack = require(‘webpack’); module.exports = { // … output: { // filename: ‘bundle.js’, filename: ‘[name].[chunkhash].js’, // chunkFilename: ‘[name].bundle.js’, // filename: process.env.NODE_ENV === ‘production’ ? ‘[name].[chunkhash].js’ : ‘[name].bundle.js’, path: path.resolve(<strong>dirname, ‘dist’) }, // … };</code></pre> <blockquote><p><strong>Tips</strong><br>[chunkhash] 是内容相关的，只要内容发生了改变，构建后文件名的 hash 就会发生改变。</p></blockquote> <p>还有一个要点是提取出第三方库放到单独模块中，因为它们是不太可能频繁发生改变的，所以无需多次加载这些模块，提取的方法用 <a href="https://webpack.js.org/plugins/commons-chunk-plugin/">CommonsChunkPlugin</a> 插件，这个插件<a>上文</a>中提到过，指定入口文件名时它会提取改入口文件为单个文件，不指定则会提取 webpack 的运行时代码。</p> <p><strong>webpack.config.js</strong></p> <pre><code class="js">const path = require(‘path’); const HtmlWebpackPlugin = require(‘html-webpack-plugin’); const CleanWebpackPlugin = require(‘clean-webpack-plugin’); const webpack = require(‘webpack’); module.exports = { // … entry: { app: ‘./src/index.js’, vendor: [ // 第三方库可以统一放在这个入口一起合并 ‘lodash’ ] // print: ‘./src/print.js’ // another: ‘./src/another.js’ }, output: { // filename: ‘bundle.js’, filename: ‘[name].[chunkhash].js’, chunkFilename: ‘[name].bundle.js’, // filename: process.env.NODE_ENV === ‘production’ ? ‘[name].[chunkhash].js’ : ‘[name].bundle.js’, path: path.resolve(</strong>dirname, ‘dist’) }, plugins: [ new HtmlWebpackPlugin({ title: ‘webpack demo’, filename: ‘index.html’ }), new CleanWebpackPlugin([‘dist’]), new webpack.optimize.CommonsChunkPlugin({ name: ‘vendor’ // 将 vendor 入口处的代码放入 vendor 模块 }), new webpack.optimize.CommonsChunkPlugin({ name: ‘runtime’ // 将 webpack 自身的运行时代码放在 runtime 模块 }) // new webpack.HotModuleReplacementPlugin(), // new webpack.NamedModulesPlugin() ], // … };</code></pre> <blockquote><p><strong>Tips</strong><br>包含 vendor 的 CommonsChunkPlugin 实例必须在包含 runtime 的之前，否则会报错。</p></blockquote> <p><strong>src/index.js</strong></p> <pre><code class="js">// import _ from ‘lodash’; // … // …</code></pre> <p>如果我们在 src 下新建一个文件<code>h.js</code>，再在<code>index.js</code>中引入它，保存，构建之，我们发现有些没改变的模块的 hash 也发生了改变，这是因为加入<code>h.js</code>后它们的<code>module.id</code>变了，但这明显是不合理的。在开发环境，我们可以用 NamedModulesPlugin 将 id 换成具体路径名。而在生产环境，我们可以使用 <a href="https://webpack.js.org/plugins/hashed-module-ids-plugin/">HashedModuleIdsPlugin</a>。</p> <p><strong>webpack.config.js</strong></p> <pre><code class="js">const path = require(‘path’); const HtmlWebpackPlugin = require(‘html-webpack-plugin’); const CleanWebpackPlugin = require(‘clean-webpack-plugin’); const webpack = require(‘webpack’); module.exports = { // … plugins: [ new HtmlWebpackPlugin({ title: ‘webpack demo’, filename: ‘index.html’ }), new webpack.HashedModuleIdsPlugin(), // 替换掉原来的<code>module.id</code> new CleanWebpackPlugin([‘dist’]), new webpack.optimize.CommonsChunkPlugin({ name: ‘vendor’ }), new webpack.optimize.CommonsChunkPlugin({ name: ‘runtime’ }) // new webpack.HotModuleReplacementPlugin(), // new webpack.NamedModulesPlugin() ], // … };</code></pre> <p>再来执行刚才那波操作，就会发现无关修改的模块 hash 未变了。</p> <h2><em>Shimming</em></h2> <blockquote><p><strong>Tips</strong><br>你可以将 shim 简单理解为是用于兼容 API 的小型库。</p></blockquote> <p>使用 jQuery 时我们习惯性地使用<code>$</code>或<code>jQuery</code>变量，每次都使用<code>const $ = require(“jquery”)</code>引入的话太麻烦，如果能直接把这两个变量设置为全局变量岂不美滋滋？这样就可以在每个模块中直接使用这两个变量了。为了兼容这一做法，我们使用 <a href="https://webpack.js.org/plugins/provide-plugin/">ProvidePlugin</a> 插件为我们完成这一任务。</p> <pre><code class="bash">$ npm i –save jquery</code></pre> <p><strong>webpack.config.js</strong></p> <pre><code class="js">const path = require(‘path’); const HtmlWebpackPlugin = require(‘html-webpack-plugin’); const CleanWebpackPlugin = require(‘clean-webpack-plugin’); const webpack = require(‘webpack’); module.exports = { // … plugins: [ new HtmlWebpackPlugin({ title: ‘webpack demo’, filename: ‘index.html’ }), new webpack.ProvidePlugin({ // 设置全局变量 $: ‘jquery’, jQuery: ‘jquery’ }), new webpack.HashedModuleIdsPlugin(), new CleanWebpackPlugin([‘dist’]), new webpack.optimize.CommonsChunkPlugin({ name: ‘vendor’ }), new webpack.optimize.CommonsChunkPlugin({ name: ‘runtime’ }) // new webpack.HotModuleReplacementPlugin(), // new webpack.NamedModulesPlugin() ], // … };</code></pre> <p><strong>src/print.js</strong></p> <pre><code class="js">console.log(‘The print.js module has loaded! See the network tab in dev tools…’); console.log($(‘title’).text()); // 使用 jQuery export default function printMe() { // console.log(‘Updating print.js…’); console.log(‘Button Clicked: Here\’s “some text”!’); }</code></pre> <p>build，点击页面按钮，成功了。</p> <p>另外，如果你需要在某些模块加载时设置该模块的全局变量，请看 <a href="https://webpack.js.org/guides/shimming/#imports-loader">这里</a>。</p> <h2>结尾的一点废话</h2> <p>终于写完了 ：），也感谢你能耐心看到这里。webpack 这个工具的配置还是有些麻烦的。但是呢，某人说这个东东前期会花比较多时间，后期会大大提高你的效率。所以呢，还是拿下这个东东吧。有其他需求的话可以继续看<a href="https://webpack.js.org/configuration/">官方的文档</a>。遇到困难可以找：</p> <ul> <li><a href="https://stackoverflow.com/">Stack Overflow</a></li> <li><a href="https://www.google.com">Google</a></li> <li><a href="https://gitter.im/webpack/webpack">Gitter</a></li> <li><a href="https://github.com/webpack/webpack/issues">Webpack Issues</a></li> </ul> <p>我写好的 demo 文件放在了<a href="https://github.com/yangkean/webpack-demo">这里</a>。</p> <h2>Reference</h2> <ul> <li><a href="https://segmentfault.com/a/1190000006178770">入门 Webpack，看这篇就够了 - v1</a></li> <li><a href="https://webpack.js.org/guides/">Webpack Guides</a></li> <li><a href="http://blog.andrewray.me/webpack-when-to-use-and-why/">Webpack: When To Use And Why</a></li> <li>stackoverflow / github issues</li> </ul></style></p>
+
+                    </div>
+                    <!-- / post-info-box -->
+                </div>
+                <!-- / blog-block -->
+                
+<div id="comment">
+    <!--PC和WAP自适应版-->
+    <div id="SOHUCS" sid="请将此处替换为配置SourceID的语句"></div>
+    <script type="text/javascript">
+    (function() {
+        var appid = 'cysYE5nWR';
+        var conf = 'prod_ea59e8a942c2c4c0e72b24ed00ecddc9';
+        var width = window.innerWidth || document.documentElement.clientWidth;
+        if (width < 960) {
+            window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>');
+        } else {
+            var loadJs = function(d, a) {
+                var c = document.getElementsByTagName("head")[0] || document.head || document.documentElement;
+                var b = document.createElement("script");
+                b.setAttribute("type", "text/javascript");
+                b.setAttribute("charset", "UTF-8");
+                b.setAttribute("src", d);
+                if (typeof a === "function") {
+                    if (window.attachEvent) {
+                        b.onreadystatechange = function() {
+                            var e = b.readyState;
+                            if (e === "loaded" || e === "complete") {
+                                b.onreadystatechange = null;
+                                a();
+                            }
+                        }
+                    } else {
+                        b.onload = a;
+                    }
+                }
+                c.appendChild(b)
+            };
+            loadJs("http://changyan.sohu.com/upload/changyan.js", function() {
+                window.changyan.api.config({
+                    appid: appid,
+                    conf: conf
+                })
+            });
+        }
+    })();
+    </script>
+</div>
+<!-- / comments -->
+
+
+            </div>
+            <!-- / col-md-9 -->
+            <!-- / post content area -->
+            <style type="text/css">
+.post-tab-header {
+    width: 100%;
+    padding: 5px 50px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.post-tab-header li {
+    width: 50%;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+
+.post-tab-header li.active {
+    color: #c39d6d;
+    border-bottom: 1px solid #c39d6d;
+}
+
+.post-tab-content .post-tab-item {
+    display: none;
+}
+
+.post-tab-content .post-tab-item.active {
+    display: block;
+}
+
+@keyframes MinefadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(45px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.MinefadeInUp {
+    animation-name: MinefadeInUp;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+.post-toc {
+    font-size: 14px;
+    color: #666;
+    overflow: auto;
+}
+
+.post-toc .nav-link {
+    padding: 0px;
+}
+
+.post-toc ol {
+    margin: 0;
+    padding: 5px 0 5px 20px;
+    text-align: left;
+    list-style: none;
+    font-size: 14px;
+}
+
+.post-toc ol>ol {
+    padding-left: 0;
+}
+
+.post-toc ol a {
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition-property: all;
+    color: #666;
+    border-bottom-color: #ccc;
+}
+
+.post-toc ol a:hover {
+    color: #000;
+    border-bottom-color: #000;
+}
+
+.post-toc .nav-item {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1.8;
+}
+
+.post-toc .nav .nav-child {
+    display: none;
+}
+
+.post-toc .nav .active>.nav-child {
+    display: block;
+}
+
+.post-toc .nav .active-current>.nav-child {
+    display: block;
+}
+
+.post-toc .nav .active-current>.nav-child>.nav-item {
+    display: block;
+}
+
+.post-toc .nav .active>a {
+    color: #c39d6d;
+    border-bottom-color: #c39d6d;
+}
+
+.post-toc .nav .active-current>a {
+    color: #c39d6d;
+}
+
+.post-toc .nav .active-current>a:hover {
+    color: #c39d6d;
+}
+</style>
+<!-- post sidebar area -->
+<div class="col-md-3">
+    <div class="blog-sidebar" data-spy="affix" data-offset-top="627">
+        <ul class="post-tab-header">
+            <li class="active" data-index="0">文章目录</li>
+            <li data-index="1">站点概览</li>
+        </ul>
+        <div style="clear: both"></div>
+        <div class="post-tab-content">
+            <div id="post-scroll-spy" data-index="0" class="active post-tab-item animated MinefadeInUp">
+                <div class="post-toc">
+                    <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Webpack，何许人也？"><span class="nav-number">2.</span> <span class="nav-text">Webpack，何许人也？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么要用介个-Webpack"><span class="nav-number">3.</span> <span class="nav-text">为什么要用介个 Webpack?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#webpack，gulp-grunt，npm，它们有什么区别"><span class="nav-number">4.</span> <span class="nav-text">webpack，gulp/grunt，npm，它们有什么区别?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备开始"><span class="nav-number">5.</span> <span class="nav-text">准备开始</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基本配置"><span class="nav-number">6.</span> <span class="nav-text">基本配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用配置文件"><span class="nav-number">7.</span> <span class="nav-text">使用配置文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#打包其他类型的文件"><span class="nav-number">8.</span> <span class="nav-text">打包其他类型的文件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#加载-CSS"><span class="nav-number">8.1.</span> <span class="nav-text">加载 CSS</span></a></li></ol></li></ol>
+                </div>
+            </div>
+            <div data-index="1" class="post-tab-item animated MinefadeInUp">
+                <div class="blog block post-sidebar-widget">
+    <img class="site-author-image" src="/images/avatar.jpg">
+    <p class="site-author-name">Hatamen</p>
+    <p class="site-author-description">hatamen-技术栈，是我的个人技术博客，主要记录和总结前端工作中常用的知识及我的生活。</p>
+    <!-- <div class="feed-link motion-element">
+                        <a href="/atom.xml" rel="alternate">
+                            <i class="fa fa-rss"></i> RSS
+                        </a>
+                    </div> -->
+    <nav class="site-state motion-element">
+        <div class="site-state-item site-state-posts">
+            <a href="/archives">
+                <!-- 计算文章 和 项目总数量 -->
+                
+                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-name">文章</span>
+            </a>
+        </div>
+        <div class="site-state-item site-state-categories">
+            <a href="/categories">
+	            <span class="site-state-item-count">0</span>
+	            <span class="site-state-item-name">项目</span>
+            </a>
+        </div>
+    </nav>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- / col-sm-4 col-md-3 -->
+<!-- / post sidebar area -->
+<script type="text/javascript">
+$(function() {
+    $('.post-tab-header').on('click', 'li', function() {
+        if ($(this).hasClass('active')) return;
+        $('.post-tab-header li').removeClass('active');
+        $('.post-tab-content .post-tab-item').removeClass('active');
+        $(this).addClass('active');
+        var index = $(this).data('index');
+        $('.post-tab-content').find('.post-tab-item[data-index=' + index + ']').addClass('active');
+    });
+});
+</script>
+        </div>
+        <!-- / row -->
+    </section>
+    <!-- / post content + sidebar -->
+</div>
+
+        <!-- / content -->
+</body>
+<!-- footer -->
+<footer>
+    <div class="container">
+        <p class="footer-info">© Made by Ckryo</p>
+    </div>
+    <!-- / container -->
+</footer>
+<!-- / footer -->
+<!-- portfolio -->
+<script src="/js/custom.js"></script>
+<script src="/js/jquery.shuffle.min.js"></script>
+<!-- lightbox -->
+<script src="/js/jquery.magnific-popup.min.js"></script>
+<!-- / lightbox -->
+<!-- / portfolio -->
+<!-- preloader -->
+<script src="/js/preloader.js"></script>
+<!-- / preloader -->
+<!-- / javascript -->
+<script src="/js/jquery.lettering.js"></script>
+<script src="/js/jquery.textillate.js"></script>
+
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?6c660646bd1d809e070de5d4a54aac08";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+<script>
+$(function() {
+    $('#banner-title').textillate({
+        in: {
+            // set the effect name
+            effect: 'fadeInDown',
+            callback: function() {
+                $('#banner-description').css('display', 'block');
+                $('#banner-description').textillate();
+            }
+        },
+        // set the type of token to animate (available types: 'char' and 'word')
+        type: 'char'
+    });
+});
+</script>
+</html>

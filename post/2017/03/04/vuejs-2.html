@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hatamen - 技术栈， 分享各类新奇有趣、科技、技术、开发，各类互联网优质精选文章以及优秀开源项目； -- by Hatamen。">
+    <meta name="keywords" content="Hatamen, php, laravel, vue, iview, ios, 全栈工程师, 创业" />
+    <meta name="author" content="Ckryo">
+    <link rel="icon" href="/favicon.ico">
+    <!-- page title -->
+    <title>Hatamen - 技术栈</title>
+    <!-- bootstrap css -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+    <!-- css -->
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/animate.css" rel="stylesheet">
+    <link href="/css/magnific-popup.css" rel="stylesheet">
+    <!-- fonts -->
+    <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='/fonts/FontAwesome.otf' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/linear-icons.css">
+    <link rel="stylesheet" href="/css/share.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="/https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="/https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <!-- javascript -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.easing.min.js"></script>
+</head>
+<body data-spy="scroll" data-target="#post-scroll-spy">
+    <!-- preloader -->
+    <div id="preloader">
+        <div class="spinner spinner-round"></div>
+    </div>
+    <!-- / preloader -->
+    <!-- header -->
+    <header>
+        <!-- nav -->
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-logo" href="/index.html">
+                        Hatamen
+                    </a>
+                </div>
+                <!-- / navbar-header -->
+                
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                    	
+                        <li>
+	                        <a href="/">
+	                        	
+	                        	<span>首页</span>
+	                        </a>
+                        </li>
+                        
+                        <li>
+	                        <a href="/project/index.html">
+	                        	
+	                        	<span>项目</span>
+	                        </a>
+                        </li>
+                        
+                        <li>
+	                        <a href="/post/index.html">
+	                        	
+	                        	<span>文章</span>
+	                        </a>
+                        </li>
+                        
+                        <li>
+	                        <a href="/about.html">
+	                        	
+	                        	<span>关于我</span>
+	                        </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                <!--/ nav-collapse -->
+            <!-- / container -->
+        </nav>
+        <!-- / nav -->
+        <!-- header-banner -->
+        <div id="header-banner" class="demo-1"  style="background-image: url(/images/banner-bg.jpg)" >
+    <div class="banner-content text-center">
+        <div class="banner-info">
+            <h1 id="banner-title">Hatamen - 技术栈</h1>
+            <p id="banner-description" style="display: none" data-in-effect="rotateInUpRight">
+                优秀技术资源分享
+            </p>
+        </div>
+        <!-- / banner-info -->
+    </div>
+    <!-- / banner-content -->
+</div>
+        <!-- / header-banner -->
+    </header>
+    <!-- / header -->
+    <!-- / content -->
+    <link rel="stylesheet" href="/css/i_slidebar.css">
+<link rel="stylesheet" href="/css/i_post.css">
+<div id="page-content" class="container">
+    <!-- post content + sidebar -->
+    <section id="blog">
+        <div class="row">
+            <!-- post content area -->
+            <div class="col-md-9">
+                <div class="blog block post-content-area">
+                    <img src="/images/post_preview_default.jpg" alt="">
+                    <div class="post-info-box">
+                        <h1 style="font-size: 48px;">vue2.0 项目开发小结</h1>
+                        <p class="post-info" style="margin-bottom: 15px;">
+                            发表于:
+                            <span style="color: #aaa; margin: 0 15px">
+                                2017.03.04
+                            </span>
+                             | 分类：
+                             <a href="#" style="margin: 0 5px">
+                                
+                                    vue.js
+                                
+                             </a>
+                             
+                                标签：
+                                
+                                    <a href="#" class="post-tag">vue.js</a>
+                                
+                            
+                        </p>
+                        <h2 id="项目架构"><a href="#项目架构" class="headerlink" title="项目架构"></a>项目架构</h2><h3 id="项目目录"><a href="#项目目录" class="headerlink" title="项目目录"></a>项目目录</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line">├── build</div><div class="line">├── config</div><div class="line">├── dist</div><div class="line">│   └── static</div><div class="line">│       ├── css</div><div class="line">│       ├── fonts</div><div class="line">│       ├── images</div><div class="line">│       ├── js</div><div class="line">│       └── lib</div><div class="line">├── src</div><div class="line">│   ├── api</div><div class="line">│   ├── assets</div><div class="line">│   │   ├── global</div><div class="line">│   │   └── images</div><div class="line">│   │       └── footer</div><div class="line">│   ├── components</div><div class="line">│   │   ├── common</div><div class="line">│   │   ├── news</div><div class="line">│   │   └── profile</div><div class="line">│   │       └── charge</div><div class="line">│   ├── config</div><div class="line">│   ├── mixin</div><div class="line">│   ├── router</div><div class="line">│   ├── service</div><div class="line">│   ├── store</div><div class="line">│   └── util</div><div class="line">└── static</div><div class="line">    ├── images</div><div class="line">    └── lib</div></pre></td></tr></table></figure>
+<p>项目目录是采用 <code>vue-cli</code> 自动生成，其它按需自己新建就好了。</p>
+<h2 id="开发实践"><a href="#开发实践" class="headerlink" title="开发实践"></a>开发实践</h2><h3 id="动态修改-document-title"><a href="#动态修改-document-title" class="headerlink" title="动态修改 document title"></a>动态修改 document title</h3><p>在不同的路由页面，我们需要动态的修改文档标题，可以将每个页面的标题配置在路由元信息 <code>meta</code> 里面带上，然后在 <code>router.beforeEach</code> 钩子函数中修改：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div></pre></td><td class="code"><pre><div class="line">import Vue from &apos;vue&apos;;</div><div class="line">import Router from &apos;vue-router&apos;;</div><div class="line"></div><div class="line">Vue.use(Router);</div><div class="line">const router = new Router(&#123;</div><div class="line">  mode: &apos;history&apos;,</div><div class="line">  routes: [</div><div class="line">    &#123; path: &apos;/&apos;, component: Index, meta: &#123; title: &apos;推荐产品得丰厚奖金&apos; &#125; &#125;,</div><div class="line">    &#123;</div><div class="line">      path: &apos;/news&apos;,</div><div class="line">      component: News,</div><div class="line">      meta: &#123; title: &apos;公告列表&apos; &#125;,</div><div class="line">      children: [</div><div class="line">        &#123; path: &apos;&apos;, redirect: &apos;list&apos; &#125;,</div><div class="line">        &#123; path: &apos;list&apos;, component: NewsList &#125;,</div><div class="line">        &#123; path: &apos;detail/:newsId&apos;, component: NewsDetail, meta: &#123; title: &apos;公告详情&apos; &#125; &#125;</div><div class="line">      ]</div><div class="line">    &#125;,</div><div class="line">    &#123;</div><div class="line">      path: &apos;/guide&apos;,</div><div class="line">      component: GuideProtocol,</div><div class="line">      meta: &#123;</div><div class="line">        title: &apos;新手指南&apos;</div><div class="line">      &#125;</div><div class="line">    &#125;</div><div class="line">  ]</div><div class="line">&#125;);</div><div class="line"></div><div class="line">router.beforeEach((to, from, next) =&gt; &#123;</div><div class="line">  let documentTitle = &apos;商城会员平台&apos;;</div><div class="line"></div><div class="line">  // path 是多级的，遍历</div><div class="line">  to.matched.forEach((path) =&gt; &#123;</div><div class="line">    if (path.meta.title) &#123;</div><div class="line">      documentTitle += ` - $&#123;path.meta.title&#125;`;</div><div class="line">    &#125;</div><div class="line">  &#125;);</div><div class="line"></div><div class="line">  document.title = documentTitle;</div><div class="line">  next();</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h3 id="根据-URL-的变化，动态更新数据"><a href="#根据-URL-的变化，动态更新数据" class="headerlink" title="根据 URL 的变化，动态更新数据"></a>根据 URL 的变化，动态更新数据</h3><p>通常在一个列表集合页，我们需要做分页操作，同时分页数据需要体现在 URL 中，那么如何动态的根据 URL 的变动来动态的获取数据呢，我们可以使用 <code>watch</code> API，在 <code>watch</code> 里面监听 <code>$route</code>，同时使用 <code>this.$router.replace</code> API 来改变 URL 的值。下面是示例代码 <code>common.js</code>：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div></pre></td><td class="code"><pre><div class="line"> &lt;code class=&quot;javascript&quot;&gt;import qs from &apos;qs&apos;;</div><div class="line"></div><div class="line">export default &#123;</div><div class="line">  data() &#123;</div><div class="line">    return &#123;</div><div class="line">      queryParams: &#123;</div><div class="line">        currentPage: 1,</div><div class="line">        pageSize: 10</div><div class="line">      &#125;</div><div class="line">    &#125;;</div><div class="line">  &#125;,</div><div class="line">  methods: &#123;</div><div class="line">    handlePageNoChange(e) &#123;</div><div class="line">      this.queryParams.currentPage = e;</div><div class="line">      this.replaceRouter();</div><div class="line">    &#125;,</div><div class="line"></div><div class="line">    replaceRouter() &#123;</div><div class="line">      const query = qs.stringify(this.queryParams);</div><div class="line">      this.$router.replace(`$&#123;location.pathname&#125;?$&#123;query&#125;`);</div><div class="line">    &#125;,</div><div class="line"></div><div class="line">    routeChange() &#123;</div><div class="line">      this.assignParams();</div><div class="line">      this.fetchData();</div><div class="line">    &#125;,</div><div class="line"></div><div class="line">    assignParams() &#123;</div><div class="line">      this.queryParams = Object.assign(&#123;&#125;, this.queryParams, this.$route.query);</div><div class="line">    &#125;</div><div class="line">  &#125;,</div><div class="line">  mounted() &#123;</div><div class="line">    this.assignParams();</div><div class="line">    this.fetchData();</div><div class="line">  &#125;,</div><div class="line">  watch: &#123;</div><div class="line">    $route: &apos;routeChange&apos;</div><div class="line">  &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<p>我们将这部分代码抽取到一个公共的 <code>mixin</code> 中，在需要的组件那里引入它，同时实现自定义的同名 <code>fetchData()</code> 方法<br><code>mixin</code> API 文档：<a href="https://cn.vuejs.org/v2/guide/mixins.html" target="_blank" rel="external">https://cn.vuejs.org/v2/guide…</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;javascript&quot;&gt;export default DemoComponent &#123;</div><div class="line">  mixins: [common],</div><div class="line">  data() &#123;</div><div class="line">    return &#123;</div><div class="line">      // 组件内部自定义同名查询参数，将会和 mixin 中的默认参数合并</div><div class="line">      queryParams: &#123;</div><div class="line">        categoryId: &apos;&apos;,</div><div class="line">        pageSize: 12</div><div class="line">      &#125;,</div><div class="line">    &#125;</div><div class="line">  &#125;,</div><div class="line">  methods: &#123;</div><div class="line">    fetchData() &#123;</div><div class="line">       // 发送请求</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="Event-Bus-使用场景"><a href="#Event-Bus-使用场景" class="headerlink" title="Event Bus 使用场景"></a>Event Bus 使用场景</h3><p>我们在项目中引入了 <code>vuex</code> ，通常情况下是不需要使用 <code>event bus</code> 的，但是有一种情况下我们需要使用它，那就是在路由钩子函数内部的时，在项目中，我们需要在 <code>beforeEnter</code> 路由钩子里面对外抛出事件，在这个钩子函数中我们无法去到 <code>this</code> 对象。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">beforeEnter: (to, from, next) =&gt; &#123;</div><div class="line">    const userInfo = localStorage.getItem(userFlag);</div><div class="line">    if (isPrivateMode()) &#123;</div><div class="line">        EventBus.$emit(&apos;get-localdata-error&apos;);</div><div class="line">        next(false);</div><div class="line">        return;</div><div class="line">    &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<p>在 <code>App.vue</code> 的 <code>mouted</code> 方法中监听这个事件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">EventBus.$on(&apos;get-localdata-error&apos;, () =&gt; &#123;</div><div class="line">    this.$alert(&apos;请勿使用无痕模式浏览&apos;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h3 id="自定义指令实现埋点数据统计"><a href="#自定义指令实现埋点数据统计" class="headerlink" title="自定义指令实现埋点数据统计"></a>自定义指令实现埋点数据统计</h3><p>在项目中通常需要做数据埋点，这个时候，使用自定义指令将会变非常简单</p>
+<p>在项目入口文件 <code>main.js</code> 中配置我们的自定义指令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">// 坑位埋点指令</div><div class="line">Vue.directive(&apos;stat&apos;, &#123;</div><div class="line">  bind(el, binding) &#123;</div><div class="line">    el.addEventListener(&apos;click&apos;, () =&gt; &#123;</div><div class="line">      const data = binding.value;</div><div class="line">      let prefix = &apos;store&apos;;</div><div class="line">      if (OS.isAndroid || OS.isPhone) &#123;</div><div class="line">        prefix = &apos;mall&apos;;</div><div class="line">      &#125;</div><div class="line">      analytics.request(&#123;</div><div class="line">        ty: `$&#123;prefix&#125;_$&#123;data.type&#125;`,</div><div class="line">        dc: data.desc || &apos;&apos;</div><div class="line">      &#125;, &apos;n&apos;);</div><div class="line">    &#125;, false);</div><div class="line">  &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>在组件中使用我们的自定义指令</p>
+<h3 id="使用过滤器实现展示信息格式化"><a href="#使用过滤器实现展示信息格式化" class="headerlink" title="使用过滤器实现展示信息格式化"></a>使用过滤器实现展示信息格式化</h3><p>如下图中奖金数据信息，我们需要将后台返回的奖金格式化为带两位小数点的格式，同时，如果返回的金额是区间类型，需要额外加上 <span style="color:red;font-weight: bold;">起</span> 字和 <span style="color:red;font-weight: bold;">￥</span> 金额符号</p>
+<p>在入口文件 <code>main.js</code> 中配置我们自定义的过滤器</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">Vue.filter(&apos;money&apos;, (value, config = &#123; unit: &apos;￥&apos;, fixed: 2 &#125;) =&gt; &#123;</div><div class="line">  const moneyStr = `$&#123;value&#125;`;</div><div class="line">  if (moneyStr.indexOf(&apos;-&apos;) &gt; -1) &#123;</div><div class="line">    const scope = moneyStr.split(&apos;-&apos;);</div><div class="line">    return `$&#123;config.unit&#125;$&#123;parseFloat(scope[0]).toFixed(config.fixed).toString()&#125; 起`;</div><div class="line">  &#125; else if (value === 0) &#123;</div><div class="line">    return value;</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  return `$&#123;config.unit&#125;$&#123;parseFloat(moneyStr).toFixed(config.fixed).toString()&#125;`;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>在组件中使用：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"> &#123;&#123;detail.priceScope | money&#125;&#125;</div><div class="line"></div><div class="line">&lt;div :class=&quot;&#123;singleWrapper: isMobile&#125;&quot;&gt;</div><div class="line"></div><div class="line">比率：&#123;&#123;detail.commissionRateScope&#125;&#125;%</div><div class="line"></div><div class="line">奖金：&#123;&#123;detail.expectedIncome | money&#125;&#125;</div><div class="line"></div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
+<h3 id="axios-使用配置"><a href="#axios-使用配置" class="headerlink" title="axios 使用配置"></a>axios 使用配置</h3><p>在项目中，我们使用了 <a href="https://github.com/mzabriskie/axios" target="_blank" rel="external">axios</a> 做接口请求</p>
+<p>在项目中全局配置 <code>/api/common.js</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div></pre></td><td class="code"><pre><div class="line">import axios from &apos;axios&apos;;</div><div class="line">import qs from &apos;qs&apos;;</div><div class="line">import store from &apos;../store&apos;;</div><div class="line"></div><div class="line">// 全局默认配置</div><div class="line">// 设置 POST 请求头</div><div class="line">axios.defaults.headers.post[&apos;Content-Type&apos;] = &apos;application/x-www-form-urlencoded&apos;;</div><div class="line">// 配置 CORS 跨域</div><div class="line">axios.defaults.withCredentials = true;</div><div class="line">axios.defaults.crossDomain = true;</div><div class="line"></div><div class="line">// 请求发起前拦截器</div><div class="line">axios.interceptors.request.use((config) =&gt; &#123;</div><div class="line">  // 全局 loading 状态，触发 loading 效果</div><div class="line">  store.dispatch(&apos;updateLoadingStatus&apos;, &#123;</div><div class="line">    isLoading: true</div><div class="line">  &#125;);</div><div class="line"></div><div class="line">  // POST 请求参数处理成 axios post 方法所需的格式</div><div class="line">  if (config.method === &apos;post&apos;) &#123;</div><div class="line">    config.data = qs.stringify(config.data);</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  // 这句不能省，不然后面的请求就无法成功发起，因为读不到配置参数</div><div class="line">  return config;</div><div class="line">&#125;, () =&gt; &#123;</div><div class="line">  // 异常处理</div><div class="line">  store.dispatch(&apos;updateLoadingStatus&apos;, &#123;</div><div class="line">    isLoading: false</div><div class="line">  &#125;);</div><div class="line">&#125;);</div><div class="line"></div><div class="line">// 响应拦截</div><div class="line">axios.interceptors.response.use((response) =&gt; &#123;</div><div class="line">  // 关闭 loading 效果</div><div class="line">  store.dispatch(&apos;updateLoadingStatus&apos;, &#123;</div><div class="line">    isLoading: false</div><div class="line">  &#125;);</div><div class="line"></div><div class="line">  // 全局登录过滤，如果没有登录，直接跳转到登录 URL</div><div class="line">  if (response.data.code === 300) &#123;</div><div class="line">    // 未登录</div><div class="line">    window.location.href = getLoginUrl();</div><div class="line">    return false;</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  // 这里返回的 response.data 是被 axios 包装过的一成，所以在这里抽取出来</div><div class="line">  return response.data;</div><div class="line">&#125;, (error) =&gt; &#123;</div><div class="line">  store.dispatch(&apos;updateLoadingStatus&apos;, &#123;</div><div class="line">    isLoading: false</div><div class="line">  &#125;);</div><div class="line">  return Promise.reject(error);</div><div class="line">&#125;);</div><div class="line"></div><div class="line">// 导出</div><div class="line">export default axios;</div></pre></td></tr></table></figure>
+<p>然后我们在接口中使用就方便很多了 <code>/api/xxx.js</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">import axios from &apos;./common&apos;;</div><div class="line"></div><div class="line">const baseURL = &apos;/api/profile&apos;;</div><div class="line">const USER_BASE_INFO = `$&#123;baseURL&#125;/getUserBaseInfo.json`;</div><div class="line">const UPDATE_USER_INFO = `$&#123;baseURL&#125;/saveUserInfo.json`;</div><div class="line"></div><div class="line">// 更新用户实名认证信息</div><div class="line">const updateUserInfo = userinfo =&gt; axios.post(UPDATE_USER_INFO, userinfo);</div><div class="line"></div><div class="line">// 获取用户基础信息</div><div class="line">const getUserBaseInfo = () =&gt; axios.get(USER_BASE_INFO);</div></pre></td></tr></table></figure>
+<h3 id="vuex-状态在响应式页面中的妙用"><a href="#vuex-状态在响应式页面中的妙用" class="headerlink" title="vuex 状态在响应式页面中的妙用"></a>vuex 状态在响应式页面中的妙用</h3><p>由于项目是响应式页面，PC 端和移动端在表现成有很多不一致的地方，有时候单单通过 CSS 无法实现交互，这个时候，我们的 <code>vuex</code> 状态就派上用场了，</p>
+<p>我们一开始在 <code>App.vue</code> 里面监听了页面的 <code>resize</code> 事件，动态的更新 <code>vuex</code> 里面 <code>isMobile</code> 的状态值</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">window.onresize = throttle(() =&gt; &#123;</div><div class="line"> this.updatePlatformStatus(&#123;</div><div class="line">   isMobile: isMobile()</div><div class="line"> &#125;);</div><div class="line">&#125;, 500);</div></pre></td></tr></table></figure>
+<p>然后，我们在组件层，就能响应式的渲染不同的 <code>dom</code> 结构了。其中最常见的是 PC 端和移动端加载的图片需要不同的规格的，这个时候我们可以这个做</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">methods: &#123;</div><div class="line">  loadImgAssets(name, suffix = &apos;.jpg&apos;) &#123;</div><div class="line">    return require(`../assets/images/$&#123;name&#125;$&#123;this.isMobile ? &apos;-mobile&apos; : &apos;&apos;&#125;$&#123;suffix&#125;`);</div><div class="line">  &#125;,</div><div class="line">&#125;</div><div class="line"></div><div class="line">// 动态渲染不同规格的 dislog</div><div class="line"> &lt;el-dialog :visible.sync=&quot;dialogVisible&quot; :size=&quot;isMobile ? &apos;full&apos; : &apos;tiny&apos;&quot; top=&quot;30%&quot; custom-class=&quot;unCertification-dialog&quot;&gt;&lt;/el-dialog&gt;</div></pre></td></tr></table></figure>
+<p>下图分别是 PC 端和移动短的表现形式，然后配合 CSS 媒体查询实现各种布局</p>
+<h2 id="开发相关配置"><a href="#开发相关配置" class="headerlink" title="开发相关配置"></a>开发相关配置</h2><h3 id="反向代理"><a href="#反向代理" class="headerlink" title="反向代理"></a>反向代理</h3><p>在项目目录的 <code>config</code> 文件下面的 <code>index.js</code> 配置我们的本地反向代理和端口信息</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">&lt;code class=&quot;javascript&quot;&gt;dev: &#123;</div><div class="line">  env: require(&apos;./dev.env&apos;),</div><div class="line">  port: 80,</div><div class="line">  autoOpenBrowser: true,</div><div class="line">  assetsSubDirectory: &apos;static&apos;,</div><div class="line">  assetsPublicPath: &apos;/&apos;,</div><div class="line">  proxyTable: &#123;</div><div class="line">    &apos;/api/profile&apos;: &#123;</div><div class="line">      target: &apos;[真实接口地址]:[端口号]&apos;, // 例如： http://api.xxx.com</div><div class="line">      changeOrigin: true,</div><div class="line">      pathRewrite: &#123;</div><div class="line">        &apos;^/api/profile&apos;: &apos;/profile&apos;</div><div class="line">      &#125;</div><div class="line">    &#125;</div><div class="line">    ...</div><div class="line">  &#125;,</div></pre></td></tr></table></figure>
+<p>然后我们调用接口的形式就会变成如下映射，当我们调用 <code>/api/profile/xxxx</code> 的时候，其实是调用了 <code>[真实接口地址]/profile/xxxx</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/api/profile/xxxx =&gt; [真实接口地址]/profile/xxxx</div></pre></td></tr></table></figure>
+<p><strong>nginx 配置</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">upstream api.xxx.com</div><div class="line">&#123;</div><div class="line"> #ip_hash;</div><div class="line">  server [接口服务器 ip 地址]:[端口];</div><div class="line">&#125;</div><div class="line"></div><div class="line">server &#123;</div><div class="line">  ...</div><div class="line">  location ^~ /api/profile &#123;</div><div class="line">    index index.php index.html index.html;</div><div class="line">    proxy_redirect off;</div><div class="line">    proxy_set_header Host $host;</div><div class="line">    proxy_set_header X-Real-IP $remote_addr;</div><div class="line">    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</div><div class="line">    proxy_pass http://api.xxx.com;</div><div class="line"></div><div class="line">    rewrite ^/api/profile/(.*)$ /profile/$1 break;</div><div class="line">  &#125;</div><div class="line">  ...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="线上部署"><a href="#线上部署" class="headerlink" title="线上部署"></a>线上部署</h3><p>如果路由使用的是 <code>history</code> 模式的话，需要在 <code>nginx</code> 里面配置将所有的请求到转发到 <code>index.html</code> 去</p>
+<p>在 <code>nginx.conf</code> 或者对应的站点 <code>vhost</code> 文件下面配置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">location / &#123;</div><div class="line">    try_files $uri $uri/ /index.html;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h2><p><strong>开启静态资源长缓存</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">location ~ .*\.(gif|jpg|jpeg|png|bmp|swf|woff|ttf|eot|svg)$ &#123;</div><div class="line">    expires 1y;</div><div class="line">&#125;</div><div class="line"></div><div class="line">location ~ .*\.(js|css)$ &#123;</div><div class="line">    expires 1y;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><strong>开启静态资源 gzip 压缩</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">// 找到 nginx.conf 配置文件</div><div class="line">vim /data/nginx/conf/nginx.conf</div><div class="line"></div><div class="line">gzip on;</div><div class="line">gzip_min_length  1k;</div><div class="line">gzip_buffers     4 8k;</div><div class="line">gzip_http_version 1.1;</div><div class="line">gzip_types text/plain application/javascript application/x-javascript text/javascript text/xml text/css;</div></pre></td></tr></table></figure>
+<p>开启了 gzip 压缩之后，页面资源请求大小将大大减小，如下图所示，表示已经开启了 <code>gzip</code> 压缩</p>
+<h2 id="Q-amp-A"><a href="#Q-amp-A" class="headerlink" title="Q&amp;A"></a>Q&amp;A</h2><p>文章到这就结束了，如果有遗漏或者错误的地方，欢迎私信指出。<br>希望这篇文章能带给大家一丝丝收获。</p>
+
+                    </div>
+                    <!-- / post-info-box -->
+                </div>
+                <!-- / blog-block -->
+                
+<div id="comment">
+    <!--PC和WAP自适应版-->
+    <div id="SOHUCS" sid="请将此处替换为配置SourceID的语句"></div>
+    <script type="text/javascript">
+    (function() {
+        var appid = 'cysYE5nWR';
+        var conf = 'prod_ea59e8a942c2c4c0e72b24ed00ecddc9';
+        var width = window.innerWidth || document.documentElement.clientWidth;
+        if (width < 960) {
+            window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>');
+        } else {
+            var loadJs = function(d, a) {
+                var c = document.getElementsByTagName("head")[0] || document.head || document.documentElement;
+                var b = document.createElement("script");
+                b.setAttribute("type", "text/javascript");
+                b.setAttribute("charset", "UTF-8");
+                b.setAttribute("src", d);
+                if (typeof a === "function") {
+                    if (window.attachEvent) {
+                        b.onreadystatechange = function() {
+                            var e = b.readyState;
+                            if (e === "loaded" || e === "complete") {
+                                b.onreadystatechange = null;
+                                a();
+                            }
+                        }
+                    } else {
+                        b.onload = a;
+                    }
+                }
+                c.appendChild(b)
+            };
+            loadJs("http://changyan.sohu.com/upload/changyan.js", function() {
+                window.changyan.api.config({
+                    appid: appid,
+                    conf: conf
+                })
+            });
+        }
+    })();
+    </script>
+</div>
+<!-- / comments -->
+
+
+            </div>
+            <!-- / col-md-9 -->
+            <!-- / post content area -->
+            <style type="text/css">
+.post-tab-header {
+    width: 100%;
+    padding: 5px 50px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.post-tab-header li {
+    width: 50%;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+
+.post-tab-header li.active {
+    color: #c39d6d;
+    border-bottom: 1px solid #c39d6d;
+}
+
+.post-tab-content .post-tab-item {
+    display: none;
+}
+
+.post-tab-content .post-tab-item.active {
+    display: block;
+}
+
+@keyframes MinefadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(45px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.MinefadeInUp {
+    animation-name: MinefadeInUp;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+.post-toc {
+    font-size: 14px;
+    color: #666;
+    overflow: auto;
+}
+
+.post-toc .nav-link {
+    padding: 0px;
+}
+
+.post-toc ol {
+    margin: 0;
+    padding: 5px 0 5px 20px;
+    text-align: left;
+    list-style: none;
+    font-size: 14px;
+}
+
+.post-toc ol>ol {
+    padding-left: 0;
+}
+
+.post-toc ol a {
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition-property: all;
+    color: #666;
+    border-bottom-color: #ccc;
+}
+
+.post-toc ol a:hover {
+    color: #000;
+    border-bottom-color: #000;
+}
+
+.post-toc .nav-item {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1.8;
+}
+
+.post-toc .nav .nav-child {
+    display: none;
+}
+
+.post-toc .nav .active>.nav-child {
+    display: block;
+}
+
+.post-toc .nav .active-current>.nav-child {
+    display: block;
+}
+
+.post-toc .nav .active-current>.nav-child>.nav-item {
+    display: block;
+}
+
+.post-toc .nav .active>a {
+    color: #c39d6d;
+    border-bottom-color: #c39d6d;
+}
+
+.post-toc .nav .active-current>a {
+    color: #c39d6d;
+}
+
+.post-toc .nav .active-current>a:hover {
+    color: #c39d6d;
+}
+</style>
+<!-- post sidebar area -->
+<div class="col-md-3">
+    <div class="blog-sidebar" data-spy="affix" data-offset-top="627">
+        <ul class="post-tab-header">
+            <li class="active" data-index="0">文章目录</li>
+            <li data-index="1">站点概览</li>
+        </ul>
+        <div style="clear: both"></div>
+        <div class="post-tab-content">
+            <div id="post-scroll-spy" data-index="0" class="active post-tab-item animated MinefadeInUp">
+                <div class="post-toc">
+                    <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#项目架构"><span class="nav-number">1.</span> <span class="nav-text">项目架构</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#项目目录"><span class="nav-number">1.1.</span> <span class="nav-text">项目目录</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开发实践"><span class="nav-number">2.</span> <span class="nav-text">开发实践</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#动态修改-document-title"><span class="nav-number">2.1.</span> <span class="nav-text">动态修改 document title</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#根据-URL-的变化，动态更新数据"><span class="nav-number">2.2.</span> <span class="nav-text">根据 URL 的变化，动态更新数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Event-Bus-使用场景"><span class="nav-number">2.3.</span> <span class="nav-text">Event Bus 使用场景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义指令实现埋点数据统计"><span class="nav-number">2.4.</span> <span class="nav-text">自定义指令实现埋点数据统计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用过滤器实现展示信息格式化"><span class="nav-number">2.5.</span> <span class="nav-text">使用过滤器实现展示信息格式化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#axios-使用配置"><span class="nav-number">2.6.</span> <span class="nav-text">axios 使用配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#vuex-状态在响应式页面中的妙用"><span class="nav-number">2.7.</span> <span class="nav-text">vuex 状态在响应式页面中的妙用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开发相关配置"><span class="nav-number">3.</span> <span class="nav-text">开发相关配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#反向代理"><span class="nav-number">3.1.</span> <span class="nav-text">反向代理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#线上部署"><span class="nav-number">3.2.</span> <span class="nav-text">线上部署</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#优化"><span class="nav-number">4.</span> <span class="nav-text">优化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q-amp-A"><span class="nav-number">5.</span> <span class="nav-text">Q&A</span></a></li></ol>
+                </div>
+            </div>
+            <div data-index="1" class="post-tab-item animated MinefadeInUp">
+                <div class="blog block post-sidebar-widget">
+    <img class="site-author-image" src="/images/avatar.jpg">
+    <p class="site-author-name">Hatamen</p>
+    <p class="site-author-description">hatamen-技术栈，是我的个人技术博客，主要记录和总结前端工作中常用的知识及我的生活。</p>
+    <!-- <div class="feed-link motion-element">
+                        <a href="/atom.xml" rel="alternate">
+                            <i class="fa fa-rss"></i> RSS
+                        </a>
+                    </div> -->
+    <nav class="site-state motion-element">
+        <div class="site-state-item site-state-posts">
+            <a href="/archives">
+                <!-- 计算文章 和 项目总数量 -->
+                
+                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-name">文章</span>
+            </a>
+        </div>
+        <div class="site-state-item site-state-categories">
+            <a href="/categories">
+	            <span class="site-state-item-count">0</span>
+	            <span class="site-state-item-name">项目</span>
+            </a>
+        </div>
+    </nav>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- / col-sm-4 col-md-3 -->
+<!-- / post sidebar area -->
+<script type="text/javascript">
+$(function() {
+    $('.post-tab-header').on('click', 'li', function() {
+        if ($(this).hasClass('active')) return;
+        $('.post-tab-header li').removeClass('active');
+        $('.post-tab-content .post-tab-item').removeClass('active');
+        $(this).addClass('active');
+        var index = $(this).data('index');
+        $('.post-tab-content').find('.post-tab-item[data-index=' + index + ']').addClass('active');
+    });
+});
+</script>
+        </div>
+        <!-- / row -->
+    </section>
+    <!-- / post content + sidebar -->
+</div>
+
+        <!-- / content -->
+</body>
+<!-- footer -->
+<footer>
+    <div class="container">
+        <p class="footer-info">© Made by Ckryo</p>
+    </div>
+    <!-- / container -->
+</footer>
+<!-- / footer -->
+<!-- portfolio -->
+<script src="/js/custom.js"></script>
+<script src="/js/jquery.shuffle.min.js"></script>
+<!-- lightbox -->
+<script src="/js/jquery.magnific-popup.min.js"></script>
+<!-- / lightbox -->
+<!-- / portfolio -->
+<!-- preloader -->
+<script src="/js/preloader.js"></script>
+<!-- / preloader -->
+<!-- / javascript -->
+<script src="/js/jquery.lettering.js"></script>
+<script src="/js/jquery.textillate.js"></script>
+
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?6c660646bd1d809e070de5d4a54aac08";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+<script>
+$(function() {
+    $('#banner-title').textillate({
+        in: {
+            // set the effect name
+            effect: 'fadeInDown',
+            callback: function() {
+                $('#banner-description').css('display', 'block');
+                $('#banner-description').textillate();
+            }
+        },
+        // set the type of token to animate (available types: 'char' and 'word')
+        type: 'char'
+    });
+});
+</script>
+</html>
